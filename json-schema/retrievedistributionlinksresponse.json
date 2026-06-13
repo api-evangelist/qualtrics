@@ -1,0 +1,75 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.qualtrics.com/schemas/RetrieveDistributionLinksResponse.json",
+  "title": "RetrieveDistributionLinksResponse",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "contactId": {
+                "type": "string"
+              },
+              "transactionId": {},
+              "link": {
+                "type": "string"
+              },
+              "exceededContactFrequency": {
+                "type": "boolean"
+              },
+              "linkExpiration": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "lastName": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "externalDataReference": {},
+              "email": {
+                "type": "string"
+              },
+              "unsubscribed": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "contactId",
+              "transactionId",
+              "link",
+              "exceededContactFrequency",
+              "linkExpiration",
+              "status",
+              "lastName",
+              "firstName",
+              "externalDataReference",
+              "email",
+              "unsubscribed"
+            ]
+          }
+        },
+        "nextPage": {}
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "httpStatus": {
+          "type": "string"
+        },
+        "requestId": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

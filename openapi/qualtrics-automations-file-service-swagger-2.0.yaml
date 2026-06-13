@@ -1,0 +1,320 @@
+swagger: '2.0'
+info:
+  title: Automations File Service API
+  description: |
+    # Introduction
+
+    The Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.
+    You may upload a file for an Automation via an HTTPS endpoint.  When the Automation is scheduled to run, it will process
+    any new files targeted at that Automation.
+
+    Files uploaded to the Automations File Service persist for 60 days. These endpoints allow you to do the following:
+      - retrieve the metadata of the file—including information about its processing
+      - download a file
+      - delete a file.
+
+    Automations supports several data import sources, including SFTP.  When an Automation consumes a file from one of these data import sources, it
+    stores the file in the Automations File Service file store to preserve a historical record. When choosing a
+    data import source, we recommend the Automations File Service for uploading files.
+
+    Note: The API calls in this documentation are written with the base URL datacenterId.qualtrics.com. You should change the base URL to 
+    reflect the correct datacenter for your brand. If you do not know the datacenter ID, you can look in the URL you use to access Qualtrics, 
+    or in your account settings to find this. API calls may still work if you call the wrong datacenter, as your request will be proxied to 
+    the correct datacenter. However, this may extend the time it takes for you to receive a response, or the API call may fail entirely.
+
+  contact:
+    name: Contact Qualtrics Support for more information.
+  version: 1.0.0
+host: datacenterId.qualtrics.com
+basePath: /automations-file-service
+schemes:
+- https
+consumes:
+- application/json
+- multipart/form-data
+produces:
+- application/json
+- text/plain; charset=utf-8
+securityDefinitions:
+  'API Token':
+      type: apiKey
+      in: header
+      name: X-API-TOKEN
+security:
+  - 'API Token': []
+parameters:
+  'offset':
+    name: offset
+    in: query
+    required: false
+    type: integer
+    format: int32
+    minimum: 0
+    description: |
+      The starting offset for the returned records. The default offset is 0.
+  'automationIdPath':
+    name: automationId
+    in: path
+    description: |
+      Id of the associated automation.
+
+      **Example**: `AU_123456789012345`
+    required: true
+    type: string
+  'fileIdPath':
+    name: fileId
+    in: path
+    description: |
+      Id of the associated file.
+
+      **Example**: `AFL_123456789012345`
+    required: true
+    type: string
+  'tag':
+    name: tag
+    in: query
+    required: false
+    type: string
+    description: |
+      * If not provided, the files that have not yet been processed by the automation will be returned.
+      * If equal to `processing`, the files that are currently being processed by the automation will be returned.
+      * If equal to `archived`, the files that have been processed and archived by the automation will be returned.
+  'runIdPath':
+    name: runId
+    in: path
+    description: |
+      Id of the associated run.
+
+      **Example**: `RN_123456789012345`
+    required: true
+    type: string
+responses:
+  'success':
+    description: Success
+    schema:
+      type: object
+      required:
+      - meta
+      properties:
+        meta:
+          $ref: '#/definitions/meta'
+definitions:
+  'fileId':
+    example: AFL_123456789012345
+    type: string
+    description: |
+      The file's unique Id.
+
+      Since multiple files may share the same name, the id is used to identify a particular file.
+
+      Multiple files may share the same name if
+      * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
+      * They have different processed or archived date/times.
+
+      **Example**: `AFL_123456789012345`
+  'meta': 
+    example:
+      httpStatus: '200 - OK'
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: |
+          Always of the format `{X} - {Y}`,
+          where `{X}` is the associated HTTP status code,
+          and `{Y}` is a human readable explanation of the status code.
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+  'metawarn':
+    example:
+      httpStatus: '200 - OK'
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: |
+          Always of the format `{X} - {Y}`,
+          where `{X}` is the associated HTTP status code,
+          and `{Y}` is a human readable explanation of the status code.
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+      warning:
+        type: object
+        description: |
+          Only given if a warning occurred during the request,
+          such as an upload of an existing file name overwriting that file's content.
+        required:
+        - warningMessage
+        - warningCode
+        properties:
+          warningMessage:
+            type: string
+            description: A human readable explanation of the warning.
+          warningCode:
+            type: string
+            description: An identifying code associated with the warning.
+
+paths:
+  /automations:
+    get:
+      tags:
+      - automations
+      summary: List Automations
+      description: Get all automations' directory information.
+      operationId: getAutomations
+      parameters:
+      - $ref: '#/parameters/offset'
+      responses:
+        '200':
+          description: Automations List
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: 'directory.yaml#/definitions/directories'
+              meta:
+                $ref: '#/definitions/meta'
+  /automations/{automationId}/files:
+    get:
+      tags:
+      - files
+      summary: Get Automation's Files
+      description: Get all the files for Automation which are neither archived or currently being processed.
+      operationId: getFiles
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/tag'
+      responses:
+        '200':
+          description: Files List
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: 'file.yaml#/definitions/files'
+              meta:
+                $ref: '#/definitions/meta'
+    post:
+      tags:
+      - file
+      summary: Upload a File
+      consumes:
+      - multipart/form-data
+      description: Upload a file for the automation to consume.
+      operationId: createFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - in: formData
+        name: file
+        type: file
+        description: The file to upload.
+      responses:
+        '200':
+          description: File Id
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                type: object
+                required:
+                - id
+                properties:
+                  id:
+                    $ref: '#/definitions/fileId'
+              meta:
+                $ref: '#/definitions/metawarn'
+  /automations/{automationId}/files/{fileId}:
+    get:
+      tags:
+      - file
+      summary: Get File Metadata
+      description: Get the file's metadata.
+      operationId: getFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          description: File Metadata
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: 'file.yaml#/definitions/file'
+              meta:
+                $ref: '#/definitions/meta'
+    delete:
+      tags:
+      - file
+      summary: Delete File
+      description: Deletes the file.
+      operationId: deleteFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          $ref: '#/responses/success'
+  /automations/{automationId}/files/{fileId}/content:
+    get:
+      tags:
+      - file
+      summary: Get File Content
+      produces:
+      - text/plain; charset=utf-8
+      description: Download the file's content.
+      operationId: getFileContent
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          description: File Content
+          schema:
+            type: file

@@ -1,0 +1,194 @@
+{
+  "RetrieveDistributionLinksResponse": {
+    "term": "RetrieveDistributionLinksResponse",
+    "source": "components/schemas",
+    "spec": "OpenAPI 3.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "result",
+      "meta"
+    ]
+  },
+  "SurveyResponse": {
+    "term": "SurveyResponse",
+    "source": "components/schemas",
+    "spec": "OpenAPI 3.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "result"
+    ]
+  },
+  "DistributionsResponse": {
+    "term": "DistributionsResponse",
+    "source": "components/schemas",
+    "spec": "OpenAPI 3.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "result",
+      "meta"
+    ]
+  },
+  "EventSubscriptionsResponse": {
+    "term": "EventSubscriptionsResponse",
+    "source": "components/schemas",
+    "spec": "OpenAPI 3.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "result",
+      "meta"
+    ]
+  },
+  "EventSubscriptionHookSchema": {
+    "term": "EventSubscriptionHookSchema",
+    "source": "components/schemas",
+    "spec": "OpenAPI 3.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "$content-type",
+      "$content",
+      "$formdata"
+    ]
+  },
+  "CreateDistributionLinks": {
+    "term": "CreateDistributionLinks",
+    "source": "definitions",
+    "spec": "Swagger 2.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "surveyId",
+      "linkType",
+      "description",
+      "action",
+      "expirationDate",
+      "mailingListId"
+    ]
+  },
+  "CreateContactInMailingList": {
+    "term": "CreateContactInMailingList",
+    "source": "definitions",
+    "spec": "Swagger 2.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "firstName",
+      "lastName",
+      "email",
+      "unsubscribed"
+    ]
+  },
+  "SubscribeToEventBody": {
+    "term": "SubscribeToEventBody",
+    "source": "definitions",
+    "spec": "Swagger 2.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "topics",
+      "publicationUrl",
+      "encrypt"
+    ]
+  },
+  "Automations_fileId": {
+    "term": "Automations_fileId",
+    "source": "definitions",
+    "spec": "Automations File Service Swagger 2.0",
+    "description": "The file's unique Id.\n\nSince multiple files may share the same name, the id is used to identify a particular file.\n\nMultiple files may share the same name if\n* They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.\n* They have different processed or archived date/times.\n\n**Example**: `AFL_123456789012345`\n",
+    "type": "string",
+    "properties": []
+  },
+  "Automations_meta": {
+    "term": "Automations_meta",
+    "source": "definitions",
+    "spec": "Automations File Service Swagger 2.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "httpStatus",
+      "error",
+      "requestId"
+    ]
+  },
+  "Automations_metawarn": {
+    "term": "Automations_metawarn",
+    "source": "definitions",
+    "spec": "Automations File Service Swagger 2.0",
+    "description": "",
+    "type": "object",
+    "properties": [
+      "httpStatus",
+      "error",
+      "requestId",
+      "warning"
+    ]
+  },
+  "Getsurveys": {
+    "term": "Getsurveys",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Get a specific survey by its 'id' (e.g SV_123)",
+    "method": "GET",
+    "path": "/survey-definitions/{Id}"
+  },
+  "Getdistributions": {
+    "term": "Getdistributions",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Get distributions for a given survey",
+    "method": "GET",
+    "path": "/distributions"
+  },
+  "Generatedistributionlinks": {
+    "term": "Generatedistributionlinks",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Generate distribution links for a given survey",
+    "method": "POST",
+    "path": "/distributions"
+  },
+  "Retrievedistributionlinks": {
+    "term": "Retrievedistributionlinks",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Retrieve distribution links",
+    "method": "GET",
+    "path": "/distributions/{DistributionId}/links"
+  },
+  "Createcontactinmailinglist": {
+    "term": "Createcontactinmailinglist",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Create a contact in a given mailing list",
+    "method": "POST",
+    "path": "/directories/{DirectoryId}/mailinglists/{MailingListId}/contacts"
+  },
+  "webhook-trigger": {
+    "term": "webhook-trigger",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Subscribe to response event",
+    "method": "POST",
+    "path": "/eventsubscriptions/"
+  },
+  "WebhookDelete": {
+    "term": "WebhookDelete",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Remove subscription to response event",
+    "method": "DELETE",
+    "path": "/eventsubscriptions/"
+  },
+  "Geteventsubscriptions": {
+    "term": "Geteventsubscriptions",
+    "source": "paths",
+    "spec": "OpenAPI 3.0",
+    "description": "Get event subscriptions",
+    "method": "GET",
+    "path": "/eventsubscriptions/{SubscripionId}"
+  }
+}

@@ -1,0 +1,3071 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.qualtrics.com/schemas/SurveyResponse.json",
+  "title": "SurveyResponse",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "properties": {
+        "QuestionCount": {
+          "type": "string"
+        },
+        "SurveyOptions": {
+          "type": "object",
+          "properties": {
+            "ActiveResponseSet": {
+              "type": "string"
+            },
+            "AnonymizeResponse": {
+              "type": "string"
+            },
+            "Autoadvance": {
+              "type": "string"
+            },
+            "AutoadvancePages": {
+              "type": "string"
+            },
+            "Autofocus": {
+              "type": "string"
+            },
+            "AvailableLanguages": {
+              "type": "object",
+              "properties": {
+                "EN": {
+                  "type": "array"
+                }
+              }
+            },
+            "BackButton": {
+              "type": "string"
+            },
+            "BallotBoxStuffingPrevention": {
+              "type": "string"
+            },
+            "CollectGeoLocation": {
+              "type": "string"
+            },
+            "CustomStyles": {
+              "type": "object",
+              "properties": {
+                "altRowStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {}
+                      }
+                    }
+                  }
+                },
+                "borderStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "borderColor": {}
+                      }
+                    }
+                  }
+                },
+                "choiceStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {},
+                        "fontFamily": {},
+                        "fontSize": {},
+                        "fontStyle": {},
+                        "fontWeight": {},
+                        "textDecoration": {}
+                      }
+                    }
+                  }
+                },
+                "customCSS": {},
+                "errorStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {},
+                        "borderColor": {},
+                        "color": {}
+                      }
+                    }
+                  }
+                },
+                "errorStylesBG": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {},
+                        "color": {}
+                      }
+                    }
+                  }
+                },
+                "footerStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {}
+                      }
+                    }
+                  }
+                },
+                "headerStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {}
+                      }
+                    }
+                  }
+                },
+                "highlightStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {}
+                      }
+                    }
+                  }
+                },
+                "highlightStylesAlt": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {}
+                      }
+                    }
+                  }
+                },
+                "pageStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {}
+                      }
+                    }
+                  }
+                },
+                "questionSeparatorStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "backgroundColor": {},
+                        "display": {}
+                      }
+                    }
+                  }
+                },
+                "questionStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {},
+                        "fontFamily": {},
+                        "fontSize": {},
+                        "fontStyle": {},
+                        "fontWeight": {},
+                        "textDecoration": {}
+                      }
+                    }
+                  }
+                },
+                "textEntryStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {}
+                      }
+                    }
+                  }
+                },
+                "textStyles": {
+                  "type": "object",
+                  "properties": {
+                    "selector": {
+                      "type": "string"
+                    },
+                    "styles": {
+                      "type": "object",
+                      "properties": {
+                        "color": {},
+                        "fontFamily": {},
+                        "fontSize": {},
+                        "fontStyle": {},
+                        "fontWeight": {},
+                        "textDecoration": {}
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "EOSMessage": {
+              "type": "string"
+            },
+            "EOSMessageLibrary": {
+              "type": "string"
+            },
+            "EOSRedirectURL": {
+              "type": "string"
+            },
+            "EmailThankYou": {
+              "type": "string"
+            },
+            "ExternalCSS": {},
+            "Footer": {
+              "type": "string"
+            },
+            "Header": {
+              "type": "string"
+            },
+            "HighlightQuestions": {
+              "type": "string"
+            },
+            "InactiveMessage": {
+              "type": "string"
+            },
+            "InactiveMessageLibrary": {
+              "type": "string"
+            },
+            "InactiveSurvey": {
+              "type": "string"
+            },
+            "NewScoring": {
+              "type": "integer"
+            },
+            "NextButton": {
+              "type": "string"
+            },
+            "NoIndex": {
+              "type": "string"
+            },
+            "PageTransition": {
+              "type": "string"
+            },
+            "PartialData": {
+              "type": "string"
+            },
+            "PartialDataCloseAfter": {
+              "type": "string"
+            },
+            "Password": {
+              "type": "string"
+            },
+            "PasswordProtection": {
+              "type": "string"
+            },
+            "PreviousButton": {
+              "type": "string"
+            },
+            "ProgressBarDisplay": {
+              "type": "string"
+            },
+            "ProtectSelectionIds": {
+              "type": "boolean"
+            },
+            "QuestionsPerPage": {
+              "type": "string"
+            },
+            "RecaptchaV3": {
+              "type": "string"
+            },
+            "RefererCheck": {
+              "type": "string"
+            },
+            "RefererURL": {
+              "type": "string"
+            },
+            "RelevantID": {
+              "type": "string"
+            },
+            "ResponseSummary": {
+              "type": "string"
+            },
+            "SaveAndContinue": {
+              "type": "string"
+            },
+            "SecureResponseFiles": {
+              "type": "string"
+            },
+            "ShowExportTags": {
+              "type": "string"
+            },
+            "Skin": {
+              "type": "string"
+            },
+            "SkinLibrary": {
+              "type": "string"
+            },
+            "SkinType": {
+              "type": "string"
+            },
+            "SurveyExpiration": {},
+            "SurveyMetaDescription": {
+              "type": "string"
+            },
+            "SurveyName": {
+              "type": "string"
+            },
+            "SurveyProtection": {
+              "type": "string"
+            },
+            "SurveyTermination": {
+              "type": "string"
+            },
+            "SurveyTitle": {
+              "type": "string"
+            },
+            "ThankYouEmailMessage": {},
+            "ThankYouEmailMessageLibrary": {},
+            "ValidateMessage": {
+              "type": "string"
+            },
+            "ValidationMessage": {},
+            "ValidationMessageLibrary": {},
+            "footerMid": {
+              "type": "string"
+            },
+            "headerMid": {
+              "type": "string"
+            },
+            "libraryId": {
+              "type": "string"
+            },
+            "nextButtonMid": {
+              "type": "string"
+            },
+            "previousButtonMid": {
+              "type": "string"
+            },
+            "SkinQuestionWidth": {
+              "type": "integer"
+            },
+            "SurveyLanguage": {
+              "type": "string"
+            },
+            "SurveyStartDate": {},
+            "SurveyExpirationDate": {},
+            "SurveyCreationDate": {
+              "type": "string"
+            }
+          }
+        },
+        "SurveyID": {
+          "type": "string"
+        },
+        "SurveyName": {
+          "type": "string"
+        },
+        "SurveyStatus": {
+          "type": "string"
+        },
+        "LastModified": {
+          "type": "string"
+        },
+        "BrandID": {
+          "type": "string"
+        },
+        "OwnerID": {
+          "type": "string"
+        },
+        "LastAccessed": {},
+        "CreatorID": {
+          "type": "string"
+        },
+        "LastActivated": {
+          "type": "string"
+        },
+        "Questions": {
+          "type": "object",
+          "properties": {
+            "QID46": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID48": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID50": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID52": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID54": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID45": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID47": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID49": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID51": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID53": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    },
+                    "TextPosition": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID36": {
+              "type": "object",
+              "properties": {
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "AllowFreeResponse": {
+                      "type": "string"
+                    },
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID42": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Display": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Display"
+                    ]
+                  }
+                },
+                "ColumnLabels": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Display": {
+                        "type": "string"
+                      },
+                      "IsLabelDefault": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "Display",
+                      "IsLabelDefault"
+                    ]
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID43": {
+              "type": "object",
+              "properties": {
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID21": {
+              "type": "object",
+              "properties": {
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "NumColumns": {
+                      "type": "integer"
+                    },
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ContentType": {
+                          "type": "string"
+                        },
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        },
+                        "ValidDateType": {
+                          "type": "string"
+                        },
+                        "ValidNumber": {
+                          "type": "object",
+                          "properties": {
+                            "Max": {
+                              "type": "string"
+                            },
+                            "Min": {
+                              "type": "string"
+                            },
+                            "NumDecimals": {
+                              "type": "string"
+                            }
+                          }
+                        },
+                        "ValidPhoneType": {
+                          "type": "string"
+                        },
+                        "ValidZipType": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID31": {
+              "type": "object",
+              "properties": {
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "DefaultChoices": {
+                  "type": "boolean"
+                },
+                "GradingData": {
+                  "type": "array"
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "MinChars": {
+                          "type": "string"
+                        },
+                        "TotalChars": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            },
+            "QID23": {
+              "type": "object",
+              "properties": {
+                "ChoiceOrder": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "Choices": {
+                  "type": "object",
+                  "properties": {
+                    "1": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "2": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "3": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "4": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "5": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "6": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "7": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        },
+                        "TextEntry": {
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "8": {
+                      "type": "object",
+                      "properties": {
+                        "Display": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "Configuration": {
+                  "type": "object",
+                  "properties": {
+                    "QuestionDescriptionOption": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "DataExportTag": {
+                  "type": "string"
+                },
+                "DataVisibility": {
+                  "type": "object",
+                  "properties": {
+                    "Hidden": {
+                      "type": "boolean"
+                    },
+                    "Private": {
+                      "type": "boolean"
+                    }
+                  }
+                },
+                "Language": {
+                  "type": "array"
+                },
+                "NextAnswerId": {
+                  "type": "integer"
+                },
+                "NextChoiceId": {
+                  "type": "integer"
+                },
+                "QuestionDescription": {
+                  "type": "string"
+                },
+                "QuestionID": {
+                  "type": "string"
+                },
+                "QuestionText": {
+                  "type": "string"
+                },
+                "QuestionType": {
+                  "type": "string"
+                },
+                "Selector": {
+                  "type": "string"
+                },
+                "SubSelector": {
+                  "type": "string"
+                },
+                "Validation": {
+                  "type": "object",
+                  "properties": {
+                    "Settings": {
+                      "type": "object",
+                      "properties": {
+                        "ForceResponse": {
+                          "type": "string"
+                        },
+                        "ForceResponseType": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                },
+                "QuestionText_Unsafe": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "Blocks": {
+          "type": "object",
+          "properties": {
+            "BL_3guR0F0lGVfF5tj": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "QuestionID",
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "BlockVisibility": {
+                      "type": "string"
+                    },
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9uZsNkfstasQRI3": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "Looping": {
+                      "type": "string"
+                    },
+                    "LoopingOptions": {},
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9uZsNkfstasQRI4": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Type": {
+                        "type": "string"
+                      },
+                      "QuestionID": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "Looping": {
+                      "type": "string"
+                    },
+                    "LoopingOptions": {},
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9z6tnZPkYBL62LH": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "BlockVisibility": {
+                      "type": "string"
+                    },
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_cNJhXeMWCFAFQLH": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "BlockVisibility": {
+                      "type": "string"
+                    },
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_0ijSd5XY4gJbogd": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "QuestionID",
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9uZsNkfstasQRI0": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "Looping": {
+                      "type": "string"
+                    },
+                    "LoopingOptions": {},
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9uZsNkfstasQRI1": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "QuestionID": {
+                        "type": "string"
+                      },
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "Looping": {
+                      "type": "string"
+                    },
+                    "LoopingOptions": {},
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            },
+            "BL_9uZsNkfstasQRI2": {
+              "type": "object",
+              "properties": {
+                "BlockElements": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "Type": {
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "Type"
+                    ]
+                  }
+                },
+                "Description": {
+                  "type": "string"
+                },
+                "ID": {
+                  "type": "string"
+                },
+                "Options": {
+                  "type": "object",
+                  "properties": {
+                    "BlockLocking": {
+                      "type": "string"
+                    },
+                    "Looping": {
+                      "type": "string"
+                    },
+                    "LoopingOptions": {},
+                    "RandomizeQuestions": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "SubType": {
+                  "type": "string"
+                },
+                "Type": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        "ResponseSets": {
+          "type": "object",
+          "properties": {
+            "RS_6LQ18e9OczDfNb0": {
+              "type": "string"
+            }
+          }
+        },
+        "SurveyFlow": {
+          "type": "object",
+          "properties": {
+            "Flow": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "Description": {
+                    "type": "string"
+                  },
+                  "Flow": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "Description": {
+                          "type": "string"
+                        },
+                        "EmbeddedData": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "DataVisibility": {
+                                "type": "array"
+                              },
+                              "Description": {
+                                "type": "string"
+                              },
+                              "Field": {
+                                "type": "string"
+                              },
+                              "FlowOnly": {
+                                "type": "boolean"
+                              },
+                              "Type": {
+                                "type": "string"
+                              },
+                              "Value": {
+                                "type": "string"
+                              },
+                              "VariableType": {
+                                "type": "string"
+                              }
+                            },
+                            "required": [
+                              "DataVisibility",
+                              "Description",
+                              "Field",
+                              "FlowOnly",
+                              "Type",
+                              "Value",
+                              "VariableType"
+                            ]
+                          }
+                        },
+                        "FlowID": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "Description",
+                        "EmbeddedData",
+                        "FlowID",
+                        "Type"
+                      ]
+                    }
+                  },
+                  "FlowID": {
+                    "type": "string"
+                  },
+                  "Type": {
+                    "type": "string"
+                  },
+                  "UIActions": {
+                    "type": "object",
+                    "properties": {
+                      "Delete": {
+                        "type": "boolean"
+                      },
+                      "Duplicate": {
+                        "type": "boolean"
+                      },
+                      "ViewFlow": {
+                        "type": "boolean"
+                      }
+                    }
+                  },
+                  "EmbeddedData": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "AnalyzeText": {
+                          "type": "boolean"
+                        },
+                        "DataVisibility": {
+                          "type": "array"
+                        },
+                        "Description": {
+                          "type": "string"
+                        },
+                        "Field": {
+                          "type": "string"
+                        },
+                        "Type": {
+                          "type": "string"
+                        },
+                        "Value": {
+                          "type": "string"
+                        },
+                        "VariableType": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "AnalyzeText",
+                        "DataVisibility",
+                        "Description",
+                        "Field",
+                        "Type",
+                        "Value",
+                        "VariableType"
+                      ]
+                    }
+                  },
+                  "ID": {
+                    "type": "string"
+                  },
+                  "SubSet": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "FlowID",
+                  "Type"
+                ]
+              }
+            },
+            "FlowID": {
+              "type": "string"
+            },
+            "Properties": {
+              "type": "object",
+              "properties": {
+                "Count": {
+                  "type": "integer"
+                },
+                "RemovedFieldsets": {
+                  "type": "array"
+                }
+              }
+            },
+            "Type": {
+              "type": "string"
+            }
+          }
+        },
+        "Scoring": {
+          "type": "object",
+          "properties": {
+            "AutoScoringCategory": {},
+            "DefaultScoringCategory": {},
+            "ScoringCategories": {
+              "type": "array"
+            },
+            "ScoringCategoryGroups": {
+              "type": "array"
+            },
+            "ScoringSummaryAfterQuestions": {
+              "type": "integer"
+            },
+            "ScoringSummaryAfterSurvey": {
+              "type": "integer"
+            },
+            "ScoringSummaryCategory": {}
+          }
+        },
+        "ProjectInfo": {
+          "type": "object",
+          "properties": {
+            "SurveyID": {
+              "type": "string"
+            },
+            "ProjectCategory": {
+              "type": "string"
+            },
+            "ProjectType": {
+              "type": "string"
+            },
+            "CompositionType": {},
+            "ContentBundle": {}
+          }
+        },
+        "BrandBaseURL": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

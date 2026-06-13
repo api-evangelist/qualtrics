@@ -40,7 +40,33 @@ apis:
       - type: Documentation
         url: https://api.qualtrics.com/
       - type: OpenAPI
-        url: https://az1.qualtrics.com/automations-file-service/docs/src/openapi.yaml
+        url: openapi/qualtrics-api-openapi-3.0.json
+      - type: OpenAPI
+        url: openapi/qualtrics-api-swagger-2.0.json
+      - type: OpenAPI
+        url: openapi/qualtrics-automations-file-service-swagger-2.0.yaml
+      - type: JSONSchema
+        url: json-schema/surveyresponse.json
+      - type: JSONSchema
+        url: json-schema/distributionsresponse.json
+      - type: JSONSchema
+        url: json-schema/retrievedistributionlinksresponse.json
+      - type: JSONSchema
+        url: json-schema/eventsubscriptionsresponse.json
+      - type: JSONSchema
+        url: json-schema/eventsubscriptionhookschema.json
+      - type: JSONSchema
+        url: json-schema/createdistributionlinks.json
+      - type: JSONSchema
+        url: json-schema/createcontactinmailinglist.json
+      - type: JSONSchema
+        url: json-schema/subscribetoeventbody.json
+      - type: Examples
+        url: examples/qualtrics-api-examples.json
+      - type: Vocabulary
+        url: vocabulary/qualtrics-api-vocabulary.json
+      - type: JSONLDContext
+        url: json-ld/qualtrics-api-context.jsonld
       - type: Postman
         url: https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
     contact:

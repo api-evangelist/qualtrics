@@ -1,0 +1,58 @@
+{
+  "Getsurveys": {
+    "path": "/survey-definitions/{Id}",
+    "method": "GET",
+    "summary": "Get a specific survey by its 'id' (e.g SV_123)",
+    "request": null,
+    "response": {}
+  },
+  "Getdistributions": {
+    "path": "/distributions",
+    "method": "GET",
+    "summary": "Get distributions for a given survey",
+    "request": null,
+    "response": {}
+  },
+  "Generatedistributionlinks": {
+    "path": "/distributions",
+    "method": "POST",
+    "summary": "Generate distribution links for a given survey",
+    "request": {},
+    "response": null
+  },
+  "Retrievedistributionlinks": {
+    "path": "/distributions/{DistributionId}/links",
+    "method": "GET",
+    "summary": "Retrieve distribution links",
+    "request": null,
+    "response": {}
+  },
+  "Createcontactinmailinglist": {
+    "path": "/directories/{DirectoryId}/mailinglists/{MailingListId}/contacts",
+    "method": "POST",
+    "summary": "Create a contact in a given mailing list",
+    "request": {},
+    "response": null
+  },
+  "webhook-trigger": {
+    "path": "/eventsubscriptions/",
+    "method": "POST",
+    "summary": "Subscribe to response event",
+    "request": {},
+    "response": {}
+  },
+  "WebhookDelete": {
+    "path": "/eventsubscriptions/",
+    "method": "DELETE",
+    "summary": "Remove subscription to response event",
+    "request": null,
+    "response": {}
+  },
+  "Geteventsubscriptions": {
+    "path": "/eventsubscriptions/{SubscripionId}",
+    "method": "GET",
+    "summary": "Get event subscriptions",
+    "request": null,
+    "response": {}
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "@context": {
+    "@vocab": "https://api.qualtrics.com/schemas/",
+    "qualtrics": "https://api.qualtrics.com/schemas/",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "Survey": "qualtrics:Survey",
+    "SurveyResponse": "qualtrics:SurveyResponse",
+    "Distribution": "qualtrics:Distribution",
+    "Contact": "qualtrics:Contact",
+    "MailingList": "qualtrics:MailingList",
+    "EventSubscription": "qualtrics:EventSubscription",
+    "Directory": "qualtrics:Directory",
+    "AutomationFile": "qualtrics:AutomationFile",
+    "QuestionCount": {
+      "@id": "qualtrics:questionCount",
+      "@type": "xsd:string"
+    },
+    "SurveyOptions": "qualtrics:surveyOptions",
+    "SurveyQuestions": "qualtrics:surveyQuestions",
+    "SurveyName": {
+      "@id": "qualtrics:surveyName",
+      "@type": "xsd:string"
+    },
+    "SurveyID": {
+      "@id": "qualtrics:surveyId",
+      "@type": "xsd:string"
+    },
+    "DistributionId": {
+      "@id": "qualtrics:distributionId",
+      "@type": "xsd:string"
+    },
+    "link": {
+      "@id": "qualtrics:link",
+      "@type": "xsd:string"
+    },
+    "contactLookupId": {
+      "@id": "qualtrics:contactLookupId",
+      "@type": "xsd:string"
+    },
+    "exceededContactFrequency": {
+      "@id": "qualtrics:exceededContactFrequency",
+      "@type": "xsd:boolean"
+    },
+    "status": {
+      "@id": "qualtrics:status",
+      "@type": "xsd:string"
+    },
+    "email": {
+      "@id": "schema:email",
+      "@type": "xsd:string"
+    },
+    "firstName": {
+      "@id": "schema:givenName",
+      "@type": "xsd:string"
+    },
+    "lastName": {
+      "@id": "schema:familyName",
+      "@type": "xsd:string"
+    },
+    "externalDataRef": {
+      "@id": "qualtrics:externalDataRef",
+      "@type": "xsd:string"
+    },
+    "embeddedData": "qualtrics:embeddedData",
+    "publicationUrl": {
+      "@id": "qualtrics:publicationUrl",
+      "@type": "xsd:string"
+    },
+    "topics": {
+      "@id": "qualtrics:topics",
+      "@type": "xsd:string"
+    },
+    "encrypt": {
+      "@id": "qualtrics:encrypt",
+      "@type": "xsd:boolean"
+    },
+    "result": "qualtrics:result",
+    "elements": "qualtrics:elements",
+    "meta": "qualtrics:meta",
+    "httpStatus": {
+      "@id": "qualtrics:httpStatus",
+      "@type": "xsd:string"
+    },
+    "requestId": {
+      "@id": "qualtrics:requestId",
+      "@type": "xsd:string"
+    },
+    "notice": {
+      "@id": "qualtrics:notice",
+      "@type": "xsd:string"
+    },
+    "automationId": {
+      "@id": "qualtrics:automationId",
+      "@type": "xsd:string"
+    },
+    "fileId": {
+      "@id": "qualtrics:fileId",
+      "@type": "xsd:string"
+    },
+    "fileName": {
+      "@id": "qualtrics:fileName",
+      "@type": "xsd:string"
+    },
+    "fileSize": {
+      "@id": "qualtrics:fileSize",
+      "@type": "xsd:integer"
+    },
+    "createdAt": {
+      "@id": "qualtrics:createdAt",
+      "@type": "xsd:dateTime"
+    },
+    "updatedAt": {
+      "@id": "qualtrics:updatedAt",
+      "@type": "xsd:dateTime"
+    }
+  }
+}

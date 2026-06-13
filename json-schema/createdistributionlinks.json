@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.qualtrics.com/schemas/CreateDistributionLinks.json",
+  "title": "CreateDistributionLinks",
+  "type": "object",
+  "properties": {
+    "surveyId": {
+      "type": "string"
+    },
+    "linkType": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string",
+      "default": "CreateDistribution"
+    },
+    "expirationDate": {
+      "type": "string",
+      "example": "2021-01-21 00:00:00"
+    },
+    "mailingListId": {
+      "type": "string"
+    }
+  }
+}

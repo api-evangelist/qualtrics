@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.qualtrics.com/schemas/DistributionsResponse.json",
+  "title": "DistributionsResponse",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "object",
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "parentDistributionId": {},
+              "ownerId": {
+                "type": "string"
+              },
+              "organizationId": {
+                "type": "string"
+              },
+              "requestStatus": {
+                "type": "string"
+              },
+              "requestType": {
+                "type": "string"
+              },
+              "sendDate": {
+                "type": "string"
+              },
+              "createdDate": {
+                "type": "string"
+              },
+              "modifiedDate": {
+                "type": "string"
+              },
+              "customHeaders": {
+                "type": "object",
+                "properties": {}
+              },
+              "headers": {
+                "type": "object",
+                "properties": {
+                  "fromEmail": {},
+                  "replyToEmail": {},
+                  "fromName": {}
+                }
+              },
+              "recipients": {
+                "type": "object",
+                "properties": {
+                  "mailingListId": {
+                    "type": "string"
+                  },
+                  "contactId": {},
+                  "libraryId": {
+                    "type": "string"
+                  },
+                  "sampleId": {}
+                }
+              },
+              "message": {
+                "type": "object",
+                "properties": {
+                  "libraryId": {},
+                  "messageId": {},
+                  "messageText": {}
+                }
+              },
+              "surveyLink": {
+                "type": "object",
+                "properties": {
+                  "surveyId": {
+                    "type": "string"
+                  },
+                  "expirationDate": {
+                    "type": "string"
+                  },
+                  "linkType": {
+                    "type": "string"
+                  }
+                }
+              },
+              "embeddedData": {},
+              "stats": {
+                "type": "object",
+                "properties": {
+                  "sent": {
+                    "type": "integer"
+                  },
+                  "failed": {
+                    "type": "integer"
+                  },
+                  "started": {
+                    "type": "integer"
+                  },
+                  "bounced": {
+                    "type": "integer"
+                  },
+                  "opened": {
+                    "type": "integer"
+                  },
+                  "skipped": {
+                    "type": "integer"
+                  },
+                  "finished": {
+                    "type": "integer"
+                  },
+                  "complaints": {
+                    "type": "integer"
+                  },
+                  "blocked": {
+                    "type": "integer"
+                  }
+                }
+              }
+            },
+            "required": [
+              "id",
+              "parentDistributionId",
+              "ownerId",
+              "organizationId",
+              "requestStatus",
+              "requestType",
+              "sendDate",
+              "createdDate",
+              "modifiedDate",
+              "customHeaders",
+              "headers",
+              "recipients",
+              "message",
+              "surveyLink",
+              "embeddedData",
+              "stats"
+            ]
+          }
+        },
+        "nextPage": {}
+      }
+    },
+    "meta": {
+      "type": "object",
+      "properties": {
+        "httpStatus": {
+          "type": "string"
+        },
+        "requestId": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
