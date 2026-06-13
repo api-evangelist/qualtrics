@@ -1,0 +1,39 @@
+name: Qualtrics API Rate Limits
+description: Rate limiting policies and thresholds for the Qualtrics v3 REST API.
+url: https://api.qualtrics.com/
+documentation: https://www.qualtrics.com/support/integrations/api-integration/overview/
+
+limits:
+  - name: Standard API Token Rate Limit
+    description: Default rate limit for standard API token authentication.
+    type: per_token
+    requests_per_hour: 350
+    notes: Default for API clients using standard API tokens.
+
+  - name: API Console Token Rate Limit
+    description: Lower rate limit applied to tokens generated via the Qualtrics API Console.
+    type: per_token
+    requests_per_hour: 20
+    notes: Tokens from the API Console have significantly lower limits (20 authenticated calls/hour vs. 350 for standard clients).
+
+  - name: Published Operational Limit
+    description: Published per-second rate limit for API calls.
+    type: per_second
+    requests_per_second: 65
+    notes: Published threshold; operational limits in practice are typically 2,000-3,000 requests/minute.
+
+error_handling:
+  rate_limit_exceeded_status: 429
+  description: Qualtrics returns HTTP 429 Too Many Requests when rate limits are exceeded.
+  recommendation: Implement exponential backoff and retry logic; optimize requests to reduce volume rather than requesting limit increases.
+
+policies:
+  - Rate limit increases are not provided by default; contact Qualtrics support for exceptions.
+  - Qualtrics recommends optimizing API requests rather than requesting higher limits.
+  - Specific numeric thresholds by plan tier are not publicly disclosed; contact Qualtrics support for plan-specific limits.
+  - Rate limits apply per API token; each user generates their own token.
+  - OAuth Client Credentials tokens may have different rate limit policies; contact Qualtrics for details.
+
+monitoring:
+  description: Qualtrics provides an API Usage Report feature to track individual API calls, statuses, and overall volume.
+  url: https://www.qualtrics.com/support/survey-platform/actions-page/events/api-usage-threshold-event/

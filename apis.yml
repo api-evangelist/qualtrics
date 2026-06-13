@@ -1,0 +1,74 @@
+aid: qualtrics
+name: Qualtrics
+description: >-
+  Qualtrics is an experience management platform providing REST APIs for managing
+  surveys, accessing response data, distributing surveys, managing contacts, and
+  automating XM programs at scale. The Qualtrics v3 API enables developers to
+  automate repetitive processes, integrate data across systems, and build custom
+  extensions for customer, employee, product, and brand experience programs.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/qualtrics/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - Experience Management
+  - Surveys
+  - Customer Experience
+  - Employee Experience
+  - Market Research
+  - XM
+  - REST API
+apis:
+  - name: Qualtrics REST API
+    description: >-
+      The Qualtrics v3 REST API provides programmatic access to the Qualtrics
+      Experience Management platform. Endpoints cover organizations, divisions,
+      groups, users, surveys, survey responses, response imports, message library,
+      graphic library, distributions, event subscriptions, XM Directory, and
+      Insights Platform contacts.
+    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    humanURL: https://api.qualtrics.com/
+    baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+    tags:
+      - Surveys
+      - Responses
+      - Distributions
+      - Contacts
+      - Users
+    properties:
+      - type: Documentation
+        url: https://api.qualtrics.com/
+      - type: OpenAPI
+        url: https://az1.qualtrics.com/automations-file-service/docs/src/openapi.yaml
+      - type: Postman
+        url: https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+    contact:
+      - FN: Qualtrics Support
+        url: https://www.qualtrics.com/support/
+common:
+  - type: Website
+    url: https://www.qualtrics.com/
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: GitHubOrg
+    url: https://github.com/qualtrics
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/qualtrics
+  - type: Blog
+    url: https://www.qualtrics.com/blog/
+  - type: Pricing
+    url: https://www.qualtrics.com/pricing/
+  - type: StatusPage
+    url: https://status.qualtrics.com/
+  - type: X
+    url: https://twitter.com/Qualtrics
+  - type: Plans
+    url: plans/qualtrics-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/qualtrics-rate-limits.yml
+  - type: FinOps
+    url: finops/qualtrics-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

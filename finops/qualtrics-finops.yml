@@ -1,0 +1,60 @@
+name: Qualtrics FinOps
+description: Financial operations guidance for managing Qualtrics API and platform costs effectively.
+url: https://www.qualtrics.com/pricing/
+
+cost_model:
+  type: custom_enterprise
+  description: Qualtrics uses a combination of subscription tiers and per-response/per-interaction pricing. Most enterprise plans require direct sales engagement for custom quotes. API access costs are typically negotiated separately.
+  billing_units:
+    - responses_per_year
+    - interactions_per_year
+    - employees_per_year
+    - monthly_subscription
+
+cost_drivers:
+  - name: Response Volume
+    description: Most Qualtrics plans bill on a per-response or response-bundle basis. Overages are charged at $5.00/response.
+    impact: High
+  - name: Number of Users
+    description: Some tiers are user-based; enterprise plans typically offer unlimited users.
+    impact: Medium
+  - name: Modules Selected
+    description: CX, EX, and Research modules are sold separately and bundled differently.
+    impact: High
+  - name: API Access Tier
+    description: API access requires negotiation; not uniformly included across plans.
+    impact: Medium
+  - name: Implementation and Onboarding
+    description: First-year implementation costs typically range from $8,400 to $10,000.
+    impact: High (Year 1)
+  - name: Premium Support
+    description: Enhanced support tiers are available at undisclosed additional cost.
+    impact: Low to Medium
+
+optimization_strategies:
+  - name: Monitor API Usage
+    description: Use the Qualtrics API Usage Report to track call volume, statuses, and trends. Set API usage threshold alerts via the Actions page.
+    url: https://www.qualtrics.com/support/survey-platform/actions-page/events/api-usage-threshold-event/
+  - name: Use Pagination Efficiently
+    description: Implement proper pagination in API calls to avoid redundant requests and stay within rate limits.
+  - name: Cache Responses
+    description: Cache frequently accessed data such as survey definitions and user lists locally to reduce API call volume.
+  - name: Batch Operations
+    description: Consolidate API operations where possible rather than making many single-record requests.
+  - name: Negotiate Multi-Year Contracts
+    description: Multi-year commitments can yield 10-15% discounts; average documented discount is approximately 11% off list price.
+  - name: Track Response Overages
+    description: Monitor response consumption against plan limits to avoid $5.00/response overage charges. Consider upgrading plans before hitting overages.
+  - name: API Console vs Standard Tokens
+    description: Use standard API tokens (350 calls/hour) rather than API Console tokens (20 calls/hour) for production integrations to avoid hitting limits and incurring retry overhead.
+
+benchmarks:
+  median_annual_spend: $28,533
+  range_low: $6,525
+  range_high: $126,000
+  enterprise_average: $323,532
+  source: Vendor spend intelligence sources (Vendr, Spendhound)
+
+contacts:
+  sales: https://www.qualtrics.com/request-demo/
+  support: https://www.qualtrics.com/support/

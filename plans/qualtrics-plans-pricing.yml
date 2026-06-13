@@ -1,0 +1,71 @@
+name: Qualtrics Plans and Pricing
+description: Pricing tiers and plans for the Qualtrics Experience Management platform and its APIs.
+url: https://www.qualtrics.com/pricing/
+plans:
+  - name: Free Account
+    description: Basic access for individuals to explore Qualtrics survey capabilities with limited responses and surveys.
+    cost: $0/month
+    unit: lifetime
+    features:
+      - 500 lifetime responses
+      - 3 active surveys
+      - Single user
+      - 8 basic question types
+      - No email distribution
+    api_access: Limited
+
+  - name: Strategic Research
+    description: Research-focused plan for teams needing advanced survey capabilities and analytics.
+    cost: $420/month
+    unit: monthly (billed annually at $5,040/year)
+    features:
+      - 1,000 responses annually
+      - Unlimited users
+      - 23 question types
+      - Unlimited surveys
+      - Advanced analytics
+      - Custom branding
+    api_access: Included
+
+  - name: XM for Customer Experience
+    description: Enterprise customer experience management with omnichannel feedback and AI analytics.
+    cost: Custom (contact sales); benchmark ~$5.00/response
+    unit: per-interaction
+    minimum_commitment: 10,000 responses/year (~$50,000/year floor)
+    features:
+      - Omnichannel feedback collection
+      - AI-powered analytics
+      - Real-time alerting
+      - Customer journey mapping
+      - Predictive intelligence
+    api_access: Negotiated separately
+
+  - name: XM for Employee Experience
+    description: Enterprise employee experience management including engagement, 360 feedback, and lifecycle surveys.
+    cost: Custom (contact sales); benchmark ~$1,500/employee/year
+    unit: per-employee
+    features:
+      - Engagement surveys
+      - 360-degree feedback
+      - Lifecycle surveys
+      - Manager assessments
+    api_access: Negotiated separately
+
+  - name: XM for Strategy and Research
+    description: Enterprise market research and brand tracking with advanced panel management and video feedback.
+    cost: Custom (contact sales); per-interaction model
+    unit: per-interaction
+    features:
+      - Market research
+      - Brand tracking
+      - Concept testing
+      - Video feedback
+      - Panel management
+    api_access: Negotiated separately
+
+notes:
+  - API access is not uniformly included across Qualtrics tiers and must be negotiated separately.
+  - Implementation and onboarding fees range from $8,400 to $10,000 in Year 1.
+  - Average documented discount is approximately 11% off list price; multi-year discounts of 10-15% are achievable.
+  - Usage overages are charged at $5.00 per response with no published volume discounts.
+  - Premium support pricing is undisclosed; contact sales for details.
