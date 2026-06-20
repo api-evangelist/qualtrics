@@ -6,7 +6,7 @@ description: >-
   automating XM programs at scale. The Qualtrics v3 API enables developers to
   automate repetitive processes, integrate data across systems, and build custom
   extensions for customer, employee, product, and brand experience programs.
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 url: https://raw.githubusercontent.com/api-evangelist/qualtrics/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -27,7 +27,7 @@ apis:
       groups, users, surveys, survey responses, response imports, message library,
       graphic library, distributions, event subscriptions, XM Directory, and
       Insights Platform contacts.
-    image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://api.qualtrics.com/
     baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
     tags:
