@@ -1,0 +1,17 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/qualtrics-api-openapi-3.0.json, openapi/qualtrics-api-swagger-2.0.json, openapi/qualtrics-automations-file-service-swagger-2.0.yaml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: QualtricsAPIKeyAuth
+  type: apiKey
+  in: header
+  parameter: X-API-TOKEN
+  sources:
+  - openapi/qualtrics-api-openapi-3.0.json
+  - openapi/qualtrics-api-swagger-2.0.json
+  - openapi/qualtrics-automations-file-service-swagger-2.0.yaml
