@@ -2,14 +2,14 @@
   "repo": "qualtrics",
   "feeds": [
     {
-      "source": "https://www.qualtrics.com/blog/",
-      "feed_url": "",
+      "source": "https://www.linkedin.com/company/qualtrics",
+      "feed_url": "https://www.linkedin.com/company/qualtrics",
+      "title": "",
       "saved": 0,
-      "method": "agent-scrape",
-      "error": "no determinable post dates on listing"
+      "method": "none"
     }
   ],
   "post_count": 3,
-  "fetched": "2026-06-27T13:03:40Z",
-  "agent_pulled": "2026-06-27"
+  "fetched": "2026-07-11T11:50:51Z",
+  "agent_pulled": "2026-07-04"
 }
