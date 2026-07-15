@@ -73,6 +73,8 @@ apis:
       - FN: Qualtrics Support
         url: https://www.qualtrics.com/support/
 common:
+  - type: AgenticAccess
+    url: agentic-access/qualtrics-agentic-access.yml
   - type: TrustCenter
     url: security/qualtrics-trust-center.yml
   - type: VulnerabilityDisclosure
