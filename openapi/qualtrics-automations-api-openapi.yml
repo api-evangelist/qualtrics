@@ -1,0 +1,93 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: automations
+paths:
+  /automations:
+    get:
+      tags:
+      - automations
+      summary: List Automations
+      description: Get all automations' directory information.
+      operationId: getAutomations
+      parameters:
+      - $ref: '#/parameters/offset'
+      responses:
+        '200':
+          description: Automations List
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: directory.yaml#/definitions/directories
+              meta:
+                $ref: '#/definitions/meta'
+components:
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN
+definitions:
+  meta:
+    example:
+      httpStatus: 200 - OK
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: 'Always of the format `{X} - {Y}`,
+
+          where `{X}` is the associated HTTP status code,
+
+          and `{Y}` is a human readable explanation of the status code.
+
+          '
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+parameters:
+  offset:
+    name: offset
+    in: query
+    required: false
+    type: integer
+    format: int32
+    minimum: 0
+    description: 'The starting offset for the returned records. The default offset is 0.
+
+      '

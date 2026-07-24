@@ -1,0 +1,107 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations files API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: files
+paths:
+  /automations/{automationId}/files:
+    get:
+      tags:
+      - files
+      summary: Get Automation's Files
+      description: Get all the files for Automation which are neither archived or currently being processed.
+      operationId: getFiles
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/tag'
+      responses:
+        '200':
+          description: Files List
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: file.yaml#/definitions/files
+              meta:
+                $ref: '#/definitions/meta'
+components:
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN
+definitions:
+  meta:
+    example:
+      httpStatus: 200 - OK
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: 'Always of the format `{X} - {Y}`,
+
+          where `{X}` is the associated HTTP status code,
+
+          and `{Y}` is a human readable explanation of the status code.
+
+          '
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+parameters:
+  automationIdPath:
+    name: automationId
+    in: path
+    description: 'Id of the associated automation.
+
+
+      **Example**: `AU_123456789012345`
+
+      '
+    required: true
+    type: string
+  tag:
+    name: tag
+    in: query
+    required: false
+    type: string
+    description: '* If not provided, the files that have not yet been processed by the automation will be returned.
+
+      * If equal to `processing`, the files that are currently being processed by the automation will be returned.
+
+      * If equal to `archived`, the files that have been processed and archived by the automation will be returned.
+
+      '

@@ -1,0 +1,280 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations Distributions API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: Distributions
+paths:
+  /distributions:
+    get:
+      summary: Get distributions for a given survey
+      operationId: Getdistributions
+      parameters:
+      - $ref: '#/components/parameters/DistributionSurveyId'
+      responses:
+        '200':
+          description: OK
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DistributionsResponse'
+      tags:
+      - Distributions
+    post:
+      summary: Generate distribution links for a given survey
+      operationId: Generatedistributionlinks
+      parameters: []
+      responses:
+        '200':
+          description: OK
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/CreateDistributionLinks'
+      tags:
+      - Distributions
+  /distributions/{DistributionId}/links:
+    get:
+      summary: Retrieve distribution links
+      operationId: Retrievedistributionlinks
+      parameters:
+      - name: surveyId
+        in: query
+        required: true
+        style: form
+        schema:
+          type: string
+          example: SV_daqxBqkZ5Di8aJU
+      - $ref: '#/components/parameters/DistributionId'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RetrieveDistributionLinksResponse'
+      tags:
+      - Distributions
+components:
+  schemas:
+    RetrieveDistributionLinksResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            elements:
+              type: array
+              items:
+                type: object
+                properties:
+                  contactId:
+                    type: string
+                  transactionId: {}
+                  link:
+                    type: string
+                  exceededContactFrequency:
+                    type: boolean
+                  linkExpiration:
+                    type: string
+                  status:
+                    type: string
+                  lastName:
+                    type: string
+                  firstName:
+                    type: string
+                  externalDataReference: {}
+                  email:
+                    type: string
+                  unsubscribed:
+                    type: boolean
+                required:
+                - contactId
+                - transactionId
+                - link
+                - exceededContactFrequency
+                - linkExpiration
+                - status
+                - lastName
+                - firstName
+                - externalDataReference
+                - email
+                - unsubscribed
+            nextPage: {}
+        meta:
+          type: object
+          properties:
+            httpStatus:
+              type: string
+            requestId:
+              type: string
+    DistributionsResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            elements:
+              type: array
+              items:
+                type: object
+                properties:
+                  id:
+                    type: string
+                  parentDistributionId: {}
+                  ownerId:
+                    type: string
+                  organizationId:
+                    type: string
+                  requestStatus:
+                    type: string
+                  requestType:
+                    type: string
+                  sendDate:
+                    type: string
+                  createdDate:
+                    type: string
+                  modifiedDate:
+                    type: string
+                  customHeaders:
+                    type: object
+                    properties: {}
+                  headers:
+                    type: object
+                    properties:
+                      fromEmail: {}
+                      replyToEmail: {}
+                      fromName: {}
+                  recipients:
+                    type: object
+                    properties:
+                      mailingListId:
+                        type: string
+                      contactId: {}
+                      libraryId:
+                        type: string
+                      sampleId: {}
+                  message:
+                    type: object
+                    properties:
+                      libraryId: {}
+                      messageId: {}
+                      messageText: {}
+                  surveyLink:
+                    type: object
+                    properties:
+                      surveyId:
+                        type: string
+                      expirationDate:
+                        type: string
+                      linkType:
+                        type: string
+                  embeddedData: {}
+                  stats:
+                    type: object
+                    properties:
+                      sent:
+                        type: integer
+                      failed:
+                        type: integer
+                      started:
+                        type: integer
+                      bounced:
+                        type: integer
+                      opened:
+                        type: integer
+                      skipped:
+                        type: integer
+                      finished:
+                        type: integer
+                      complaints:
+                        type: integer
+                      blocked:
+                        type: integer
+                required:
+                - id
+                - parentDistributionId
+                - ownerId
+                - organizationId
+                - requestStatus
+                - requestType
+                - sendDate
+                - createdDate
+                - modifiedDate
+                - customHeaders
+                - headers
+                - recipients
+                - message
+                - surveyLink
+                - embeddedData
+                - stats
+            nextPage: {}
+        meta:
+          type: object
+          properties:
+            httpStatus:
+              type: string
+            requestId:
+              type: string
+  requestBodies:
+    CreateDistributionLinks:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              surveyId:
+                type: string
+              linkType:
+                type: string
+              description:
+                type: string
+              action:
+                type: string
+                default: CreateDistribution
+              expirationDate:
+                type: string
+                example: '2021-01-21 00:00:00'
+              mailingListId:
+                type: string
+  parameters:
+    DistributionId:
+      name: DistributionId
+      in: path
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: DistributionId
+    DistributionSurveyId:
+      name: surveyId
+      in: query
+      required: true
+      style: form
+      schema:
+        type: string
+        example: SV_123
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN

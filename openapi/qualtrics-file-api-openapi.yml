@@ -1,0 +1,247 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations file API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: file
+paths:
+  /automations/{automationId}/files:
+    post:
+      tags:
+      - file
+      summary: Upload a File
+      consumes:
+      - multipart/form-data
+      description: Upload a file for the automation to consume.
+      operationId: createFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - in: formData
+        name: file
+        type: file
+        description: The file to upload.
+      responses:
+        '200':
+          description: File Id
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                type: object
+                required:
+                - id
+                properties:
+                  id:
+                    $ref: '#/definitions/fileId'
+              meta:
+                $ref: '#/definitions/metawarn'
+  /automations/{automationId}/files/{fileId}:
+    get:
+      tags:
+      - file
+      summary: Get File Metadata
+      description: Get the file's metadata.
+      operationId: getFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          description: File Metadata
+          schema:
+            type: object
+            required:
+            - result
+            - meta
+            properties:
+              result:
+                $ref: file.yaml#/definitions/file
+              meta:
+                $ref: '#/definitions/meta'
+    delete:
+      tags:
+      - file
+      summary: Delete File
+      description: Deletes the file.
+      operationId: deleteFile
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          $ref: '#/responses/success'
+  /automations/{automationId}/files/{fileId}/content:
+    get:
+      tags:
+      - file
+      summary: Get File Content
+      produces:
+      - text/plain; charset=utf-8
+      description: Download the file's content.
+      operationId: getFileContent
+      parameters:
+      - $ref: '#/parameters/automationIdPath'
+      - $ref: '#/parameters/fileIdPath'
+      responses:
+        '200':
+          description: File Content
+          schema:
+            type: file
+components:
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN
+definitions:
+  metawarn:
+    example:
+      httpStatus: 200 - OK
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: 'Always of the format `{X} - {Y}`,
+
+          where `{X}` is the associated HTTP status code,
+
+          and `{Y}` is a human readable explanation of the status code.
+
+          '
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+      warning:
+        type: object
+        description: 'Only given if a warning occurred during the request,
+
+          such as an upload of an existing file name overwriting that file''s content.
+
+          '
+        required:
+        - warningMessage
+        - warningCode
+        properties:
+          warningMessage:
+            type: string
+            description: A human readable explanation of the warning.
+          warningCode:
+            type: string
+            description: An identifying code associated with the warning.
+  fileId:
+    example: AFL_123456789012345
+    type: string
+    description: 'The file''s unique Id.
+
+
+      Since multiple files may share the same name, the id is used to identify a particular file.
+
+
+      Multiple files may share the same name if
+
+      * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
+
+      * They have different processed or archived date/times.
+
+
+      **Example**: `AFL_123456789012345`
+
+      '
+  meta:
+    example:
+      httpStatus: 200 - OK
+    type: object
+    required:
+    - httpStatus
+    - requestId
+    properties:
+      httpStatus:
+        type: string
+        description: 'Always of the format `{X} - {Y}`,
+
+          where `{X}` is the associated HTTP status code,
+
+          and `{Y}` is a human readable explanation of the status code.
+
+          '
+      error:
+        type: object
+        description: Only given if an error occurred during the request.
+        required:
+        - errorMessage
+        - errorCode
+        properties:
+          errorMessage:
+            type: string
+            description: A human readable explanation of the error.
+          errorCode:
+            type: string
+            description: An identifying code associated with the error.
+      requestId:
+        type: string
+        description: A transaction id associated with the request.
+parameters:
+  automationIdPath:
+    name: automationId
+    in: path
+    description: 'Id of the associated automation.
+
+
+      **Example**: `AU_123456789012345`
+
+      '
+    required: true
+    type: string
+  fileIdPath:
+    name: fileId
+    in: path
+    description: 'Id of the associated file.
+
+
+      **Example**: `AFL_123456789012345`
+
+      '
+    required: true
+    type: string
+responses:
+  success:
+    description: Success
+    schema:
+      type: object
+      required:
+      - meta
+      properties:
+        meta:
+          $ref: '#/definitions/meta'

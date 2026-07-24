@@ -1,0 +1,83 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations Directories API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: Directories
+paths:
+  /directories/{DirectoryId}/mailinglists/{MailingListId}/contacts:
+    post:
+      summary: Create a contact in a given mailing list
+      operationId: Createcontactinmailinglist
+      parameters:
+      - $ref: '#/components/parameters/Content-Type'
+      - $ref: '#/components/parameters/DirectoryId'
+      - $ref: '#/components/parameters/MailingListId'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/CreateContactInMailingList'
+      tags:
+      - Directories
+components:
+  requestBodies:
+    CreateContactInMailingList:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+              email:
+                type: string
+              unsubscribed:
+                type: boolean
+  parameters:
+    MailingListId:
+      name: MailingListId
+      required: true
+      in: path
+      schema:
+        type: string
+    DirectoryId:
+      name: DirectoryId
+      required: true
+      in: path
+      schema:
+        type: string
+    Content-Type:
+      name: Content-Type
+      in: header
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: application/json
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN

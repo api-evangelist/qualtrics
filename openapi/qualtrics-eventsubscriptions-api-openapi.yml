@@ -1,0 +1,229 @@
+openapi: 3.0.0
+info:
+  version: '0.2'
+  title: Qualtrics automations Eventsubscriptions API
+  description: Work with Qualtrics surveys, distributions and response events
+servers:
+- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+  description: Qualtrics API endpoint for EU region
+  variables:
+    apiRegion:
+      default: fra1
+      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+    apiVersion:
+      default: v3
+      description: API version to use - default v3
+security:
+- QualtricsAPIKeyAuth: []
+tags:
+- name: Eventsubscriptions
+paths:
+  /eventsubscriptions/:
+    x-ms-notification-content:
+      description: WebHook registration response
+      schema:
+        $ref: '#/definitions/EventSubscriptionHookSchema'
+    post:
+      summary: Subscribe to response event
+      operationId: webhook-trigger
+      x-ms-trigger: single
+      parameters: []
+      x-ms-notification-content:
+        description: Response schema
+        schema:
+          $ref: '#/components/schemas/EventSubscriptionHookSchema'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventSubscriptionsResponse'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/requestBodies/SubscribeToEventBody'
+            example:
+              topics: surveyengine.completedResponse.{SurveyID}
+              publicationUrl: https://prod-142.westeurope.logic.azure.com:443/workflows/
+              encrypt: false
+      tags:
+      - Eventsubscriptions
+    delete:
+      summary: Remove subscription to response event
+      operationId: WebhookDelete
+      parameters: []
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventSubscriptionsResponse'
+      tags:
+      - Eventsubscriptions
+  /eventsubscriptions/{SubscripionId}:
+    get:
+      summary: Get event subscriptions
+      operationId: Geteventsubscriptions
+      parameters:
+      - $ref: '#/components/parameters/SubscriptionId'
+      responses:
+        '200':
+          description: ''
+          headers: {}
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EventSubscriptionsResponse'
+      tags:
+      - Eventsubscriptions
+  /eventsubscriptions/{SubscriptionId}:
+    get:
+      summary: Get event subscriptions
+      description: Get event subscriptions
+      operationId: GetEventSubscriptions
+      parameters:
+      - name: SubscriptionId
+        required: true
+        in: path
+        type: string
+        description: ID of event subscription - can be obtained from web hook response
+      responses:
+        '200':
+          description: Event subscriptions
+          headers: {}
+          schema:
+            $ref: '#/definitions/EventSubscriptionsResponse'
+      tags:
+      - Eventsubscriptions
+components:
+  schemas:
+    EventSubscriptionsResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            result:
+              type: object
+              properties:
+                id:
+                  type: string
+            meta:
+              type: object
+              properties:
+                httpStatus:
+                  type: string
+        meta:
+          type: object
+          properties:
+            requestId:
+              type: string
+            httpStatus:
+              type: string
+    EventSubscriptionHookSchema:
+      type: object
+      properties:
+        $content-type:
+          type: string
+          default: application/x-www-form-urlencoded
+        $content:
+          type: string
+        $formdata:
+          type: array
+          items:
+            type: object
+            properties:
+              key:
+                type: string
+              value:
+                type: string
+            required:
+            - key
+            - value
+  requestBodies:
+    SubscribeToEventBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              topics:
+                type: string
+              publicationUrl:
+                type: string
+              encrypt:
+                type: boolean
+  parameters:
+    SubscriptionId:
+      name: SubscriptionId
+      required: true
+      in: path
+      schema:
+        type: string
+  securitySchemes:
+    QualtricsAPIKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-TOKEN
+definitions:
+  EventSubscriptionHookSchema:
+    type: object
+    properties:
+      $content-type:
+        x-ms-summary: Content type
+        type: string
+        default: application/x-www-form-urlencoded
+        x-ms-visibility: internal
+      $content:
+        x-ms-summary: Content
+        type: string
+        x-ms-visibility: internal
+        default: x
+      $formdata:
+        type: array
+        x-ms-summary: Questions and answers
+        items:
+          type: object
+          properties:
+            key:
+              type: string
+              x-ms-summary: ' : Question'
+            value:
+              type: string
+              x-ms-summary: ': Answer'
+          required:
+          - key
+          - value
+    required:
+    - $content-type
+    - $content
+  EventSubscriptionsResponse:
+    type: object
+    properties:
+      result:
+        type: object
+        properties:
+          result:
+            type: object
+            properties:
+              id:
+                type: string
+          meta:
+            type: object
+            properties:
+              httpStatus:
+                type: string
+      meta:
+        type: object
+        properties:
+          requestId:
+            type: string
+          httpStatus:
+            type: string
