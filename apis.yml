@@ -6,7 +6,20 @@ description: >-
   automating XM programs at scale. The Qualtrics v3 API enables developers to
   automate repetitive processes, integrate data across systems, and build custom
   extensions for customer, employee, product, and brand experience programs.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qualtrics.png
 url: https://raw.githubusercontent.com/api-evangelist/qualtrics/refs/heads/main/apis.yml
 created: '2026-06-13'
 modified: '2026-06-13'
@@ -20,58 +33,265 @@ tags:
   - XM
   - REST API
 apis:
-  - name: Qualtrics REST API
-    description: >-
-      The Qualtrics v3 REST API provides programmatic access to the Qualtrics
-      Experience Management platform. Endpoints cover organizations, divisions,
-      groups, users, surveys, survey responses, response imports, message library,
-      graphic library, distributions, event subscriptions, XM Directory, and
-      Insights Platform contacts.
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    humanURL: https://api.qualtrics.com/
-    baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
-    tags:
-      - Surveys
-      - Responses
-      - Distributions
-      - Contacts
-      - Users
-    properties:
-      - type: Documentation
-        url: https://api.qualtrics.com/
-      - type: OpenAPI
-        url: openapi/qualtrics-api-openapi-3.0.json
-      - type: OpenAPI
-        url: openapi/qualtrics-api-swagger-2.0.json
-      - type: OpenAPI
-        url: openapi/qualtrics-automations-file-service-swagger-2.0.yaml
-      - type: JSONSchema
-        url: json-schema/surveyresponse.json
-      - type: JSONSchema
-        url: json-schema/distributionsresponse.json
-      - type: JSONSchema
-        url: json-schema/retrievedistributionlinksresponse.json
-      - type: JSONSchema
-        url: json-schema/eventsubscriptionsresponse.json
-      - type: JSONSchema
-        url: json-schema/eventsubscriptionhookschema.json
-      - type: JSONSchema
-        url: json-schema/createdistributionlinks.json
-      - type: JSONSchema
-        url: json-schema/createcontactinmailinglist.json
-      - type: JSONSchema
-        url: json-schema/subscribetoeventbody.json
-      - type: Examples
-        url: examples/qualtrics-api-examples.json
-      - type: Vocabulary
-        url: vocabulary/qualtrics-api-vocabulary.json
-      - type: JSONLDContext
-        url: json-ld/qualtrics-api-context.jsonld
-      - type: Postman
-        url: https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
-    contact:
-      - FN: Qualtrics Support
-        url: https://www.qualtrics.com/support/
+- aid: qualtrics:qualtrics-automations-api
+  name: Qualtrics automations API
+  description: The automations API from Qualtrics — 1 operation(s) for automations.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - automations
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-automations-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-directories-api
+  name: Qualtrics Directories API
+  description: The Directories API from Qualtrics — 1 operation(s) for directories.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - Directories
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-directories-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-distributions-api
+  name: Qualtrics Distributions API
+  description: The Distributions API from Qualtrics — 2 operation(s) for distributions.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - Distributions
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-distributions-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-eventsubscriptions-api
+  name: Qualtrics Eventsubscriptions API
+  description: The Eventsubscriptions API from Qualtrics — 3 operation(s) for eventsubscriptions.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - Eventsubscriptions
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-eventsubscriptions-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-file-api
+  name: Qualtrics file API
+  description: The file API from Qualtrics — 3 operation(s) for file.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - file
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-file-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-files-api
+  name: Qualtrics files API
+  description: The files API from Qualtrics — 1 operation(s) for files.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - files
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-files-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
+- aid: qualtrics:qualtrics-survey-definitions-api
+  name: Qualtrics Survey Definitions API
+  description: The Survey Definitions API from Qualtrics — 2 operation(s) for survey definitions.
+  humanURL: https://api.qualtrics.com/
+  baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
+  tags:
+  - Survey Definitions
+  properties:
+  - type: OpenAPI
+    url: openapi/qualtrics-survey-definitions-api-openapi.yml
+  - type: Documentation
+    url: https://api.qualtrics.com/
+  - type: JSONSchema
+    url: json-schema/surveyresponse.json
+  - type: JSONSchema
+    url: json-schema/distributionsresponse.json
+  - type: JSONSchema
+    url: json-schema/retrievedistributionlinksresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionsresponse.json
+  - type: JSONSchema
+    url: json-schema/eventsubscriptionhookschema.json
+  - type: JSONSchema
+    url: json-schema/createdistributionlinks.json
+  - type: JSONSchema
+    url: json-schema/createcontactinmailinglist.json
+  - type: JSONSchema
+    url: json-schema/subscribetoeventbody.json
+  - type: Examples
+    url: examples/qualtrics-api-examples.json
+  - type: Vocabulary
+    url: vocabulary/qualtrics-api-vocabulary.json
+  - type: JSONLDContext
+    url: json-ld/qualtrics-api-context.jsonld
+  - type: Postman
+    url: >-
+      https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
 common:
   - type: AgenticAccess
     url: agentic-access/qualtrics-agentic-access.yml
