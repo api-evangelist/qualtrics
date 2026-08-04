@@ -1,0 +1,26 @@
+{
+  "provider": "qualtrics",
+  "sources": [
+    "qualtrics-automations-api-openapi.yml",
+    "qualtrics-directories-api-openapi.yml",
+    "qualtrics-distributions-api-openapi.yml",
+    "qualtrics-eventsubscriptions-api-openapi.yml",
+    "qualtrics-file-api-openapi.yml",
+    "qualtrics-files-api-openapi.yml",
+    "qualtrics-survey-definitions-api-openapi.yml"
+  ],
+  "outputs": [
+    "qualtrics-automations-api-openapi.yml",
+    "qualtrics-directories-api-openapi.yml",
+    "qualtrics-distributions-api-openapi.yml",
+    "qualtrics-eventsubscriptions-api-openapi.yml",
+    "qualtrics-file-api-openapi.yml",
+    "qualtrics-files-api-openapi.yml",
+    "qualtrics-survey-definitions-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
