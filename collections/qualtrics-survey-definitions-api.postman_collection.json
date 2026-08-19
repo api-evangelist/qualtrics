@@ -1,0 +1,354 @@
+{
+  "item": [
+    {
+      "id": "09eae51f-6750-4765-9815-376441c6c360",
+      "name": "Survey Definitions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "9429cc1c-d0b6-48b5-b899-100402fe4ffc",
+          "name": "Get a specific survey by its 'id' (e.g SV_123)",
+          "request": {
+            "name": "Get a specific survey by its 'id' (e.g SV_123)",
+            "description": {},
+            "url": {
+              "path": [
+                "survey-definitions",
+                ":Id"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "Id",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "ee5ad9a6-af29-4e41-8970-61476d791ceb",
+              "name": "The requested survey",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "survey-definitions",
+                    ":Id"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "Id",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"QuestionCount\": \"string\",\n    \"SurveyOptions\": {\n      \"ActiveResponseSet\": \"string\",\n      \"AnonymizeResponse\": \"string\",\n      \"Autoadvance\": \"string\",\n      \"AutoadvancePages\": \"string\",\n      \"Autofocus\": \"string\",\n      \"AvailableLanguages\": {},\n      \"BackButton\": \"string\",\n      \"BallotBoxStuffingPrevention\": \"string\",\n      \"CollectGeoLocation\": \"string\",\n      \"CustomStyles\": {\n        \"altRowStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\"\n          }\n        },\n        \"borderStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"borderColor\": \"\"\n          }\n        },\n        \"choiceStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\",\n            \"fontFamily\": \"\",\n            \"fontSize\": \"\",\n            \"fontStyle\": \"\",\n            \"fontWeight\": \"\",\n            \"textDecoration\": \"\"\n          }\n        },\n        \"customCSS\": \"\",\n        \"errorStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\",\n            \"borderColor\": \"\",\n            \"color\": \"\"\n          }\n        },\n        \"errorStylesBG\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\",\n            \"color\": \"\"\n          }\n        },\n        \"footerStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\"\n          }\n        },\n        \"headerStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\"\n          }\n        },\n        \"highlightStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\"\n          }\n        },\n        \"highlightStylesAlt\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\"\n          }\n        },\n        \"pageStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\"\n          }\n        },\n        \"questionSeparatorStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"backgroundColor\": \"\",\n            \"display\": \"\"\n          }\n        },\n        \"questionStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\",\n            \"fontFamily\": \"\",\n            \"fontSize\": \"\",\n            \"fontStyle\": \"\",\n            \"fontWeight\": \"\",\n            \"textDecoration\": \"\"\n          }\n        },\n        \"textEntryStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\"\n          }\n        },\n        \"textStyles\": {\n          \"selector\": \"string\",\n          \"styles\": {\n            \"color\": \"\",\n            \"fontFamily\": \"\",\n            \"fontSize\": \"\",\n            \"fontStyle\": \"\",\n            \"fontWeight\": \"\",\n            \"textDecoration\": \"\"\n          }\n        }\n      },\n      \"EOSMessage\": \"string\",\n      \"EOSMessageLibrary\": \"string\",\n      \"EOSRedirectURL\": \"string\",\n      \"EmailThankYou\": \"string\",\n      \"ExternalCSS\": \"\",\n      \"Footer\": \"string\",\n      \"Header\": \"string\",\n      \"HighlightQuestions\": \"string\",\n      \"InactiveMessage\": \"string\",\n      \"InactiveMessageLibrary\": \"string\",\n      \"InactiveSurvey\": \"string\",\n      \"NewScoring\": 3514,\n      \"NextButton\": \"string\",\n      \"NoIndex\": \"string\",\n      \"PageTransition\": \"string\",\n      \"PartialData\": \"string\",\n      \"PartialDataCloseAfter\": \"string\",\n      \"Password\": \"string\",\n      \"PasswordProtection\": \"string\",\n      \"PreviousButton\": \"string\",\n      \"ProgressBarDisplay\": \"string\",\n      \"ProtectSelectionIds\": true,\n      \"QuestionsPerPage\": \"string\",\n      \"RecaptchaV3\": \"string\",\n      \"RefererCheck\": \"string\",\n      \"RefererURL\": \"string\",\n      \"RelevantID\": \"string\",\n      \"ResponseSummary\": \"string\",\n      \"SaveAndContinue\": \"string\",\n      \"SecureResponseFiles\": \"string\",\n      \"ShowExportTags\": \"string\",\n      \"Skin\": \"string\",\n      \"SkinLibrary\": \"string\",\n      \"SkinType\": \"string\",\n      \"SurveyExpiration\": \"\",\n      \"SurveyMetaDescription\": \"string\",\n      \"SurveyName\": \"string\",\n      \"SurveyProtection\": \"string\",\n      \"SurveyTermination\": \"string\",\n      \"SurveyTitle\": \"string\",\n      \"ThankYouEmailMessage\": \"\",\n      \"ThankYouEmailMessageLibrary\": \"\",\n      \"ValidateMessage\": \"string\",\n      \"ValidationMessage\": \"\",\n      \"ValidationMessageLibrary\": \"\",\n      \"footerMid\": \"string\",\n      \"headerMid\": \"string\",\n      \"libraryId\": \"string\",\n      \"nextButtonMid\": \"string\",\n      \"previousButtonMid\": \"string\",\n      \"SkinQuestionWidth\": 3846,\n      \"SurveyLanguage\": \"string\",\n      \"SurveyStartDate\": \"\",\n      \"SurveyExpirationDate\": \"\",\n      \"SurveyCreationDate\": \"string\"\n    },\n    \"SurveyID\": \"string\",\n    \"SurveyName\": \"string\",\n    \"SurveyStatus\": \"string\",\n    \"LastModified\": \"string\",\n    \"BrandID\": \"string\",\n    \"OwnerID\": \"string\",\n    \"LastAccessed\": \"\",\n    \"CreatorID\": \"string\",\n    \"LastActivated\": \"string\",\n    \"Questions\": {\n      \"QID46\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": false\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 3682,\n        \"NextChoiceId\": 4513,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID48\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": false\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 3494,\n        \"NextChoiceId\": 6671,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID50\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": true\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 3352,\n        \"NextChoiceId\": 6710,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID52\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": false\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 1242,\n        \"NextChoiceId\": 5273,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID54\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": true\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 4564,\n        \"NextChoiceId\": 6418,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID45\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": false\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 2013,\n        \"NextChoiceId\": 4143,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID47\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": false\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 861,\n        \"NextChoiceId\": 3072,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID49\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": true\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 8398,\n        \"NextChoiceId\": 4022,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID51\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": true\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 3800,\n        \"NextChoiceId\": 5364,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID53\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\",\n          \"TextPosition\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": true\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 7180,\n        \"NextChoiceId\": 3787,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID36\": {\n        \"Configuration\": {\n          \"AllowFreeResponse\": \"string\",\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": false\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 4322,\n        \"NextChoiceId\": 4752,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID42\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": [\n          {\n            \"Display\": \"string\"\n          },\n          {\n            \"Display\": \"string\"\n          }\n        ],\n        \"ColumnLabels\": [\n          {\n            \"Display\": \"string\",\n            \"IsLabelDefault\": true\n          },\n          {\n            \"Display\": \"string\",\n            \"IsLabelDefault\": false\n          }\n        ],\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": false\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 3741,\n        \"NextChoiceId\": 2592,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID43\": {\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": true\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 7107,\n        \"NextChoiceId\": 2517,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID21\": {\n        \"Configuration\": {\n          \"NumColumns\": 2189,\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": false\n        },\n        \"DefaultChoices\": false,\n        \"NextAnswerId\": 1724,\n        \"NextChoiceId\": 3142,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ContentType\": \"string\",\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\",\n            \"ValidDateType\": \"string\",\n            \"ValidNumber\": {\n              \"Max\": \"string\",\n              \"Min\": \"string\",\n              \"NumDecimals\": \"string\"\n            },\n            \"ValidPhoneType\": \"string\",\n            \"ValidZipType\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID31\": {\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": true,\n          \"Private\": true\n        },\n        \"DefaultChoices\": true,\n        \"NextAnswerId\": 1427,\n        \"NextChoiceId\": 6408,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"MinChars\": \"string\",\n            \"TotalChars\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      },\n      \"QID23\": {\n        \"ChoiceOrder\": [\n          \"string\",\n          \"string\"\n        ],\n        \"Choices\": {\n          \"1\": {\n            \"Display\": \"string\"\n          },\n          \"2\": {\n            \"Display\": \"string\"\n          },\n          \"3\": {\n            \"Display\": \"string\"\n          },\n          \"4\": {\n            \"Display\": \"string\"\n          },\n          \"5\": {\n            \"Display\": \"string\"\n          },\n          \"6\": {\n            \"Display\": \"string\"\n          },\n          \"7\": {\n            \"Display\": \"string\",\n            \"TextEntry\": \"string\"\n          },\n          \"8\": {\n            \"Display\": \"string\"\n          }\n        },\n        \"Configuration\": {\n          \"QuestionDescriptionOption\": \"string\"\n        },\n        \"DataExportTag\": \"string\",\n        \"DataVisibility\": {\n          \"Hidden\": false,\n          \"Private\": true\n        },\n        \"NextAnswerId\": 9192,\n        \"NextChoiceId\": 9637,\n        \"QuestionDescription\": \"string\",\n        \"QuestionID\": \"string\",\n        \"QuestionText\": \"string\",\n        \"QuestionType\": \"string\",\n        \"Selector\": \"string\",\n        \"SubSelector\": \"string\",\n        \"Validation\": {\n          \"Settings\": {\n            \"ForceResponse\": \"string\",\n            \"ForceResponseType\": \"string\",\n            \"Type\": \"string\"\n          }\n        },\n        \"QuestionText_Unsafe\": \"string\"\n      }\n    },\n    \"Blocks\": {\n      \"BL_3guR0F0lGVfF5tj\": {\n        \"BlockElements\": [\n          {\n            \"QuestionID\": \"string\",\n            \"Type\": \"string\"\n          },\n          {\n            \"QuestionID\": \"string\",\n            \"Type\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"BlockVisibility\": \"string\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"Type\": \"string\"\n      },\n      \"BL_9uZsNkfstasQRI3\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"Looping\": \"string\",\n          \"LoopingOptions\": \"\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_9uZsNkfstasQRI4\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"Looping\": \"string\",\n          \"LoopingOptions\": \"\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_9z6tnZPkYBL62LH\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"BlockVisibility\": \"string\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_cNJhXeMWCFAFQLH\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"BlockVisibility\": \"string\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_0ijSd5XY4gJbogd\": {\n        \"BlockElements\": [\n          {\n            \"QuestionID\": \"string\",\n            \"Type\": \"string\"\n          },\n          {\n            \"QuestionID\": \"string\",\n            \"Type\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_9uZsNkfstasQRI0\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"Looping\": \"string\",\n          \"LoopingOptions\": \"\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_9uZsNkfstasQRI1\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          },\n          {\n            \"Type\": \"string\",\n            \"QuestionID\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"Looping\": \"string\",\n          \"LoopingOptions\": \"\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      },\n      \"BL_9uZsNkfstasQRI2\": {\n        \"BlockElements\": [\n          {\n            \"Type\": \"string\"\n          },\n          {\n            \"Type\": \"string\"\n          }\n        ],\n        \"Description\": \"string\",\n        \"ID\": \"string\",\n        \"Options\": {\n          \"BlockLocking\": \"string\",\n          \"Looping\": \"string\",\n          \"LoopingOptions\": \"\",\n          \"RandomizeQuestions\": \"string\"\n        },\n        \"SubType\": \"string\",\n        \"Type\": \"string\"\n      }\n    },\n    \"ResponseSets\": {\n      \"RS_6LQ18e9OczDfNb0\": \"string\"\n    },\n    \"SurveyFlow\": {\n      \"Flow\": [\n        {\n          \"FlowID\": \"string\",\n          \"Type\": \"string\",\n          \"Description\": \"string\",\n          \"Flow\": [\n            {\n              \"Description\": \"string\",\n              \"EmbeddedData\": [\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": true,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                },\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": true,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                }\n              ],\n              \"FlowID\": \"string\",\n              \"Type\": \"string\"\n            },\n            {\n              \"Description\": \"string\",\n              \"EmbeddedData\": [\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": true,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                },\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": true,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                }\n              ],\n              \"FlowID\": \"string\",\n              \"Type\": \"string\"\n            }\n          ],\n          \"UIActions\": {\n            \"Delete\": false,\n            \"Duplicate\": false,\n            \"ViewFlow\": true\n          },\n          \"EmbeddedData\": [\n            {\n              \"AnalyzeText\": false,\n              \"DataVisibility\": [],\n              \"Description\": \"string\",\n              \"Field\": \"string\",\n              \"Type\": \"string\",\n              \"Value\": \"string\",\n              \"VariableType\": \"string\"\n            },\n            {\n              \"AnalyzeText\": true,\n              \"DataVisibility\": [],\n              \"Description\": \"string\",\n              \"Field\": \"string\",\n              \"Type\": \"string\",\n              \"Value\": \"string\",\n              \"VariableType\": \"string\"\n            }\n          ],\n          \"ID\": \"string\",\n          \"SubSet\": 5507\n        },\n        {\n          \"FlowID\": \"string\",\n          \"Type\": \"string\",\n          \"Description\": \"string\",\n          \"Flow\": [\n            {\n              \"Description\": \"string\",\n              \"EmbeddedData\": [\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": false,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                },\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": false,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                }\n              ],\n              \"FlowID\": \"string\",\n              \"Type\": \"string\"\n            },\n            {\n              \"Description\": \"string\",\n              \"EmbeddedData\": [\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": false,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                },\n                {\n                  \"Description\": \"string\",\n                  \"Field\": \"string\",\n                  \"FlowOnly\": true,\n                  \"Type\": \"string\",\n                  \"Value\": \"string\",\n                  \"VariableType\": \"string\"\n                }\n              ],\n              \"FlowID\": \"string\",\n              \"Type\": \"string\"\n            }\n          ],\n          \"UIActions\": {\n            \"Delete\": true,\n            \"Duplicate\": true,\n            \"ViewFlow\": true\n          },\n          \"EmbeddedData\": [\n            {\n              \"AnalyzeText\": true,\n              \"DataVisibility\": [],\n              \"Description\": \"string\",\n              \"Field\": \"string\",\n              \"Type\": \"string\",\n              \"Value\": \"string\",\n              \"VariableType\": \"string\"\n            },\n            {\n              \"AnalyzeText\": true,\n              \"DataVisibility\": [],\n              \"Description\": \"string\",\n              \"Field\": \"string\",\n              \"Type\": \"string\",\n              \"Value\": \"string\",\n              \"VariableType\": \"string\"\n            }\n          ],\n          \"ID\": \"string\",\n          \"SubSet\": 522\n        }\n      ],\n      \"FlowID\": \"string\",\n      \"Properties\": {\n        \"Count\": 9495\n      },\n      \"Type\": \"string\"\n    },\n    \"Scoring\": {\n      \"AutoScoringCategory\": \"\",\n      \"DefaultScoringCategory\": \"\",\n      \"ScoringSummaryAfterQuestions\": 3908,\n      \"ScoringSummaryAfterSurvey\": 797,\n      \"ScoringSummaryCategory\": \"\"\n    },\n    \"ProjectInfo\": {\n      \"SurveyID\": \"string\",\n      \"ProjectCategory\": \"string\",\n      \"ProjectType\": \"string\",\n      \"CompositionType\": \"\",\n      \"ContentBundle\": \"\"\n    },\n    \"BrandBaseURL\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "028bec1f-ec5e-45af-a62a-af55f29c8377",
+          "name": "Get survey",
+          "request": {
+            "name": "Get survey",
+            "description": {
+              "content": "Gets a single Qualtrics survey speficied by its ID",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "survey-definitions",
+                ":SurveyId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "",
+                  "key": "SurveyId",
+                  "description": "(Required) ID of survey (eg. SV_123)"
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "05e0a714-66cc-4e73-897b-63a6878532b0",
+              "name": "Survey data",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "survey-definitions",
+                    ":SurveyId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "",
+                      "key": "SurveyId",
+                      "description": "(Required) ID of survey (eg. SV_123)"
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "02972b6a-d448-4211-b258-e92d16722f8a",
+              "name": "Operation Failed.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "survey-definitions",
+                    ":SurveyId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "",
+                      "key": "SurveyId",
+                      "description": "(Required) ID of survey (eg. SV_123)"
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Internal Server Error",
+              "code": 500,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "e3a232fa-79ea-48b3-95b4-dfc02d86bd89",
+    "name": "Qualtrics automations Survey Definitions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}

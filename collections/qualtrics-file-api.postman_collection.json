@@ -1,0 +1,466 @@
+{
+  "item": [
+    {
+      "id": "5884888b-6f8b-4d0e-aa74-8f764259fe87",
+      "name": "file",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "897f6465-0474-40cc-a3b7-462f564a9055",
+          "name": "Upload a File",
+          "request": {
+            "name": "Upload a File",
+            "description": {
+              "content": "Upload a file for the automation to consume.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "automations",
+                ":automationId",
+                "files"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "POST",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "a8992605-ee19-4206-b542-c2bff8c192de",
+              "name": "File Id",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "automations",
+                    ":automationId",
+                    "files"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "a0ce777f-61a5-4baf-9c65-1c1a8d59a2f6",
+          "name": "Get File Metadata",
+          "request": {
+            "name": "Get File Metadata",
+            "description": {
+              "content": "Get the file's metadata.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "automations",
+                ":automationId",
+                "files",
+                ":fileId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "8c688dd5-1cfb-4a76-8f7c-f70e819868f7",
+              "name": "File Metadata",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "automations",
+                    ":automationId",
+                    "files",
+                    ":fileId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "bb7779d6-e82f-4456-a6ed-40ae740ca12a",
+          "name": "Delete File",
+          "request": {
+            "name": "Delete File",
+            "description": {
+              "content": "Deletes the file.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "automations",
+                ":automationId",
+                "files",
+                ":fileId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f3368785-3dd7-4f9b-bdbd-89c7ae507fd8",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "automations",
+                    ":automationId",
+                    "files",
+                    ":fileId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "99cd7003-88f8-453c-9390-8acd786e9a9a",
+          "name": "Get File Content",
+          "request": {
+            "name": "Get File Content",
+            "description": {
+              "content": "Download the file's content.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "automations",
+                ":automationId",
+                "files",
+                ":fileId",
+                "content"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "7331faa7-ff37-4cc4-97da-d4b8bd0fc43e",
+              "name": "File Content",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "automations",
+                    ":automationId",
+                    "files",
+                    ":fileId",
+                    "content"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "5d3046f0-21e9-4177-9103-9f1a1e3a39d5",
+    "name": "Qualtrics automations file API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,518 @@
+{
+  "item": [
+    {
+      "id": "57838d0e-78c9-4ede-8592-a80e9e85e89c",
+      "name": "Eventsubscriptions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "35b7e403-471e-479a-8ed8-bcc46ec030ce",
+          "name": "Subscribe to response event",
+          "request": {
+            "name": "Subscribe to response event",
+            "description": {},
+            "url": {
+              "path": [
+                "eventsubscriptions",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "4edd2908-c005-4aa0-b22d-d476dacafb0a",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "eventsubscriptions",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"topics\": \"surveyengine.completedResponse.{SurveyID}\",\n  \"publicationUrl\": \"https://prod-142.westeurope.logic.azure.com:443/workflows/\",\n  \"encrypt\": false\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"string\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"string\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"string\",\n    \"httpStatus\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "17c33a5e-1d5f-41a8-8919-029382a394a9",
+          "name": "Remove subscription to response event",
+          "request": {
+            "name": "Remove subscription to response event",
+            "description": {},
+            "url": {
+              "path": [
+                "eventsubscriptions",
+                ""
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "DELETE",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "16e41e4f-c0a0-45d2-99dd-2da8a66d0909",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "eventsubscriptions",
+                    ""
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "DELETE",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"string\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"string\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"string\",\n    \"httpStatus\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "48a6802b-c84d-4843-a7a6-12b5cafec5c0",
+          "name": "Get event subscriptions",
+          "request": {
+            "name": "Get event subscriptions",
+            "description": {},
+            "url": {
+              "path": [
+                "eventsubscriptions",
+                ":SubscripionId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "SubscriptionId",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "f61fef62-862b-4fa8-b17c-1856c34453a8",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "eventsubscriptions",
+                    ":SubscripionId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "SubscriptionId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"string\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"string\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"string\",\n    \"httpStatus\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "f37762ca-f95f-4672-bd05-215872256068",
+          "name": "Get event subscriptions",
+          "request": {
+            "name": "Get event subscriptions",
+            "description": {
+              "content": "Get event subscriptions",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "eventsubscriptions",
+                ":SubscriptionId"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "",
+                  "key": "SubscriptionId",
+                  "description": "(Required) ID of event subscription - can be obtained from web hook response"
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "cec97fef-0969-44a7-95e9-58b985844f1a",
+              "name": "Event subscriptions",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "eventsubscriptions",
+                    ":SubscriptionId"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "",
+                      "key": "SubscriptionId",
+                      "description": "(Required) ID of event subscription - can be obtained from web hook response"
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "53502e05-fdd0-4b2d-91d9-5a222468c8a5",
+    "name": "Qualtrics automations Eventsubscriptions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}

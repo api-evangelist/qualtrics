@@ -1,0 +1,89 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Qualtrics automations Eventsubscriptions API",
+    "version": "0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-TOKEN",
+      "value": "{{X-API-TOKEN}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Eventsubscriptions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Subscribe to response event",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/eventsubscriptions/",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Subscribe to response event"
+        },
+        {
+          "info": {
+            "name": "Remove subscription to response event",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/eventsubscriptions/"
+          },
+          "docs": "Remove subscription to response event"
+        },
+        {
+          "info": {
+            "name": "Get event subscriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/eventsubscriptions/:SubscripionId",
+            "params": [
+              {
+                "name": "SubscriptionId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get event subscriptions"
+        },
+        {
+          "info": {
+            "name": "Get event subscriptions",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/eventsubscriptions/:SubscriptionId",
+            "params": [
+              {
+                "name": "SubscriptionId",
+                "value": "",
+                "type": "path",
+                "description": "ID of event subscription - can be obtained from web hook response"
+              }
+            ]
+          },
+          "docs": "Get event subscriptions"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,161 @@
+{
+  "item": [
+    {
+      "id": "8d6f3efa-c283-4fad-bece-ad327f2b11fa",
+      "name": "automations",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "113c8259-19fc-4442-8f73-a7a8132ad7fc",
+          "name": "List Automations",
+          "request": {
+            "name": "List Automations",
+            "description": {
+              "content": "Get all automations' directory information.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "automations"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "071317c2-3147-40be-8076-7d42b5391b46",
+              "name": "Automations List",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "automations"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "fb0965f7-13c4-4c26-8763-4f1ac37a5425",
+    "name": "Qualtrics automations API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Qualtrics automations Distributions API",
+    "version": "0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-TOKEN",
+      "value": "{{X-API-TOKEN}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Distributions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get distributions for a given survey",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/distributions",
+            "params": [
+              {
+                "name": "surveyId",
+                "value": "",
+                "type": "query"
+              }
+            ]
+          },
+          "docs": "Get distributions for a given survey"
+        },
+        {
+          "info": {
+            "name": "Generate distribution links for a given survey",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/distributions",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Generate distribution links for a given survey"
+        },
+        {
+          "info": {
+            "name": "Retrieve distribution links",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/distributions/:DistributionId/links",
+            "params": [
+              {
+                "name": "surveyId",
+                "value": "",
+                "type": "query"
+              },
+              {
+                "name": "DistributionId",
+                "value": "",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Retrieve distribution links"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

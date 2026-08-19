@@ -1,0 +1,222 @@
+{
+  "item": [
+    {
+      "id": "63c3272b-f507-49bc-a504-e88abce1be66",
+      "name": "Directories",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "77f38e0d-d9c8-40c4-a556-456d0dd260a7",
+          "name": "Create a contact in a given mailing list",
+          "request": {
+            "name": "Create a contact in a given mailing list",
+            "description": {},
+            "url": {
+              "path": [
+                "directories",
+                ":DirectoryId",
+                "mailinglists",
+                ":MailingListId",
+                "contacts"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "DirectoryId",
+                  "description": "(Required) "
+                },
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "MailingListId",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "c60eba56-0359-4d5c-a47d-c35736184ff7",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "directories",
+                    ":DirectoryId",
+                    "mailinglists",
+                    ":MailingListId",
+                    "contacts"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "DirectoryId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "MailingListId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "disabled": false,
+                    "description": "(Required) ",
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "aeff4fa3-1798-4653-8651-6669e2c744ae",
+    "name": "Qualtrics automations Directories API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}

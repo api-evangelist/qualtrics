@@ -1,0 +1,51 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Qualtrics automations files API",
+    "version": "0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-TOKEN",
+      "value": "{{X-API-TOKEN}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "files",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get Automation's Files",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/automations/:automationId/files",
+            "params": [
+              {
+                "name": "automationId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+              },
+              {
+                "name": "tag",
+                "value": "",
+                "type": "query",
+                "description": "* If not provided, the files that have not yet been processed by the automation will be returned.\n* If equal to `processing`, the files that are currently being processed by the automation will be returned.\n* If equal to `archived`, the files that have been processed and archived by the automation will be returned.\n"
+              }
+            ]
+          },
+          "docs": "Get all the files for Automation which are neither archived or currently being processed."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

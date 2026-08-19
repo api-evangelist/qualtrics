@@ -1,0 +1,63 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Qualtrics automations Survey Definitions API",
+    "version": "0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-TOKEN",
+      "value": "{{X-API-TOKEN}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "Survey Definitions",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get a specific survey by its 'id' (e.g SV_123)",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/survey-definitions/:Id",
+            "params": [
+              {
+                "name": "Id",
+                "value": "SV_123",
+                "type": "path"
+              }
+            ]
+          },
+          "docs": "Get a specific survey by its 'id' (e.g SV_123)"
+        },
+        {
+          "info": {
+            "name": "Get survey",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/survey-definitions/:SurveyId",
+            "params": [
+              {
+                "name": "SurveyId",
+                "value": "",
+                "type": "path",
+                "description": "ID of survey (eg. SV_123)"
+              }
+            ]
+          },
+          "docs": "Gets a single Qualtrics survey speficied by its ID"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

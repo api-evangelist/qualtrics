@@ -1,0 +1,120 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Qualtrics automations file API",
+    "version": "0.2"
+  },
+  "request": {
+    "auth": {
+      "type": "apikey",
+      "key": "X-API-TOKEN",
+      "value": "{{X-API-TOKEN}}",
+      "placement": "header"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "file",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Upload a File",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/automations/:automationId/files",
+            "params": [
+              {
+                "name": "automationId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+              }
+            ]
+          },
+          "docs": "Upload a file for the automation to consume."
+        },
+        {
+          "info": {
+            "name": "Get File Metadata",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/automations/:automationId/files/:fileId",
+            "params": [
+              {
+                "name": "automationId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+              }
+            ]
+          },
+          "docs": "Get the file's metadata."
+        },
+        {
+          "info": {
+            "name": "Delete File",
+            "type": "http"
+          },
+          "http": {
+            "method": "DELETE",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/automations/:automationId/files/:fileId",
+            "params": [
+              {
+                "name": "automationId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+              }
+            ]
+          },
+          "docs": "Deletes the file."
+        },
+        {
+          "info": {
+            "name": "Get File Content",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://{apiRegion}.qualtrics.com/API/{apiVersion}/automations/:automationId/files/:fileId/content",
+            "params": [
+              {
+                "name": "automationId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+              },
+              {
+                "name": "fileId",
+                "value": "",
+                "type": "path",
+                "description": "Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+              }
+            ]
+          },
+          "docs": "Download the file's content."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}

@@ -1,0 +1,424 @@
+{
+  "item": [
+    {
+      "id": "2bd0a504-d738-4d2f-84b9-45360dbd53cb",
+      "name": "Distributions",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "72679a68-97cb-4fe7-ba1b-c7e403f6eb81",
+          "name": "Get distributions for a given survey",
+          "request": {
+            "name": "Get distributions for a given survey",
+            "description": {},
+            "url": {
+              "path": [
+                "distributions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "surveyId",
+                  "value": "<string>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "5c6f6292-54a6-42d2-a61e-d0749949074f",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "distributions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "surveyId",
+                      "value": "SV_123"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"elements\": [\n      {\n        \"id\": \"string\",\n        \"parentDistributionId\": \"\",\n        \"ownerId\": \"string\",\n        \"organizationId\": \"string\",\n        \"requestStatus\": \"string\",\n        \"requestType\": \"string\",\n        \"sendDate\": \"string\",\n        \"createdDate\": \"string\",\n        \"modifiedDate\": \"string\",\n        \"customHeaders\": {},\n        \"headers\": {\n          \"fromEmail\": \"\",\n          \"replyToEmail\": \"\",\n          \"fromName\": \"\"\n        },\n        \"recipients\": {\n          \"mailingListId\": \"string\",\n          \"contactId\": \"\",\n          \"libraryId\": \"string\",\n          \"sampleId\": \"\"\n        },\n        \"message\": {\n          \"libraryId\": \"\",\n          \"messageId\": \"\",\n          \"messageText\": \"\"\n        },\n        \"surveyLink\": {\n          \"surveyId\": \"string\",\n          \"expirationDate\": \"string\",\n          \"linkType\": \"string\"\n        },\n        \"embeddedData\": \"\",\n        \"stats\": {\n          \"sent\": 579,\n          \"failed\": 6359,\n          \"started\": 578,\n          \"bounced\": 1793,\n          \"opened\": 3217,\n          \"skipped\": 1367,\n          \"finished\": 1467,\n          \"complaints\": 6357,\n          \"blocked\": 1006\n        }\n      },\n      {\n        \"id\": \"string\",\n        \"parentDistributionId\": \"\",\n        \"ownerId\": \"string\",\n        \"organizationId\": \"string\",\n        \"requestStatus\": \"string\",\n        \"requestType\": \"string\",\n        \"sendDate\": \"string\",\n        \"createdDate\": \"string\",\n        \"modifiedDate\": \"string\",\n        \"customHeaders\": {},\n        \"headers\": {\n          \"fromEmail\": \"\",\n          \"replyToEmail\": \"\",\n          \"fromName\": \"\"\n        },\n        \"recipients\": {\n          \"mailingListId\": \"string\",\n          \"contactId\": \"\",\n          \"libraryId\": \"string\",\n          \"sampleId\": \"\"\n        },\n        \"message\": {\n          \"libraryId\": \"\",\n          \"messageId\": \"\",\n          \"messageText\": \"\"\n        },\n        \"surveyLink\": {\n          \"surveyId\": \"string\",\n          \"expirationDate\": \"string\",\n          \"linkType\": \"string\"\n        },\n        \"embeddedData\": \"\",\n        \"stats\": {\n          \"sent\": 7555,\n          \"failed\": 6189,\n          \"started\": 6812,\n          \"bounced\": 7396,\n          \"opened\": 6853,\n          \"skipped\": 3416,\n          \"finished\": 6248,\n          \"complaints\": 170,\n          \"blocked\": 2280\n        }\n      }\n    ],\n    \"nextPage\": \"\"\n  },\n  \"meta\": {\n    \"httpStatus\": \"string\",\n    \"requestId\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "cd8a7f97-d0d2-4957-8575-cb58996c1867",
+          "name": "Generate distribution links for a given survey",
+          "request": {
+            "name": "Generate distribution links for a given survey",
+            "description": {},
+            "url": {
+              "path": [
+                "distributions"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "3276790d-47ef-422b-b044-6da11d2bc20c",
+              "name": "OK",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "distributions"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "62ef9c58-4dbb-4559-9c92-c1c994ac4b85",
+          "name": "Retrieve distribution links",
+          "request": {
+            "name": "Retrieve distribution links",
+            "description": {},
+            "url": {
+              "path": [
+                "distributions",
+                ":DistributionId",
+                "links"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [
+                {
+                  "disabled": false,
+                  "key": "surveyId",
+                  "value": "<string>",
+                  "description": "(Required) "
+                }
+              ],
+              "variable": [
+                {
+                  "disabled": false,
+                  "type": "any",
+                  "value": "<string>",
+                  "key": "DistributionId",
+                  "description": "(Required) "
+                },
+                {
+                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                  "type": "any",
+                  "value": "{{apiRegion}}",
+                  "key": "apiRegion"
+                },
+                {
+                  "description": "API version to use - default v3",
+                  "type": "any",
+                  "value": "{{apiVersion}}",
+                  "key": "apiVersion"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "659857f7-2480-43a1-9cf8-350ba97200f3",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "distributions",
+                    ":DistributionId",
+                    "links"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [
+                    {
+                      "key": "surveyId",
+                      "value": "SV_daqxBqkZ5Di8aJU"
+                    }
+                  ],
+                  "variable": [
+                    {
+                      "disabled": false,
+                      "type": "any",
+                      "value": "<string>",
+                      "key": "DistributionId",
+                      "description": "(Required) "
+                    },
+                    {
+                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+                      "type": "any",
+                      "value": "{{apiRegion}}",
+                      "key": "apiRegion"
+                    },
+                    {
+                      "description": "API version to use - default v3",
+                      "type": "any",
+                      "value": "{{apiVersion}}",
+                      "key": "apiVersion"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"result\": {\n    \"elements\": [\n      {\n        \"contactId\": \"string\",\n        \"transactionId\": \"\",\n        \"link\": \"string\",\n        \"exceededContactFrequency\": true,\n        \"linkExpiration\": \"string\",\n        \"status\": \"string\",\n        \"lastName\": \"string\",\n        \"firstName\": \"string\",\n        \"externalDataReference\": \"\",\n        \"email\": \"string\",\n        \"unsubscribed\": true\n      },\n      {\n        \"contactId\": \"string\",\n        \"transactionId\": \"\",\n        \"link\": \"string\",\n        \"exceededContactFrequency\": false,\n        \"linkExpiration\": \"string\",\n        \"status\": \"string\",\n        \"lastName\": \"string\",\n        \"firstName\": \"string\",\n        \"externalDataReference\": \"\",\n        \"email\": \"string\",\n        \"unsubscribed\": true\n      }\n    ],\n    \"nextPage\": \"\"\n  },\n  \"meta\": {\n    \"httpStatus\": \"string\",\n    \"requestId\": \"string\"\n  }\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "fra1",
+      "key": "apiRegion"
+    },
+    {
+      "description": {
+        "content": "API version to use - default v3",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "v3",
+      "key": "apiVersion"
+    },
+    {
+      "type": "string",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-TOKEN"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "800f2e97-19dd-440c-9006-4c28f29239a4",
+    "name": "Qualtrics automations Distributions API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Work with Qualtrics surveys, distributions and response events",
+      "type": "text/plain"
+    }
+  }
+}
