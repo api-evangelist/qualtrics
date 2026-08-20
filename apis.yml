@@ -39,6 +39,8 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
+  - Automations
+  tags_raw:
   - automations
   properties:
   - type: OpenAPI
@@ -150,6 +152,8 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
+  - Event Subscriptions
+  tags_raw:
   - Eventsubscriptions
   properties:
   - type: OpenAPI
@@ -187,6 +191,8 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
+  - File
+  tags_raw:
   - file
   properties:
   - type: OpenAPI
@@ -224,6 +230,8 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
+  - File
+  tags_raw:
   - files
   properties:
   - type: OpenAPI
