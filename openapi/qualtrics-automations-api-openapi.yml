@@ -1,20 +1,14 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
-  version: '0.2'
-  title: Qualtrics automations API
-  description: Work with Qualtrics surveys, distributions and response events
+  title: File Service Automations API
+  description: "# Introduction\n\nThe Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.\nYou may upload a file for an Automation via an HTTPS endpoint.  When the Automation is scheduled to run, it will process\nany new files targeted at that Automation.\n\nFiles uploaded to the Automations File Service persist for 60 days. These endpoints allow you to do the following:\n  - retrieve the metadata of the file—including information about its processing\n  - download a file\n  - delete a file.\n\nAutomations supports several data import sources, including SFTP.  When an Automation consumes a file from one of these data import sources, it\nstores the file in the Automations File Service file store to preserve a historical record. When choosing a\ndata import source, we recommend the Automations File Service for uploading files.\n\nNote: The API calls in this documentation are written with the base URL datacenterId.qualtrics.com. You should change the base URL to \nreflect the correct datacenter for your brand. If you do not know the datacenter ID, you can look in the URL you use to access Qualtrics, \nor in your account settings to find this. API calls may still work if you call the wrong datacenter, as your request will be proxied to \nthe correct datacenter. However, this may extend the time it takes for you to receive a response, or the API call may fail entirely.\n"
+  contact:
+    name: Contact Qualtrics Support for more information.
+  version: 1.0.0
 servers:
-- url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
-  description: Qualtrics API endpoint for EU region
-  variables:
-    apiRegion:
-      default: fra1
-      description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
-    apiVersion:
-      default: v3
-      description: API version to use - default v3
+- url: https://datacenterId.qualtrics.com/automations-file-service
 security:
-- QualtricsAPIKeyAuth: []
+- API Token: []
 tags:
 - name: automations
 paths:
@@ -26,68 +20,82 @@ paths:
       description: Get all automations' directory information.
       operationId: getAutomations
       parameters:
-      - $ref: '#/parameters/offset'
+      - $ref: '#/components/parameters/offset'
       responses:
         '200':
           description: Automations List
-          schema:
-            type: object
-            required:
-            - result
-            - meta
-            properties:
-              result:
-                $ref: directory.yaml#/definitions/directories
-              meta:
-                $ref: '#/definitions/meta'
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                - result
+                - meta
+                properties:
+                  result:
+                    $ref: directory.yaml#/definitions/directories
+                  meta:
+                    $ref: '#/components/schemas/meta'
+            text/plain; charset=utf-8:
+              schema:
+                type: object
+                required:
+                - result
+                - meta
+                properties:
+                  result:
+                    $ref: directory.yaml#/definitions/directories
+                  meta:
+                    $ref: '#/components/schemas/meta'
 components:
+  schemas:
+    meta:
+      example:
+        httpStatus: 200 - OK
+      type: object
+      required:
+      - httpStatus
+      - requestId
+      properties:
+        httpStatus:
+          type: string
+          description: 'Always of the format `{X} - {Y}`,
+
+            where `{X}` is the associated HTTP status code,
+
+            and `{Y}` is a human readable explanation of the status code.
+
+            '
+        error:
+          type: object
+          description: Only given if an error occurred during the request.
+          required:
+          - errorMessage
+          - errorCode
+          properties:
+            errorMessage:
+              type: string
+              description: A human readable explanation of the error.
+            errorCode:
+              type: string
+              description: An identifying code associated with the error.
+        requestId:
+          type: string
+          description: A transaction id associated with the request.
+  parameters:
+    offset:
+      name: offset
+      in: query
+      required: false
+      description: 'The starting offset for the returned records. The default offset is 0.
+
+        '
+      schema:
+        type: integer
+        format: int32
+        minimum: 0
   securitySchemes:
-    QualtricsAPIKeyAuth:
+    API_Token:
       type: apiKey
       in: header
       name: X-API-TOKEN
-definitions:
-  meta:
-    example:
-      httpStatus: 200 - OK
-    type: object
-    required:
-    - httpStatus
-    - requestId
-    properties:
-      httpStatus:
-        type: string
-        description: 'Always of the format `{X} - {Y}`,
-
-          where `{X}` is the associated HTTP status code,
-
-          and `{Y}` is a human readable explanation of the status code.
-
-          '
-      error:
-        type: object
-        description: Only given if an error occurred during the request.
-        required:
-        - errorMessage
-        - errorCode
-        properties:
-          errorMessage:
-            type: string
-            description: A human readable explanation of the error.
-          errorCode:
-            type: string
-            description: An identifying code associated with the error.
-      requestId:
-        type: string
-        description: A transaction id associated with the request.
-parameters:
-  offset:
-    name: offset
-    in: query
-    required: false
-    type: integer
-    format: int32
-    minimum: 0
-    description: 'The starting offset for the returned records. The default offset is 0.
-
-      '

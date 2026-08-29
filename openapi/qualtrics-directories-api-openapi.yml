@@ -1,8 +1,8 @@
-openapi: 3.0.0
+openapi: 3.2.0
 info:
+  title: Qualtrics Directories API
   version: '0.2'
-  title: Qualtrics automations Directories API
-  description: Work with Qualtrics surveys, distributions and response events
+  description: 'Operations tagged Directories across 2 of this provider''s published API definitions: qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json. Each path carries the servers of the definition it was published in.'
 servers:
 - url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
   description: Qualtrics API endpoint for EU region
@@ -13,8 +13,7 @@ servers:
     apiVersion:
       default: v3
       description: API version to use - default v3
-security:
-- QualtricsAPIKeyAuth: []
+- url: https://fra1.qualtrics.com/API/v3
 tags:
 - name: Directories
 paths:
@@ -38,7 +37,40 @@ paths:
               $ref: '#/components/requestBodies/CreateContactInMailingList'
       tags:
       - Directories
+      security:
+      - QualtricsAPIKeyAuth: []
+    servers:
+    - url: https://{apiRegion}.qualtrics.com/API/{apiVersion}
+      description: Qualtrics API endpoint for EU region
+      variables:
+        apiRegion:
+          default: fra1
+          description: Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)
+        apiVersion:
+          default: v3
+          description: API version to use - default v3
 components:
+  parameters:
+    MailingListId:
+      name: MailingListId
+      required: true
+      in: path
+      schema:
+        type: string
+    Content-Type:
+      name: Content-Type
+      in: header
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: application/json
+    DirectoryId:
+      name: DirectoryId
+      required: true
+      in: path
+      schema:
+        type: string
   requestBodies:
     CreateContactInMailingList:
       required: true
@@ -55,29 +87,27 @@ components:
                 type: string
               unsubscribed:
                 type: boolean
-  parameters:
-    MailingListId:
-      name: MailingListId
-      required: true
-      in: path
-      schema:
-        type: string
-    DirectoryId:
-      name: DirectoryId
-      required: true
-      in: path
-      schema:
-        type: string
-    Content-Type:
-      name: Content-Type
-      in: header
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: application/json
+  schemas:
+    CreateContactInMailingList:
+      type: object
+      properties:
+        firstName:
+          type: string
+        lastName:
+          type: string
+        email:
+          type: string
+        unsubscribed:
+          type: boolean
   securitySchemes:
     QualtricsAPIKeyAuth:
       type: apiKey
       in: header
       name: X-API-TOKEN
+    api_key:
+      type: apiKey
+      name: X-API-TOKEN
+      in: header
+x-refined-from:
+- qualtrics-api-openapi-3.0.json
+- qualtrics-api-swagger-2.0.json

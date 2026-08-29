@@ -1,26 +1,66 @@
 {
   "provider": "qualtrics",
   "sources": [
-    "qualtrics-automations-api-openapi.yml",
-    "qualtrics-directories-api-openapi.yml",
-    "qualtrics-distributions-api-openapi.yml",
-    "qualtrics-eventsubscriptions-api-openapi.yml",
-    "qualtrics-file-api-openapi.yml",
-    "qualtrics-files-api-openapi.yml",
-    "qualtrics-survey-definitions-api-openapi.yml"
+    "_original/qualtrics-api-openapi-3.0.json",
+    "_original/qualtrics-api-swagger-2.0.json",
+    "_original/qualtrics-automations-file-service-swagger-2.0.yaml"
   ],
   "outputs": [
-    "qualtrics-automations-api-openapi.yml",
     "qualtrics-directories-api-openapi.yml",
     "qualtrics-distributions-api-openapi.yml",
     "qualtrics-eventsubscriptions-api-openapi.yml",
+    "qualtrics-survey-definitions-api-openapi.yml",
+    "qualtrics-automations-api-openapi.yml",
     "qualtrics-file-api-openapi.yml",
-    "qualtrics-files-api-openapi.yml",
-    "qualtrics-survey-definitions-api-openapi.yml"
+    "qualtrics-files-api-openapi.yml"
   ],
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (3 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "qualtrics-api-openapi-3.0.json: upgraded openapi 3.0.0 -> OpenAPI 3.2.0",
+    "qualtrics-api-openapi-3.0.json: tagged paths GET /survey-definitions/{Id} -> Survey Definitions",
+    "qualtrics-api-openapi-3.0.json: tagged paths GET /distributions -> Distributions",
+    "qualtrics-api-openapi-3.0.json: tagged paths POST /distributions -> Distributions",
+    "qualtrics-api-openapi-3.0.json: tagged paths GET /distributions/{DistributionId}/links -> Distributions",
+    "qualtrics-api-openapi-3.0.json: tagged paths POST /directories/{DirectoryId}/mailinglists/{MailingListId}/contacts -> Directories",
+    "qualtrics-api-openapi-3.0.json: tagged paths POST /eventsubscriptions/ -> Eventsubscriptions",
+    "qualtrics-api-openapi-3.0.json: tagged paths DELETE /eventsubscriptions/ -> Eventsubscriptions",
+    "qualtrics-api-openapi-3.0.json: tagged paths GET /eventsubscriptions/{SubscripionId} -> Eventsubscriptions",
+    "qualtrics-api-openapi-3.0.json: declared missing tag: Directories",
+    "qualtrics-api-openapi-3.0.json: declared missing tag: Distributions",
+    "qualtrics-api-openapi-3.0.json: declared missing tag: Eventsubscriptions",
+    "qualtrics-api-openapi-3.0.json: declared missing tag: Survey Definitions",
+    "qualtrics-api-swagger-2.0.json: upgraded swagger 2.0 -> OpenAPI 3.2.0",
+    "qualtrics-api-swagger-2.0.json: tagged paths GET /survey-definitions/{SurveyId} -> Survey Definitions",
+    "qualtrics-api-swagger-2.0.json: tagged paths GET /distributions -> Distributions",
+    "qualtrics-api-swagger-2.0.json: tagged paths POST /distributions -> Distributions",
+    "qualtrics-api-swagger-2.0.json: tagged paths GET /distributions/{DistributionId}/links -> Distributions",
+    "qualtrics-api-swagger-2.0.json: tagged paths POST /directories/{DirectoryId}/mailinglists/{MailingListId}/contacts -> Directories",
+    "qualtrics-api-swagger-2.0.json: tagged paths POST /eventsubscriptions/ -> Eventsubscriptions",
+    "qualtrics-api-swagger-2.0.json: tagged paths DELETE /eventsubscriptions/ -> Eventsubscriptions",
+    "qualtrics-api-swagger-2.0.json: tagged paths GET /eventsubscriptions/{SubscriptionId} -> Eventsubscriptions",
+    "qualtrics-api-swagger-2.0.json: declared missing tag: Directories",
+    "qualtrics-api-swagger-2.0.json: declared missing tag: Distributions",
+    "qualtrics-api-swagger-2.0.json: declared missing tag: Eventsubscriptions",
+    "qualtrics-api-swagger-2.0.json: declared missing tag: Survey Definitions",
+    "qualtrics-automations-file-service-swagger-2.0.yaml: upgraded swagger 2.0 -> OpenAPI 3.2.0; renamed 1 component key(s) illegal in 3.x (e.g. API Token)",
+    "qualtrics-automations-file-service-swagger-2.0.yaml: declared missing tag: automations",
+    "qualtrics-automations-file-service-swagger-2.0.yaml: declared missing tag: file",
+    "qualtrics-automations-file-service-swagger-2.0.yaml: declared missing tag: files",
+    "tag 'Directories' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
+    "tag 'Distributions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
+    "tag 'Eventsubscriptions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
+    "tag 'Survey Definitions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied"
+  ],
+  "skipped": [
+    "qualtrics-automations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-directories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-distributions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-eventsubscriptions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-file-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-survey-definitions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
