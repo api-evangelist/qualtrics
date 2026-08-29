@@ -6,6 +6,18 @@ description: >-
   automating XM programs at scale. The Qualtrics v3 API enables developers to
   automate repetitive processes, integrate data across systems, and build custom
   extensions for customer, employee, product, and brand experience programs.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: self-serve
