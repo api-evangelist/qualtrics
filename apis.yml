@@ -51,7 +51,7 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
-  - automations
+  - Automations
   tags_raw:
   - automations
   properties:
@@ -164,7 +164,7 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
-  - Eventsubscriptions
+  - Event Subscriptions
   tags_raw:
   - Eventsubscriptions
   properties:
