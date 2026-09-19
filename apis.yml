@@ -52,7 +52,7 @@ apis:
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
   tags:
-  - Automations
+  - Automation
   tags_raw:
   - automations
   properties:
