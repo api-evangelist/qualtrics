@@ -1,7 +1,10 @@
 openapi: 3.2.0
 info:
   title: Automations File Service Files API
-  description: "# Introduction\n\nThe Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.\nYou may upload a file for an Automation via an HTTPS endpoint.  When the Automation is scheduled to run, it will process\nany new files targeted at that Automation.\n\nFiles uploaded to the Automations File Service persist for 60 days. These endpoints allow you to do the following:\n  - retrieve the metadata of the file—including information about its processing\n  - download a file\n  - delete a file.\n\nAutomations supports several data import sources, including SFTP.  When an Automation consumes a file from one of these data import sources, it\nstores the file in the Automations File Service file store to preserve a historical record. When choosing a\ndata import source, we recommend the Automations File Service for uploading files.\n\nNote: The API calls in this documentation are written with the base URL datacenterId.qualtrics.com. You should change the base URL to \nreflect the correct datacenter for your brand. If you do not know the datacenter ID, you can look in the URL you use to access Qualtrics, \nor in your account settings to find this. API calls may still work if you call the wrong datacenter, as your request will be proxied to \nthe correct datacenter. However, this may extend the time it takes for you to receive a response, or the API call may fail entirely.\n"
+  description: '# Introduction
+
+
+    The Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.'
   contact:
     name: Contact Qualtrics Support for more information.
   version: 1.0.0
@@ -10,12 +13,12 @@ servers:
 security:
 - API Token: []
 tags:
-- name: files
+- name: Files
 paths:
   /automations/{automationId}/files:
     get:
       tags:
-      - files
+      - Files
       summary: Get Automation's Files
       description: Get all the files for Automation which are neither archived or currently being processed.
       operationId: getFiles
@@ -49,6 +52,32 @@ paths:
                   meta:
                     $ref: '#/components/schemas/meta'
 components:
+  parameters:
+    automationIdPath:
+      name: automationId
+      in: path
+      description: 'Id of the associated automation.
+
+
+        **Example**: `AU_123456789012345`
+
+        '
+      required: true
+      schema:
+        type: string
+    tag:
+      name: tag
+      in: query
+      required: false
+      description: '* If not provided, the files that have not yet been processed by the automation will be returned.
+
+        * If equal to `processing`, the files that are currently being processed by the automation will be returned.
+
+        * If equal to `archived`, the files that have been processed and archived by the automation will be returned.
+
+        '
+      schema:
+        type: string
   schemas:
     meta:
       example:
@@ -83,32 +112,6 @@ components:
         requestId:
           type: string
           description: A transaction id associated with the request.
-  parameters:
-    tag:
-      name: tag
-      in: query
-      required: false
-      description: '* If not provided, the files that have not yet been processed by the automation will be returned.
-
-        * If equal to `processing`, the files that are currently being processed by the automation will be returned.
-
-        * If equal to `archived`, the files that have been processed and archived by the automation will be returned.
-
-        '
-      schema:
-        type: string
-    automationIdPath:
-      name: automationId
-      in: path
-      description: 'Id of the associated automation.
-
-
-        **Example**: `AU_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
   securitySchemes:
     API_Token:
       type: apiKey

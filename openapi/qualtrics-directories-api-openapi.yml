@@ -51,12 +51,6 @@ paths:
           description: API version to use - default v3
 components:
   parameters:
-    MailingListId:
-      name: MailingListId
-      required: true
-      in: path
-      schema:
-        type: string
     Content-Type:
       name: Content-Type
       in: header
@@ -67,6 +61,12 @@ components:
         example: application/json
     DirectoryId:
       name: DirectoryId
+      required: true
+      in: path
+      schema:
+        type: string
+    MailingListId:
+      name: MailingListId
       required: true
       in: path
       schema:

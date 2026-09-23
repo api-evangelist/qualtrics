@@ -99,75 +99,7 @@ paths:
           default: v3
           description: API version to use - default v3
 components:
-  parameters:
-    DistributionSurveyId:
-      name: surveyId
-      in: query
-      required: true
-      style: form
-      schema:
-        type: string
-        example: SV_123
-    DistributionId:
-      name: DistributionId
-      in: path
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: DistributionId
   schemas:
-    RetrieveDistributionLinksResponse:
-      type: object
-      properties:
-        result:
-          type: object
-          properties:
-            elements:
-              type: array
-              items:
-                type: object
-                properties:
-                  contactId:
-                    type: string
-                  transactionId: {}
-                  link:
-                    type: string
-                  exceededContactFrequency:
-                    type: boolean
-                  linkExpiration:
-                    type: string
-                  status:
-                    type: string
-                  lastName:
-                    type: string
-                  firstName:
-                    type: string
-                  externalDataReference: {}
-                  email:
-                    type: string
-                  unsubscribed:
-                    type: boolean
-                required:
-                - contactId
-                - transactionId
-                - link
-                - exceededContactFrequency
-                - linkExpiration
-                - status
-                - lastName
-                - firstName
-                - externalDataReference
-                - email
-                - unsubscribed
-            nextPage: {}
-        meta:
-          type: object
-          properties:
-            httpStatus:
-              type: string
-            requestId:
-              type: string
     DistributionsResponse:
       type: object
       properties:
@@ -276,6 +208,57 @@ components:
               type: string
             requestId:
               type: string
+    RetrieveDistributionLinksResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            elements:
+              type: array
+              items:
+                type: object
+                properties:
+                  contactId:
+                    type: string
+                  transactionId: {}
+                  link:
+                    type: string
+                  exceededContactFrequency:
+                    type: boolean
+                  linkExpiration:
+                    type: string
+                  status:
+                    type: string
+                  lastName:
+                    type: string
+                  firstName:
+                    type: string
+                  externalDataReference: {}
+                  email:
+                    type: string
+                  unsubscribed:
+                    type: boolean
+                required:
+                - contactId
+                - transactionId
+                - link
+                - exceededContactFrequency
+                - linkExpiration
+                - status
+                - lastName
+                - firstName
+                - externalDataReference
+                - email
+                - unsubscribed
+            nextPage: {}
+        meta:
+          type: object
+          properties:
+            httpStatus:
+              type: string
+            requestId:
+              type: string
     CreateDistributionLinks:
       type: object
       properties:
@@ -293,6 +276,23 @@ components:
           example: '2021-01-21 00:00:00'
         mailingListId:
           type: string
+  parameters:
+    DistributionSurveyId:
+      name: surveyId
+      in: query
+      required: true
+      style: form
+      schema:
+        type: string
+        example: SV_123
+    DistributionId:
+      name: DistributionId
+      in: path
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: DistributionId
   requestBodies:
     CreateDistributionLinks:
       required: true

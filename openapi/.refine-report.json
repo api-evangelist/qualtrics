@@ -14,7 +14,9 @@
     "qualtrics-file-api-openapi.yml",
     "qualtrics-files-api-openapi.yml"
   ],
-  "archived": [],
+  "archived": [
+    "deleted 1 superseded output(s) from the previous generation"
+  ],
   "errors": [],
   "warnings": [],
   "notes": [
@@ -52,13 +54,15 @@
     "tag 'Directories' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
     "tag 'Distributions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
     "tag 'Eventsubscriptions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
-    "tag 'Survey Definitions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied"
+    "tag 'Survey Definitions' spans 2 source specs (qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json): per-path servers applied",
+    "superseded outputs removed: qualtrics-event-subscriptions-api-openapi.yml",
+    "apis.yml register: written (+1 apis, 7 total)"
   ],
   "skipped": [
     "qualtrics-automations-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "qualtrics-directories-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "qualtrics-distributions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
-    "qualtrics-eventsubscriptions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "qualtrics-event-subscriptions-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "qualtrics-file-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "qualtrics-files-api-openapi.yml: previously refined output, superseded by openapi/_original/",
     "qualtrics-survey-definitions-api-openapi.yml: previously refined output, superseded by openapi/_original/"
