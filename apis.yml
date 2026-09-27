@@ -47,7 +47,7 @@ tags:
   - REST API
 apis:
 - aid: qualtrics:qualtrics-automations-api
-  name: Qualtrics automations API
+  name: Qualtrics Automations API
   description: The automations API from Qualtrics — 1 operation(s) for automations.
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
@@ -160,7 +160,7 @@ apis:
     url: >-
       https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
 - aid: qualtrics:qualtrics-file-api
-  name: Qualtrics file API
+  name: Qualtrics File API
   description: The file API from Qualtrics — 3 operation(s) for file.
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/
@@ -199,7 +199,7 @@ apis:
     url: >-
       https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
 - aid: qualtrics:qualtrics-files-api
-  name: Qualtrics files API
+  name: Qualtrics Files API
   description: The files API from Qualtrics — 1 operation(s) for files.
   humanURL: https://api.qualtrics.com/
   baseURL: https://yourdatacenterid.qualtrics.com/API/v3/

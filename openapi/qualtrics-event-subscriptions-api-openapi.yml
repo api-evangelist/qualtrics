@@ -131,27 +131,6 @@ paths:
     servers:
     - url: https://fra1.qualtrics.com/API/v3
 components:
-  parameters:
-    SubscriptionId:
-      name: SubscriptionId
-      required: true
-      in: path
-      schema:
-        type: string
-  requestBodies:
-    SubscribeToEventBody:
-      required: true
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              topics:
-                type: string
-              publicationUrl:
-                type: string
-              encrypt:
-                type: boolean
   schemas:
     EventSubscriptionHookSchema:
       type: object
@@ -244,6 +223,27 @@ components:
       required:
       - $content-type
       - $content
+  requestBodies:
+    SubscribeToEventBody:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              topics:
+                type: string
+              publicationUrl:
+                type: string
+              encrypt:
+                type: boolean
+  parameters:
+    SubscriptionId:
+      name: SubscriptionId
+      required: true
+      in: path
+      schema:
+        type: string
   securitySchemes:
     QualtricsAPIKeyAuth:
       type: apiKey

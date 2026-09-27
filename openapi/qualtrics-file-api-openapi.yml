@@ -137,79 +137,32 @@ paths:
                 type: string
                 format: binary
 components:
-  responses:
-    success:
-      description: Success
-      content:
-        application/json:
-          schema:
-            type: object
-            required:
-            - meta
-            properties:
-              meta:
-                $ref: '#/components/schemas/meta'
-        text/plain; charset=utf-8:
-          schema:
-            type: object
-            required:
-            - meta
-            properties:
-              meta:
-                $ref: '#/components/schemas/meta'
-  schemas:
-    meta:
-      example:
-        httpStatus: 200 - OK
-      type: object
-      required:
-      - httpStatus
-      - requestId
-      properties:
-        httpStatus:
-          type: string
-          description: 'Always of the format `{X} - {Y}`,
-
-            where `{X}` is the associated HTTP status code,
-
-            and `{Y}` is a human readable explanation of the status code.
-
-            '
-        error:
-          type: object
-          description: Only given if an error occurred during the request.
-          required:
-          - errorMessage
-          - errorCode
-          properties:
-            errorMessage:
-              type: string
-              description: A human readable explanation of the error.
-            errorCode:
-              type: string
-              description: An identifying code associated with the error.
-        requestId:
-          type: string
-          description: A transaction id associated with the request.
-    fileId:
-      example: AFL_123456789012345
-      type: string
-      description: 'The file''s unique Id.
+  parameters:
+    automationIdPath:
+      name: automationId
+      in: path
+      description: 'Id of the associated automation.
 
 
-        Since multiple files may share the same name, the id is used to identify a particular file.
+        **Example**: `AU_123456789012345`
 
-
-        Multiple files may share the same name if
-
-        * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
-
-        * They have different processed or archived date/times.
+        '
+      required: true
+      schema:
+        type: string
+    fileIdPath:
+      name: fileId
+      in: path
+      description: 'Id of the associated file.
 
 
         **Example**: `AFL_123456789012345`
 
         '
+      required: true
+      schema:
+        type: string
+  schemas:
     metawarn:
       example:
         httpStatus: 200 - OK
@@ -260,31 +213,78 @@ components:
             warningCode:
               type: string
               description: An identifying code associated with the warning.
-  parameters:
-    fileIdPath:
-      name: fileId
-      in: path
-      description: 'Id of the associated file.
+    fileId:
+      example: AFL_123456789012345
+      type: string
+      description: 'The file''s unique Id.
+
+
+        Since multiple files may share the same name, the id is used to identify a particular file.
+
+
+        Multiple files may share the same name if
+
+        * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
+
+        * They have different processed or archived date/times.
 
 
         **Example**: `AFL_123456789012345`
 
         '
-      required: true
-      schema:
-        type: string
-    automationIdPath:
-      name: automationId
-      in: path
-      description: 'Id of the associated automation.
+    meta:
+      example:
+        httpStatus: 200 - OK
+      type: object
+      required:
+      - httpStatus
+      - requestId
+      properties:
+        httpStatus:
+          type: string
+          description: 'Always of the format `{X} - {Y}`,
 
+            where `{X}` is the associated HTTP status code,
 
-        **Example**: `AU_123456789012345`
+            and `{Y}` is a human readable explanation of the status code.
 
-        '
-      required: true
-      schema:
-        type: string
+            '
+        error:
+          type: object
+          description: Only given if an error occurred during the request.
+          required:
+          - errorMessage
+          - errorCode
+          properties:
+            errorMessage:
+              type: string
+              description: A human readable explanation of the error.
+            errorCode:
+              type: string
+              description: An identifying code associated with the error.
+        requestId:
+          type: string
+          description: A transaction id associated with the request.
+  responses:
+    success:
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            required:
+            - meta
+            properties:
+              meta:
+                $ref: '#/components/schemas/meta'
+        text/plain; charset=utf-8:
+          schema:
+            type: object
+            required:
+            - meta
+            properties:
+              meta:
+                $ref: '#/components/schemas/meta'
   securitySchemes:
     API_Token:
       type: apiKey

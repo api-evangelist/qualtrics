@@ -59,14 +59,14 @@ components:
       schema:
         type: string
         example: application/json
-    DirectoryId:
-      name: DirectoryId
+    MailingListId:
+      name: MailingListId
       required: true
       in: path
       schema:
         type: string
-    MailingListId:
-      name: MailingListId
+    DirectoryId:
+      name: DirectoryId
       required: true
       in: path
       schema:
