@@ -100,14 +100,6 @@ paths:
           description: API version to use - default v3
 components:
   parameters:
-    DistributionId:
-      name: DistributionId
-      in: path
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: DistributionId
     DistributionSurveyId:
       name: surveyId
       in: query
@@ -116,58 +108,15 @@ components:
       schema:
         type: string
         example: SV_123
+    DistributionId:
+      name: DistributionId
+      in: path
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: DistributionId
   schemas:
-    RetrieveDistributionLinksResponse:
-      type: object
-      properties:
-        result:
-          type: object
-          properties:
-            elements:
-              type: array
-              items:
-                type: object
-                properties:
-                  contactId:
-                    type: string
-                  transactionId: {}
-                  link:
-                    type: string
-                  exceededContactFrequency:
-                    type: boolean
-                  linkExpiration:
-                    type: string
-                  status:
-                    type: string
-                  lastName:
-                    type: string
-                  firstName:
-                    type: string
-                  externalDataReference: {}
-                  email:
-                    type: string
-                  unsubscribed:
-                    type: boolean
-                required:
-                - contactId
-                - transactionId
-                - link
-                - exceededContactFrequency
-                - linkExpiration
-                - status
-                - lastName
-                - firstName
-                - externalDataReference
-                - email
-                - unsubscribed
-            nextPage: {}
-        meta:
-          type: object
-          properties:
-            httpStatus:
-              type: string
-            requestId:
-              type: string
     DistributionsResponse:
       type: object
       properties:
@@ -268,6 +217,57 @@ components:
                 - surveyLink
                 - embeddedData
                 - stats
+            nextPage: {}
+        meta:
+          type: object
+          properties:
+            httpStatus:
+              type: string
+            requestId:
+              type: string
+    RetrieveDistributionLinksResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            elements:
+              type: array
+              items:
+                type: object
+                properties:
+                  contactId:
+                    type: string
+                  transactionId: {}
+                  link:
+                    type: string
+                  exceededContactFrequency:
+                    type: boolean
+                  linkExpiration:
+                    type: string
+                  status:
+                    type: string
+                  lastName:
+                    type: string
+                  firstName:
+                    type: string
+                  externalDataReference: {}
+                  email:
+                    type: string
+                  unsubscribed:
+                    type: boolean
+                required:
+                - contactId
+                - transactionId
+                - link
+                - exceededContactFrequency
+                - linkExpiration
+                - status
+                - lastName
+                - firstName
+                - externalDataReference
+                - email
+                - unsubscribed
             nextPage: {}
         meta:
           type: object

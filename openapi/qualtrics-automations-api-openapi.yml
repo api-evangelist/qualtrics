@@ -51,6 +51,18 @@ paths:
                   meta:
                     $ref: '#/components/schemas/meta'
 components:
+  parameters:
+    offset:
+      name: offset
+      in: query
+      required: false
+      description: 'The starting offset for the returned records. The default offset is 0.
+
+        '
+      schema:
+        type: integer
+        format: int32
+        minimum: 0
   schemas:
     meta:
       example:
@@ -85,18 +97,6 @@ components:
         requestId:
           type: string
           description: A transaction id associated with the request.
-  parameters:
-    offset:
-      name: offset
-      in: query
-      required: false
-      description: 'The starting offset for the returned records. The default offset is 0.
-
-        '
-      schema:
-        type: integer
-        format: int32
-        minimum: 0
   securitySchemes:
     API_Token:
       type: apiKey
