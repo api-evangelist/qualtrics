@@ -312,6 +312,9 @@ apis:
     url: >-
       https://www.postman.com/qualtrics-public-apis/qualtrics-public-workspace/documentation/e4q8a25/qualtrics-rest-api
 common:
+  - type: CapabilityMap
+    url: capabilities/qualtrics-capability-edges.yml
+    name: Qualtrics Business Capability Map
   - type: AgenticAccess
     url: agentic-access/qualtrics-agentic-access.yml
   - type: TrustCenter

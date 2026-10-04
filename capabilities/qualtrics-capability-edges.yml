@@ -1,0 +1,39 @@
+slug: qualtrics
+provider: Qualtrics
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Software & Technology
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Distributions
+  spec_file: qualtrics-distributions-api-openapi.yml
+  capability_id: BC-430.50
+  capability_id_l1: BC-430
+  capability_name: Customer Feedback Management
+  confidence: 0.75
+  evidence: POST /distributions "Generate distribution links for a given survey"; GET /distributions "Get
+    distributions for a given survey"
+  reason: Operations create and retrieve survey distributions and distribution links — the mechanism by
+    which surveys reach respondents. That is survey/voice-of-customer programme execution, which maps
+    to Customer Feedback Management. Some residual ambiguity because Qualtrics surveys also serve employee
+    and brand programmes, so the L2 fit is good but not certain.
+- tag: Event Subscriptions
+  spec_file: qualtrics-event-subscriptions-api-openapi.yml
+  capability_id: BC-4270.80
+  capability_id_l1: BC-4270
+  capability_name: Webhook & Event Subscription Management
+  confidence: 0.7
+  evidence: POST /eventsubscriptions/ webhook-trigger "Subscribe to response event"; DELETE /eventsubscriptions/
+    "Remove subscription to response event"; schema EventSubscriptionHookSchema
+  reason: The operations manage the lifecycle of outbound webhook/event subscriptions (subscribe, delete,
+    list), which is exactly the Webhook & Event Subscription Management sub-capability of a SaaS developer
+    platform. Confidence moderated because this is arguably pure integration plumbing rather than a managed
+    business capability.
