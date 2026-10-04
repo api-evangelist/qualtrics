@@ -51,14 +51,6 @@ paths:
           description: API version to use - default v3
 components:
   parameters:
-    Content-Type:
-      name: Content-Type
-      in: header
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: application/json
     DirectoryId:
       name: DirectoryId
       required: true
@@ -71,6 +63,14 @@ components:
       in: path
       schema:
         type: string
+    Content-Type:
+      name: Content-Type
+      in: header
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: application/json
   requestBodies:
     CreateContactInMailingList:
       required: true

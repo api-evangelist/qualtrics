@@ -137,51 +137,7 @@ paths:
                 type: string
                 format: binary
 components:
-  parameters:
-    fileIdPath:
-      name: fileId
-      in: path
-      description: 'Id of the associated file.
-
-
-        **Example**: `AFL_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
-    automationIdPath:
-      name: automationId
-      in: path
-      description: 'Id of the associated automation.
-
-
-        **Example**: `AU_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
   schemas:
-    fileId:
-      example: AFL_123456789012345
-      type: string
-      description: 'The file''s unique Id.
-
-
-        Since multiple files may share the same name, the id is used to identify a particular file.
-
-
-        Multiple files may share the same name if
-
-        * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
-
-        * They have different processed or archived date/times.
-
-
-        **Example**: `AFL_123456789012345`
-
-        '
     metawarn:
       example:
         httpStatus: 200 - OK
@@ -265,6 +221,50 @@ components:
         requestId:
           type: string
           description: A transaction id associated with the request.
+    fileId:
+      example: AFL_123456789012345
+      type: string
+      description: 'The file''s unique Id.
+
+
+        Since multiple files may share the same name, the id is used to identify a particular file.
+
+
+        Multiple files may share the same name if
+
+        * They have different tags; e.g. one file has no tags, one file is tagged for processing, one file is tagged as archived.
+
+        * They have different processed or archived date/times.
+
+
+        **Example**: `AFL_123456789012345`
+
+        '
+  parameters:
+    automationIdPath:
+      name: automationId
+      in: path
+      description: 'Id of the associated automation.
+
+
+        **Example**: `AU_123456789012345`
+
+        '
+      required: true
+      schema:
+        type: string
+    fileIdPath:
+      name: fileId
+      in: path
+      description: 'Id of the associated file.
+
+
+        **Example**: `AFL_123456789012345`
+
+        '
+      required: true
+      schema:
+        type: string
   responses:
     success:
       description: Success

@@ -53,18 +53,6 @@ paths:
                     $ref: '#/components/schemas/meta'
 components:
   parameters:
-    automationIdPath:
-      name: automationId
-      in: path
-      description: 'Id of the associated automation.
-
-
-        **Example**: `AU_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
     tag:
       name: tag
       in: query
@@ -76,6 +64,18 @@ components:
         * If equal to `archived`, the files that have been processed and archived by the automation will be returned.
 
         '
+      schema:
+        type: string
+    automationIdPath:
+      name: automationId
+      in: path
+      description: 'Id of the associated automation.
+
+
+        **Example**: `AU_123456789012345`
+
+        '
+      required: true
       schema:
         type: string
   schemas:
