@@ -1,3 +1,7 @@
+# Provenance stamped 2026-10-07 (roadmap#943): written by an API Evangelist sweep (undated — the file carries no date and git cannot supply one), not
+# harvested from the provider. `method: generated` so the economics campaign may replace it with a
+# dated, verbatim transcription; every figure below is unverified until it does.
+method: generated
 name: Qualtrics Plans and Pricing
 description: Pricing tiers and plans for the Qualtrics Experience Management platform and its APIs.
 url: https://www.qualtrics.com/pricing/
@@ -69,3 +73,44 @@ notes:
   - Average documented discount is approximately 11% off list price; multi-year discounts of 10-15% are achievable.
   - Usage overages are charged at $5.00 per response with no published volume discounts.
   - Premium support pricing is undisclosed; contact sales for details.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Free Account
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: Strategic Research
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: XM for Customer Experience
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: XM for Employee Experience
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
+  - name: XM for Strategy and Research
+    access: other
+    model: unstated
+    model_how: derived
+    units:
+    - other
+    periods: []
