@@ -62,3 +62,2050 @@
     detected: '2026-10-14'
   status: not-a-workflow
   arazzo: null
+- slug: qualtrics-edugain
+  label: eduGAIN
+  partner_name: eduGAIN
+  category: research and education identity federation
+  type: register
+  channel: standard-directory
+  evidence: https://technical.edugain.org/api.php?action=list_entities&type=sp&format=json
+  source: edge
+  relationship: network-participant
+  contract_reference:
+    network: eduGAIN (GÉANT interfederation)
+    spec_file: null
+    roles:
+    - service-provider
+    role: service-provider
+    federations:
+    - EDUGATE
+    - INCOMMON
+    matched_by: domain:qualtrics.com
+    entities:
+    - entity_id: https://akron.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://albany.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://american.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://amherst.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://appstatepsych.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://appstatepsych.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://au1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://augsburg.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://az1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://bates.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://baylor.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://boisestate.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://bostonu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://brandeis.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://bridgewater.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://brown.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://brown.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://bsu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ca1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cahnrswsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://calstatela.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://chpswtemple.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://co1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://coastal.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://colby.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://colby.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cornell.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cspluis.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csuci.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csueastbay.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csufedu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csulb.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csumb.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csusm.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csustan.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://csustan.us.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cuboulder.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cumc.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cumc.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://cumc360.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://dartmouth.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://duke.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://educationwsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://eheosu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://elon.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://escits.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://eu.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://explorationosu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://fandm.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://fandm.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://feinberg.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://fullerton.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://furman.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://gatech.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://georgetown.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://gmu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://gsu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://hamilton.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://hbs.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://hnd1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://iastate.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://indianacdc.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ipruc.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ischooluw.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://iu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://iulibraries.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://iup.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://iusb.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://jhmi.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://johnson.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://kstate.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://lafayettec.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://lehigh.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://lhr1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://mdanderson.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://memphis.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://miamioh.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://michigansoeei.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://micron.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://missouri.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://mit.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://mit360.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://mitresearch.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://montana.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://msu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://mtsu.ca1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://nau.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://nd.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://niu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://nursingjhu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://nyu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://odu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://oregon.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://oregonstate.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://oshkosh.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://osu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://oxfordsaid.eu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://pacificu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://pennstate.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://pitt.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://plu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://portlandstate.ca1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://purdue.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://qcorpshib.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://quni.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://riceuniversity.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://riceuniversity.us.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://richmond.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://rmit.asia.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://rutgers.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://salisbury.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sanjosestate.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sdsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sesp.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sfsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sfsu.us.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://shibtest.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://shsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sin1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sjsu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://skidmore.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://smithcollege.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://smu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://soka.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sonoma.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sou.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sou.us.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://sphps360.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotest2ut1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotest4az1.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotest8az1.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotestco1.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotesteu.eu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: EDUGATE
+      display_name: Qualtrics
+      entity_categories: null
+      sirtfi: false
+      coco: true
+    - entity_id: https://ssotesting.ut1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotestut1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ssotestut3.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stanfordmedicine.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stanforduniversity.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stedwards.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stonybrook360.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stonybrookuniversity.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://stonybrookuniversity.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://templecs.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://tgas.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-em
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://tourocollege.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://tufts.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://txstate.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uacba.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uaex.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uaex.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/saml2-acs.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uarizona.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucdavis.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucf.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uchicago.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucla.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucmerced.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucop.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucsd.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucsf.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ucsf.us.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://ufl.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uic.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uicbusiness360.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uicehs360.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uidaho.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uiowa.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uisits.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umassboston.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-tr
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umbc.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umbc.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umd.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umiami.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umiami.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umich.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umichpsych.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umichta.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umkc.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umn.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umncarlson.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umnhr360.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://umt.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uncg.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uncp.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uncp.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uncsa.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uni.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://unibodisa.eu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://unomaha.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://upenn.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://upenn.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://upenngse.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://upenngse.us2.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://upennira.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://usc.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uta.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://utdallas.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://utexas.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://utexasengr.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uvu.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwb.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uweducation.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwmadison.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwplatteville.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwstout.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwt.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://uwwhitewater.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://virginia.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://virginia.ca1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://virginia.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://virginia.ut1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://virginiahsd.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wakeforest.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://weberbus.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://weillcornell.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://weinberg.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wentworth.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wmichcas.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wmsas.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wmsurveys.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wooster.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wpi.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wsu.co1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wwu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/default-sp
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://wwu.az1.qualtrics.com/WRSAML/simplesaml/www/module.php/saml/sp/metadata.php/sp-us
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    - entity_id: https://yul1.qualtrics.com
+      role: service-provider
+      federation: INCOMMON
+      display_name: Qualtrics Labs, Inc.
+      entity_categories:
+      - '43'
+      - '76'
+      sirtfi: true
+      coco: true
+    detected_by: sweep-higher-ed.py
+    detected: '2026-10-15'
+  status: not-a-workflow
+  arazzo: null
