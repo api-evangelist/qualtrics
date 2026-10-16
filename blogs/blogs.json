@@ -2,6 +2,13 @@
   "repo": "qualtrics",
   "feeds": [
     {
+      "source": "https://www.qualtrics.com/blog/",
+      "feed_url": "https://www.qualtrics.com/blog/",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    },
+    {
       "source": "https://www.linkedin.com/company/qualtrics",
       "feed_url": "https://www.linkedin.com/company/qualtrics",
       "title": "",
@@ -10,7 +17,7 @@
     }
   ],
   "post_count": 3,
-  "fetched": "2026-10-03T12:30:02Z",
+  "fetched": "2026-10-10T13:15:00Z",
   "agent_pulled": "2026-07-04",
   "feed_nature": "undetermined",
   "feed_nature_basis": null,
