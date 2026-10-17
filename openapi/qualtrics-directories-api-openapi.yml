@@ -50,27 +50,6 @@ paths:
           default: v3
           description: API version to use - default v3
 components:
-  parameters:
-    DirectoryId:
-      name: DirectoryId
-      required: true
-      in: path
-      schema:
-        type: string
-    MailingListId:
-      name: MailingListId
-      required: true
-      in: path
-      schema:
-        type: string
-    Content-Type:
-      name: Content-Type
-      in: header
-      required: true
-      style: simple
-      schema:
-        type: string
-        example: application/json
   requestBodies:
     CreateContactInMailingList:
       required: true
@@ -87,6 +66,27 @@ components:
                 type: string
               unsubscribed:
                 type: boolean
+  parameters:
+    MailingListId:
+      name: MailingListId
+      required: true
+      in: path
+      schema:
+        type: string
+    DirectoryId:
+      name: DirectoryId
+      required: true
+      in: path
+      schema:
+        type: string
+    Content-Type:
+      name: Content-Type
+      in: header
+      required: true
+      style: simple
+      schema:
+        type: string
+        example: application/json
   schemas:
     CreateContactInMailingList:
       type: object

@@ -137,6 +137,31 @@ paths:
                 type: string
                 format: binary
 components:
+  parameters:
+    automationIdPath:
+      name: automationId
+      in: path
+      description: 'Id of the associated automation.
+
+
+        **Example**: `AU_123456789012345`
+
+        '
+      required: true
+      schema:
+        type: string
+    fileIdPath:
+      name: fileId
+      in: path
+      description: 'Id of the associated file.
+
+
+        **Example**: `AFL_123456789012345`
+
+        '
+      required: true
+      schema:
+        type: string
   schemas:
     metawarn:
       example:
@@ -240,31 +265,6 @@ components:
         **Example**: `AFL_123456789012345`
 
         '
-  parameters:
-    automationIdPath:
-      name: automationId
-      in: path
-      description: 'Id of the associated automation.
-
-
-        **Example**: `AU_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
-    fileIdPath:
-      name: fileId
-      in: path
-      description: 'Id of the associated file.
-
-
-        **Example**: `AFL_123456789012345`
-
-        '
-      required: true
-      schema:
-        type: string
   responses:
     success:
       description: Success

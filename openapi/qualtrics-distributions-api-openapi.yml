@@ -116,80 +116,7 @@ components:
       schema:
         type: string
         example: SV_123
-  requestBodies:
-    CreateDistributionLinks:
-      required: true
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              surveyId:
-                type: string
-              linkType:
-                type: string
-              description:
-                type: string
-              action:
-                type: string
-                default: CreateDistribution
-              expirationDate:
-                type: string
-                example: '2021-01-21 00:00:00'
-              mailingListId:
-                type: string
   schemas:
-    RetrieveDistributionLinksResponse:
-      type: object
-      properties:
-        result:
-          type: object
-          properties:
-            elements:
-              type: array
-              items:
-                type: object
-                properties:
-                  contactId:
-                    type: string
-                  transactionId: {}
-                  link:
-                    type: string
-                  exceededContactFrequency:
-                    type: boolean
-                  linkExpiration:
-                    type: string
-                  status:
-                    type: string
-                  lastName:
-                    type: string
-                  firstName:
-                    type: string
-                  externalDataReference: {}
-                  email:
-                    type: string
-                  unsubscribed:
-                    type: boolean
-                required:
-                - contactId
-                - transactionId
-                - link
-                - exceededContactFrequency
-                - linkExpiration
-                - status
-                - lastName
-                - firstName
-                - externalDataReference
-                - email
-                - unsubscribed
-            nextPage: {}
-        meta:
-          type: object
-          properties:
-            httpStatus:
-              type: string
-            requestId:
-              type: string
     DistributionsResponse:
       type: object
       properties:
@@ -298,6 +225,57 @@ components:
               type: string
             requestId:
               type: string
+    RetrieveDistributionLinksResponse:
+      type: object
+      properties:
+        result:
+          type: object
+          properties:
+            elements:
+              type: array
+              items:
+                type: object
+                properties:
+                  contactId:
+                    type: string
+                  transactionId: {}
+                  link:
+                    type: string
+                  exceededContactFrequency:
+                    type: boolean
+                  linkExpiration:
+                    type: string
+                  status:
+                    type: string
+                  lastName:
+                    type: string
+                  firstName:
+                    type: string
+                  externalDataReference: {}
+                  email:
+                    type: string
+                  unsubscribed:
+                    type: boolean
+                required:
+                - contactId
+                - transactionId
+                - link
+                - exceededContactFrequency
+                - linkExpiration
+                - status
+                - lastName
+                - firstName
+                - externalDataReference
+                - email
+                - unsubscribed
+            nextPage: {}
+        meta:
+          type: object
+          properties:
+            httpStatus:
+              type: string
+            requestId:
+              type: string
     CreateDistributionLinks:
       type: object
       properties:
@@ -315,6 +293,28 @@ components:
           example: '2021-01-21 00:00:00'
         mailingListId:
           type: string
+  requestBodies:
+    CreateDistributionLinks:
+      required: true
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              surveyId:
+                type: string
+              linkType:
+                type: string
+              description:
+                type: string
+              action:
+                type: string
+                default: CreateDistribution
+              expirationDate:
+                type: string
+                example: '2021-01-21 00:00:00'
+              mailingListId:
+                type: string
   securitySchemes:
     QualtricsAPIKeyAuth:
       type: apiKey
