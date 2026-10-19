@@ -2284,3 +2284,29 @@
   relationship: platform-app
   status: not-a-workflow
   arazzo: null
+- slug: qualtrics-genesys-own
+  label: Genesys (own)
+  partner: genesys
+  partner_name: Genesys (own)
+  category: businessOptimization|businessIntelligence
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://appfoundry.genesys.com/filter/genesyscloud/listing/0231db79-589f-4d6b-a6d6-60bf7b926327
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-zendesk-own
+  label: Zendesk (own)
+  partner: zendesk
+  partner_name: Zendesk (own)
+  category: Workflows
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.zendesk.com/marketplace/apps/support/1281932/qualtrics/
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
