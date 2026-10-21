@@ -2368,3 +2368,525 @@
     identity_note: wikidata P856 qualtrics.com for 'Qualtrics' (labelled identity step)
   status: not-a-workflow
   arazzo: null
+- slug: qualtrics-affectiva
+  label: Affectiva
+  partner: affectiva
+  partner_name: Affectiva
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/affectiva-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Affectiva
+    matched_domain: affectiva.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Affectiva Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q4688886 'Affectiva' P856 http://www.affectiva.com (identity_source wikidata P856,
+      labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-annex-cloud
+  label: Annex Cloud
+  partner: annex-cloud
+  partner_name: Annex Cloud
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/annex-cloud-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Annex Cloud
+    matched_domain: annexcloud.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Annex Cloud Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q140382421 'Annex Cloud' P856 https://www.annexcloud.com/ (identity_source wikidata
+      P856, labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-callminer
+  label: CallMiner
+  partner: callminer
+  partner_name: CallMiner
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/call-miner-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: CallMiner
+    matched_domain: callminer.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - CallMiner Voice Analytics Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q48976963 'CallMiner' P856 https://callminer.com/ (identity_source wikidata P856,
+      labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-contentsquare
+  label: Contentsquare
+  partner: contentsquare
+  partner_name: Contentsquare
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/contentsquare-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Contentsquare
+    matched_domain: contentsquare.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Contentsquare Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q86676634 'Contentsquare' P856 https://contentsquare.com (identity_source wikidata
+      P856, labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-datagrail
+  label: DataGrail
+  partner: datagrail
+  partner_name: DataGrail
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/datagrail-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: DataGrail
+    matched_domain: datagrail.io
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - DataGrail Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q118390931 'DataGrail, Inc.' P856 https://www.datagrail.io/ (identity_source wikidata
+      P856, labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-korn-ferry
+  label: Korn Ferry
+  partner: korn-ferry
+  partner_name: Korn Ferry
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/korn-ferry-dei-compass/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Korn Ferry
+    matched_domain: kornferry.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Korn Ferry DEI Compass Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q1728446 'Korn Ferry' P856 https://www.kornferry.com/ (identity_source wikidata P856,
+      labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-reputation-com
+  label: Reputation.com
+  partner: reputation
+  partner_name: Reputation.com
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/reputation-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Reputation.com
+    matched_domain: reputation.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Reputation.com Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q7314762 'Reputation.com' P856 http://www.reputation.com/ (identity_source wikidata
+      P856, labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-sap
+  label: SAP
+  partner: sap
+  partner_name: SAP
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/sap-analytics-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: SAP
+    matched_domain: sap.com
+    matched_by: domain+name-among-holders
+    listings: 2
+    sample_apps:
+    - SAP Analytics Cloud Integration
+    - SAP Customer Experience Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q552581 'SAP' P856 https://www.sap.com/ (identity_source wikidata P856, labelled provenance
+      step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-tremendous
+  label: Tremendous
+  partner: tremendous
+  partner_name: Tremendous
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/tremendous-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Tremendous
+    matched_domain: tremendous.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Tremendous Integration
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q140281024 'Tremendous' P856 https://www.tremendous.com (identity_source wikidata
+      P856, labelled provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-twilio
+  label: Twilio
+  partner: twilio
+  partner_name: Twilio
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/twilio/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Twilio
+    matched_domain: twilio.com
+    matched_by: domain
+    listings: 1
+    sample_apps:
+    - Twilio
+    signal_note: one edge per (builder, platform); listings and badges are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: wikidata Q7858039 'Twilio' P856 http://www.twilio.com/ (identity_source wikidata P856, labelled
+      provenance step)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-asknicely
+  label: AskNicely
+  partner: asknicely
+  partner_name: AskNicely
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/asknicely/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: AskNicely
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'asknicely' = asknicely; no wikidata P856
+    listings: 1
+    sample_apps:
+    - AskNicely Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-awardco
+  label: Awardco
+  partner: awardco
+  partner_name: Awardco
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/awardco/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Awardco
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'awardco' = awardco; no wikidata P856
+    listings: 1
+    sample_apps:
+    - Awardco Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-fullstory
+  label: Fullstory
+  partner: fullstory
+  partner_name: Fullstory
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/fullstory-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Fullstory
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'fullstory' = fullstory; no wikidata P856
+    listings: 1
+    sample_apps:
+    - Fullstory Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-logrocket
+  label: LogRocket
+  partner: logrocket
+  partner_name: LogRocket
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/knowledgehound-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: LogRocket
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'logrocket' = logrocket; no wikidata P856
+    listings: 2
+    sample_apps:
+    - KnowledgeHound Integration
+    - LogRocket Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-lakeside-software
+  label: Lakeside Software
+  partner: lakeside-software
+  partner_name: Lakeside Software
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/lakeside-software/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Lakeside Software
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'lakesidesoftware' = lakeside-software; no wikidata P856
+    listings: 1
+    sample_apps:
+    - Lakeside Software Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-quantum-metric
+  label: Quantum Metric
+  partner: quantum-metric
+  partner_name: Quantum Metric
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/quantum-metric-integration/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: Quantum Metric
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'quantummetric' = quantum-metric; no wikidata P856
+    listings: 1
+    sample_apps:
+    - Quantum Metric Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-reviewtrackers
+  label: ReviewTrackers
+  partner: reviewtrackers
+  partner_name: ReviewTrackers
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/reviewtrackers/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: ReviewTrackers
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'reviewtrackers' = reviewtrackers; no wikidata P856
+    listings: 1
+    sample_apps:
+    - ReviewTrackers Integration
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
+- slug: qualtrics-usertesting
+  label: UserTesting
+  partner: usertesting
+  partner_name: UserTesting
+  category: Integration
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://www.qualtrics.com/marketplace/usertesting/
+  source: edge
+  relationship: platform-app
+  contract_reference:
+    register: Qualtrics XM Marketplace (qualtrics.com/marketplace, sitemap -> listing pages, 'Created by')
+    spec_file: null
+    role: qualtrics-app
+    registered_name: UserTesting
+    matched_domain: null
+    matched_by: register-name
+    register_name_note: register-name 'usertesting' = usertesting; no wikidata P856
+    listings: 1
+    sample_apps:
+    - UserTesting
+    signal_note: one edge per (builder, platform); listings are context, never read
+    detected_by: sweep-surveys-research.py
+    detected: '2026-10-20'
+    identity_source: register-name
+    identity_note: register gave only the name; exact normalised match to the repo's apis.yml name, one repo, Wikidata
+      P856 not contradicting (Kin 2026-10-20 decision 2)
+  status: not-a-workflow
+  arazzo: null
