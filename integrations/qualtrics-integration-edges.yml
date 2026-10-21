@@ -28,6 +28,11 @@ checked:
 - https://www.indexventures.com/companies/
 - https://www.sequoiacap.com/our-companies/
 - https://www.sequoiacap.com/sitemap.xml
+- https://cdn.cocoapods.org/all_pods.txt
+- https://cert.appdefensealliance.org/certifications
+- https://play.google.com/sdks
+- https://search.maven.org/solrsearch/select
+- google-play/integrations/google-play-integration-edges.yml
 marketplace_apps:
 - marketplace: own
   channel: partner-built
@@ -86,84 +91,6 @@ edges:
     builder: unknown (not in the directory record)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: Microsoft Teams (own)
-  partner: microsoft-teams
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://appsource.microsoft.com/en-us/product/office/WA200002454
-  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
-  apps:
-  - Qualtrics
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Microsoft Teams app
-  publisher_verified:
-  - Microsoft 365 Certified
-- partner_name: Slack (own)
-  partner: slack
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://slack.com/marketplace/AN0G1JK36-qualtrics
-  mirror_of: slack/integrations/slack-integration-edges.yml
-  apps:
-  - Qualtrics
-  listing_count: 1
-  detected: '2026-10-18'
-  detected_by: mirror-platform-listings.py
-  category: Slack app
-- partner_name: Genesys (own)
-  partner: genesys
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://appfoundry.genesys.com/filter/genesyscloud/listing/0231db79-589f-4d6b-a6d6-60bf7b926327
-  mirror_of: genesys/integrations/genesys-integration-edges.yml
-  apps:
-  - Qualtrics
-  listing_count: 1
-  detected: '2026-10-19'
-  detected_by: mirror-platform-listings.py
-  category: businessOptimization|businessIntelligence
-  publisher_verified:
-  - attestation:fedramp
-  - attestation:gdpr
-  - attestation:hipaa
-  - attestation:hitrust
-  - attestation:iso
-  - attestation:pci
-  - attestation:soc2
-- partner_name: Zendesk (own)
-  partner: zendesk
-  partner_match: mirror
-  mirror_match: domain
-  type: marketplace
-  relationship: platform-app
-  direction: third-party
-  channel: partner-built
-  marketplace: own
-  evidence: https://www.zendesk.com/marketplace/apps/support/1281932/qualtrics/
-  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
-  apps:
-  - Qualtrics
-  listing_count: 1
-  detected: '2026-10-19'
-  detected_by: mirror-platform-listings.py
-  category: Workflows
 - partner_name: Twilio Segment
   partner: segment
   partner_match: aggregator
@@ -2997,6 +2924,137 @@ edges:
     detected: '2026-10-21'
   detected_by: sweep-vc-portfolios.py
   first_seen: '2026-10-21'
+- partner_name: CocoaPods trunk
+  partner: null
+  partner_match: register
+  type: register
+  channel: package-registry
+  relationship: distribution-channel
+  direction: provider-built
+  evidence: https://cocoapods.org/pods/Qualtrics
+  category: iOS SDK (CocoaPods)
+  contract_reference:
+    register: CocoaPods trunk (cdn.cocoapods.org Specs; github.com/CocoaPods/Specs)
+    spec_file: null
+    role: cocoapods-publisher
+    registered_name: Qualtrics
+    matched_domain: qualtrics.com
+    matched_by: domain
+    pods:
+    - pod: Qualtrics
+      version: 2.40.0
+      homepage: https://api.qualtrics.com
+      deprecated: false
+    - pod: QualtricsDXA
+      version: 0.4.2
+      homepage: https://api.qualtrics.com
+      deprecated: false
+    - pod: QualtricsExperience
+      version: 0.9.0
+      homepage: https://api.qualtrics.com
+      deprecated: false
+    signal_note: latest podspec homepage (domain) + authors (name); pods, versions and counts are context
+    detected_by: sweep-mobile-sdk-index.py
+    detected: '2026-10-21'
+  detected_by: sweep-mobile-sdk-index.py
+  first_seen: '2026-10-21'
+- partner_name: Microsoft Teams (own)
+  partner: microsoft-teams
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://appsource.microsoft.com/en-us/product/office/WA200002454
+  mirror_of: microsoft-teams/integrations/microsoft-teams-integration-edges.yml
+  apps:
+  - Qualtrics
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Microsoft Teams app
+  publisher_verified:
+  - Microsoft 365 Certified
+- partner_name: Slack (own)
+  partner: slack
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://slack.com/marketplace/AN0G1JK36-qualtrics
+  mirror_of: slack/integrations/slack-integration-edges.yml
+  apps:
+  - Qualtrics
+  listing_count: 1
+  detected: '2026-10-18'
+  detected_by: mirror-platform-listings.py
+  category: Slack app
+- partner_name: Genesys (own)
+  partner: genesys
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://appfoundry.genesys.com/filter/genesyscloud/listing/0231db79-589f-4d6b-a6d6-60bf7b926327
+  mirror_of: genesys/integrations/genesys-integration-edges.yml
+  apps:
+  - Qualtrics
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+  category: businessOptimization|businessIntelligence
+  publisher_verified:
+  - attestation:fedramp
+  - attestation:gdpr
+  - attestation:hipaa
+  - attestation:hitrust
+  - attestation:iso
+  - attestation:pci
+  - attestation:soc2
+- partner_name: Zendesk (own)
+  partner: zendesk
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://www.zendesk.com/marketplace/apps/support/1281932/qualtrics/
+  mirror_of: zendesk/integrations/zendesk-integration-edges.yml
+  apps:
+  - Qualtrics
+  listing_count: 1
+  detected: '2026-10-19'
+  detected_by: mirror-platform-listings.py
+  category: Workflows
+- partner_name: Google Play Developer (Google Play SDK Index)
+  partner: google-play
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: Google Play SDK Index
+  evidence: https://play.google.com/sdks/details/com-qualtrics-digital
+  mirror_of: google-play/integrations/google-play-integration-edges.yml
+  apps:
+  - Qualtrics Website/App Feedback Android SDK
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: mobile SDK (analytics)
+  publisher_verified:
+  - Registered in Google Play SDK Console
 source:
 - https://docs.mparticle.com/integrations/qualtrics/event/
 - https://hightouch.com/docs/destinations/qualtrics
