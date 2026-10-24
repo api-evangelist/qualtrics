@@ -1,466 +1,469 @@
 {
+  "info": {
+    "_postman_id": "f7628911-28c1-42c3-b79d-bdf844f2efdf",
+    "name": "Automations Service File API",
+    "description": "# Introduction\n\nThe Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.\n\nContact Support:\n Name: Contact Qualtrics Support for more information.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:39:08.000Z",
+    "updatedAt": "2026-10-21T20:39:08.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-f7628911-28c1-42c3-b79d-bdf844f2efdf"
+  },
   "item": [
     {
-      "id": "5884888b-6f8b-4d0e-aa74-8f764259fe87",
-      "name": "file",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "automations",
       "item": [
         {
-          "id": "897f6465-0474-40cc-a3b7-462f564a9055",
-          "name": "Upload a File",
-          "request": {
-            "name": "Upload a File",
-            "description": {
-              "content": "Upload a file for the automation to consume.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "automations",
-                ":automationId",
-                "files"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                  "type": "any",
-                  "value": "{{apiRegion}}",
-                  "key": "apiRegion"
-                },
-                {
-                  "description": "API version to use - default v3",
-                  "type": "any",
-                  "value": "{{apiVersion}}",
-                  "key": "apiVersion"
-                }
-              ]
-            },
-            "method": "POST",
-            "auth": null
-          },
-          "response": [
+          "name": "{automationId}",
+          "item": [
             {
-              "id": "a8992605-ee19-4206-b542-c2bff8c192de",
-              "name": "File Id",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "automations",
-                    ":automationId",
-                    "files"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                      "type": "any",
-                      "value": "{{apiRegion}}",
-                      "key": "apiRegion"
-                    },
-                    {
-                      "description": "API version to use - default v3",
-                      "type": "any",
-                      "value": "{{apiVersion}}",
-                      "key": "apiVersion"
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "X-API-TOKEN",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "POST",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
+              "name": "files",
+              "item": [
                 {
-                  "key": "Content-Type",
-                  "value": "text/plain"
+                  "name": "{fileId}",
+                  "item": [
+                    {
+                      "name": "content",
+                      "item": [
+                        {
+                          "name": "Get File Content",
+                          "id": "b9d9496e-c299-4419-83bf-7a750f056521",
+                          "protocolProfileBehavior": {
+                            "disableBodyPruning": true
+                          },
+                          "request": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "text/plain; charset=utf-8"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/automations/:automationId/files/:fileId/content",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "automations",
+                                ":automationId",
+                                "files",
+                                ":fileId",
+                                "content"
+                              ],
+                              "variable": [
+                                {
+                                  "id": "4ccb4b41-2a63-405b-9423-f73a26bf480b",
+                                  "key": "automationId",
+                                  "value": "<string>",
+                                  "description": "(Required) Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+                                },
+                                {
+                                  "id": "da1df8fc-21e8-4862-9c18-8f765fc4ff9e",
+                                  "key": "fileId",
+                                  "value": "<string>",
+                                  "description": "(Required) Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+                                }
+                              ]
+                            },
+                            "description": "Download the file's content."
+                          },
+                          "response": [
+                            {
+                              "id": "ac1af17d-2f43-4729-b0d6-f9fefd3424e0",
+                              "name": "File Content",
+                              "originalRequest": {
+                                "method": "GET",
+                                "header": [
+                                  {
+                                    "key": "Accept",
+                                    "value": "text/plain; charset=utf-8"
+                                  }
+                                ],
+                                "url": {
+                                  "raw": "{{baseUrl}}/automations/:automationId/files/:fileId/content",
+                                  "host": [
+                                    "{{baseUrl}}"
+                                  ],
+                                  "path": [
+                                    "automations",
+                                    ":automationId",
+                                    "files",
+                                    ":fileId",
+                                    "content"
+                                  ],
+                                  "variable": [
+                                    {
+                                      "key": "automationId"
+                                    },
+                                    {
+                                      "key": "fileId"
+                                    }
+                                  ]
+                                }
+                              },
+                              "status": "OK",
+                              "code": 200,
+                              "_postman_previewlanguage": "text",
+                              "header": [
+                                {
+                                  "key": "Content-Type",
+                                  "value": "text/plain; charset=utf-8"
+                                }
+                              ],
+                              "cookie": [],
+                              "responseTime": null,
+                              "body": "<binary>",
+                              "createdAt": "2026-10-21T20:39:08.000Z",
+                              "updatedAt": "2026-10-21T20:39:08.000Z",
+                              "uid": "35240-ac1af17d-2f43-4729-b0d6-f9fefd3424e0"
+                            }
+                          ],
+                          "createdAt": "2026-10-21T20:39:08.000Z",
+                          "updatedAt": "2026-10-21T20:39:08.000Z",
+                          "uid": "35240-b9d9496e-c299-4419-83bf-7a750f056521"
+                        }
+                      ],
+                      "id": "f1a6c5e6-bda7-4396-bdd9-4363f1009dfd",
+                      "createdAt": "2026-10-21T20:39:08.000Z",
+                      "updatedAt": "2026-10-21T20:39:08.000Z",
+                      "uid": "35240-f1a6c5e6-bda7-4396-bdd9-4363f1009dfd"
+                    },
+                    {
+                      "name": "Get File Metadata",
+                      "id": "ffbcec4a-9c3f-40be-87d5-aaf9ffa23445",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/automations/:automationId/files/:fileId",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "automations",
+                            ":automationId",
+                            "files",
+                            ":fileId"
+                          ],
+                          "variable": [
+                            {
+                              "id": "c4504dc8-ea12-4f45-8d8e-bad53176ef92",
+                              "key": "automationId",
+                              "value": "<string>",
+                              "description": "(Required) Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+                            },
+                            {
+                              "id": "30028bd6-34b5-41d0-9091-0880a51e35fe",
+                              "key": "fileId",
+                              "value": "<string>",
+                              "description": "(Required) Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+                            }
+                          ]
+                        },
+                        "description": "Get the file's metadata."
+                      },
+                      "response": [
+                        {
+                          "id": "246ca760-6a74-4677-b5fa-e79d10aba863",
+                          "name": "File Metadata",
+                          "originalRequest": {
+                            "method": "GET",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/automations/:automationId/files/:fileId",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "automations",
+                                ":automationId",
+                                "files",
+                                ":fileId"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "automationId"
+                                },
+                                {
+                                  "key": "fileId"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n  \"result\": {\n    \"value\": \"reference file.yaml#/definitions/file not found in the OpenAPI spec\"\n  },\n  \"meta\": {\n    \"httpStatus\": \"<string>\",\n    \"requestId\": \"<string>\",\n    \"error\": {\n      \"errorMessage\": \"<string>\",\n      \"errorCode\": \"<string>\"\n    }\n  }\n}",
+                          "createdAt": "2026-10-21T20:39:08.000Z",
+                          "updatedAt": "2026-10-21T20:39:08.000Z",
+                          "uid": "35240-246ca760-6a74-4677-b5fa-e79d10aba863"
+                        }
+                      ],
+                      "createdAt": "2026-10-21T20:39:08.000Z",
+                      "updatedAt": "2026-10-21T20:39:08.000Z",
+                      "uid": "35240-ffbcec4a-9c3f-40be-87d5-aaf9ffa23445"
+                    },
+                    {
+                      "name": "Delete File",
+                      "id": "6c1b70aa-a971-4996-99d1-0a295e43374c",
+                      "protocolProfileBehavior": {
+                        "disableBodyPruning": true
+                      },
+                      "request": {
+                        "method": "DELETE",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/automations/:automationId/files/:fileId",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "automations",
+                            ":automationId",
+                            "files",
+                            ":fileId"
+                          ],
+                          "variable": [
+                            {
+                              "id": "e85ef0b1-93f4-4dec-bf1d-5d79acb58436",
+                              "key": "automationId",
+                              "value": "<string>",
+                              "description": "(Required) Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+                            },
+                            {
+                              "id": "af86dd78-861b-4cb3-8185-8ba3f1ead9cb",
+                              "key": "fileId",
+                              "value": "<string>",
+                              "description": "(Required) Id of the associated file.\n\n**Example**: `AFL_123456789012345`\n"
+                            }
+                          ]
+                        },
+                        "description": "Deletes the file."
+                      },
+                      "response": [
+                        {
+                          "id": "91facab5-3b3f-472e-bb5a-0dc6ab68c498",
+                          "name": "Success",
+                          "originalRequest": {
+                            "method": "DELETE",
+                            "header": [
+                              {
+                                "key": "Accept",
+                                "value": "application/json"
+                              }
+                            ],
+                            "url": {
+                              "raw": "{{baseUrl}}/automations/:automationId/files/:fileId",
+                              "host": [
+                                "{{baseUrl}}"
+                              ],
+                              "path": [
+                                "automations",
+                                ":automationId",
+                                "files",
+                                ":fileId"
+                              ],
+                              "variable": [
+                                {
+                                  "key": "automationId"
+                                },
+                                {
+                                  "key": "fileId"
+                                }
+                              ]
+                            }
+                          },
+                          "status": "OK",
+                          "code": 200,
+                          "_postman_previewlanguage": "json",
+                          "header": [
+                            {
+                              "key": "Content-Type",
+                              "value": "application/json"
+                            }
+                          ],
+                          "cookie": [],
+                          "responseTime": null,
+                          "body": "{\n  \"meta\": {\n    \"httpStatus\": \"<string>\",\n    \"requestId\": \"<string>\",\n    \"error\": {\n      \"errorMessage\": \"<string>\",\n      \"errorCode\": \"<string>\"\n    }\n  }\n}",
+                          "createdAt": "2026-10-21T20:39:08.000Z",
+                          "updatedAt": "2026-10-21T20:39:08.000Z",
+                          "uid": "35240-91facab5-3b3f-472e-bb5a-0dc6ab68c498"
+                        }
+                      ],
+                      "createdAt": "2026-10-21T20:39:08.000Z",
+                      "updatedAt": "2026-10-21T20:39:08.000Z",
+                      "uid": "35240-6c1b70aa-a971-4996-99d1-0a295e43374c"
+                    }
+                  ],
+                  "id": "0b6fa020-57e4-4cb9-a426-b14b13896929",
+                  "createdAt": "2026-10-21T20:39:08.000Z",
+                  "updatedAt": "2026-10-21T20:39:08.000Z",
+                  "uid": "35240-0b6fa020-57e4-4cb9-a426-b14b13896929"
+                },
+                {
+                  "name": "Upload a File",
+                  "id": "ccbf645d-9060-404f-9168-a5d505d6a9d9",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "multipart/form-data"
+                      },
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "formdata",
+                      "formdata": [
+                        {
+                          "description": "The file to upload.",
+                          "key": "file",
+                          "type": "file",
+                          "value": null
+                        }
+                      ]
+                    },
+                    "url": {
+                      "raw": "{{baseUrl}}/automations/:automationId/files",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "automations",
+                        ":automationId",
+                        "files"
+                      ],
+                      "variable": [
+                        {
+                          "id": "93f8bd2c-d41b-407f-8f55-6197c108608f",
+                          "key": "automationId",
+                          "value": "<string>",
+                          "description": "(Required) Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+                        }
+                      ]
+                    },
+                    "description": "Upload a file for the automation to consume."
+                  },
+                  "response": [
+                    {
+                      "id": "407c76c6-df72-444f-ae82-8fc4393baf13",
+                      "name": "File Id",
+                      "originalRequest": {
+                        "method": "POST",
+                        "header": [
+                          {
+                            "key": "Content-Type",
+                            "value": "multipart/form-data"
+                          },
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "body": {
+                          "mode": "formdata",
+                          "formdata": [
+                            {
+                              "description": "The file to upload.",
+                              "key": "file",
+                              "type": "file"
+                            }
+                          ]
+                        },
+                        "url": {
+                          "raw": "{{baseUrl}}/automations/:automationId/files",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "automations",
+                            ":automationId",
+                            "files"
+                          ],
+                          "variable": [
+                            {
+                              "key": "automationId"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n  \"result\": {\n    \"id\": \"<string>\"\n  },\n  \"meta\": {\n    \"httpStatus\": \"<string>\",\n    \"requestId\": \"<string>\",\n    \"error\": {\n      \"errorMessage\": \"<string>\",\n      \"errorCode\": \"<string>\"\n    },\n    \"warning\": {\n      \"warningMessage\": \"<string>\",\n      \"warningCode\": \"<string>\"\n    }\n  }\n}",
+                      "createdAt": "2026-10-21T20:39:08.000Z",
+                      "updatedAt": "2026-10-21T20:39:08.000Z",
+                      "uid": "35240-407c76c6-df72-444f-ae82-8fc4393baf13"
+                    }
+                  ],
+                  "createdAt": "2026-10-21T20:39:08.000Z",
+                  "updatedAt": "2026-10-21T20:39:08.000Z",
+                  "uid": "35240-ccbf645d-9060-404f-9168-a5d505d6a9d9"
                 }
               ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
+              "id": "e4edee92-8abf-44fa-a9d1-b47b29df0739",
+              "createdAt": "2026-10-21T20:39:08.000Z",
+              "updatedAt": "2026-10-21T20:39:08.000Z",
+              "uid": "35240-e4edee92-8abf-44fa-a9d1-b47b29df0739"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "a0ce777f-61a5-4baf-9c65-1c1a8d59a2f6",
-          "name": "Get File Metadata",
-          "request": {
-            "name": "Get File Metadata",
-            "description": {
-              "content": "Get the file's metadata.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "automations",
-                ":automationId",
-                "files",
-                ":fileId"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                  "type": "any",
-                  "value": "{{apiRegion}}",
-                  "key": "apiRegion"
-                },
-                {
-                  "description": "API version to use - default v3",
-                  "type": "any",
-                  "value": "{{apiVersion}}",
-                  "key": "apiVersion"
-                }
-              ]
-            },
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "8c688dd5-1cfb-4a76-8f7c-f70e819868f7",
-              "name": "File Metadata",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "automations",
-                    ":automationId",
-                    "files",
-                    ":fileId"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                      "type": "any",
-                      "value": "{{apiRegion}}",
-                      "key": "apiRegion"
-                    },
-                    {
-                      "description": "API version to use - default v3",
-                      "type": "any",
-                      "value": "{{apiVersion}}",
-                      "key": "apiVersion"
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "X-API-TOKEN",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "bb7779d6-e82f-4456-a6ed-40ae740ca12a",
-          "name": "Delete File",
-          "request": {
-            "name": "Delete File",
-            "description": {
-              "content": "Deletes the file.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "automations",
-                ":automationId",
-                "files",
-                ":fileId"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                  "type": "any",
-                  "value": "{{apiRegion}}",
-                  "key": "apiRegion"
-                },
-                {
-                  "description": "API version to use - default v3",
-                  "type": "any",
-                  "value": "{{apiVersion}}",
-                  "key": "apiVersion"
-                }
-              ]
-            },
-            "method": "DELETE",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "f3368785-3dd7-4f9b-bdbd-89c7ae507fd8",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "automations",
-                    ":automationId",
-                    "files",
-                    ":fileId"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                      "type": "any",
-                      "value": "{{apiRegion}}",
-                      "key": "apiRegion"
-                    },
-                    {
-                      "description": "API version to use - default v3",
-                      "type": "any",
-                      "value": "{{apiVersion}}",
-                      "key": "apiVersion"
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "X-API-TOKEN",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "DELETE",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
-        },
-        {
-          "id": "99cd7003-88f8-453c-9390-8acd786e9a9a",
-          "name": "Get File Content",
-          "request": {
-            "name": "Get File Content",
-            "description": {
-              "content": "Download the file's content.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "automations",
-                ":automationId",
-                "files",
-                ":fileId",
-                "content"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                  "type": "any",
-                  "value": "{{apiRegion}}",
-                  "key": "apiRegion"
-                },
-                {
-                  "description": "API version to use - default v3",
-                  "type": "any",
-                  "value": "{{apiVersion}}",
-                  "key": "apiVersion"
-                }
-              ]
-            },
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
-            {
-              "id": "7331faa7-ff37-4cc4-97da-d4b8bd0fc43e",
-              "name": "File Content",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "automations",
-                    ":automationId",
-                    "files",
-                    ":fileId",
-                    "content"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                      "type": "any",
-                      "value": "{{apiRegion}}",
-                      "key": "apiRegion"
-                    },
-                    {
-                      "description": "API version to use - default v3",
-                      "type": "any",
-                      "value": "{{apiVersion}}",
-                      "key": "apiVersion"
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "X-API-TOKEN",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
-                {
-                  "key": "Content-Type",
-                  "value": "text/plain"
-                }
-              ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
-            }
-          ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "id": "74ad6eae-4edd-476e-9e18-e08e74a81ed8",
+          "createdAt": "2026-10-21T20:39:08.000Z",
+          "updatedAt": "2026-10-21T20:39:08.000Z",
+          "uid": "35240-74ad6eae-4edd-476e-9e18-e08e74a81ed8"
         }
       ],
-      "event": []
+      "id": "aecad06c-ba02-4f79-95a0-4d08f9d2bbea",
+      "createdAt": "2026-10-21T20:39:08.000Z",
+      "updatedAt": "2026-10-21T20:39:08.000Z",
+      "uid": "35240-aecad06c-ba02-4f79-95a0-4d08f9d2bbea"
     }
   ],
-  "event": [],
   "variable": [
     {
-      "description": {
-        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-        "type": "text/plain"
-      },
-      "type": "any",
-      "value": "fra1",
-      "key": "apiRegion"
-    },
-    {
-      "description": {
-        "content": "API version to use - default v3",
-        "type": "text/plain"
-      },
-      "type": "any",
-      "value": "v3",
-      "key": "apiVersion"
-    },
-    {
-      "type": "string",
-      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
-      "key": "baseUrl"
+      "key": "baseUrl",
+      "value": "https://datacenterId.qualtrics.com/automations-file-service"
     }
-  ],
-  "auth": {
-    "type": "apikey",
-    "apikey": [
-      {
-        "key": "key",
-        "value": "X-API-TOKEN"
-      },
-      {
-        "key": "value",
-        "value": "{{apiKey}}"
-      },
-      {
-        "key": "in",
-        "value": "header"
-      }
-    ]
-  },
-  "info": {
-    "_postman_id": "5d3046f0-21e9-4177-9103-9f1a1e3a39d5",
-    "name": "Qualtrics automations file API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "Work with Qualtrics surveys, distributions and response events",
-      "type": "text/plain"
-    }
-  }
+  ]
 }

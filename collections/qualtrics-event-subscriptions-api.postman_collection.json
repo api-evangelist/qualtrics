@@ -1,0 +1,464 @@
+{
+  "info": {
+    "_postman_id": "66c86034-ddf6-4fb5-b043-29856d4cb414",
+    "name": "Qualtrics Eventsubscriptions API",
+    "description": "Operations tagged Eventsubscriptions across 2 of this provider's published API definitions: qualtrics-api-openapi-3.0.json, qualtrics-api-swagger-2.0.json. Each path carries the servers of the definition it was published in.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:39:24.000Z",
+    "updatedAt": "2026-10-21T20:39:24.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-66c86034-ddf6-4fb5-b043-29856d4cb414"
+  },
+  "item": [
+    {
+      "name": "eventsubscriptions",
+      "item": [
+        {
+          "name": "{SubscripionId}",
+          "item": [
+            {
+              "name": "Get event subscriptions",
+              "id": "2631a938-d564-4ad9-abce-07f6f846e817",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "apikey",
+                  "apikey": [
+                    {
+                      "key": "key",
+                      "value": "X-API-TOKEN",
+                      "type": "string"
+                    },
+                    {
+                      "key": "value",
+                      "value": "{{apiKey}}",
+                      "type": "string"
+                    },
+                    {
+                      "key": "in",
+                      "value": "header",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/eventsubscriptions/:SubscripionId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "eventsubscriptions",
+                    ":SubscripionId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "c6f64d86-cd78-438e-a794-e5157f2c7341",
+                      "key": "SubscripionId"
+                    },
+                    {
+                      "id": "b15ba208-b8a5-4822-9392-1cf7c08bddc0",
+                      "key": "SubscriptionId",
+                      "value": "<string>",
+                      "description": "(Required) "
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "0db961ba-6b44-4e2b-8c35-7f4d2d62dbd4",
+                  "name": "New Response",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      },
+                      {
+                        "description": "Added as a part of security scheme: apikey",
+                        "key": "X-API-TOKEN",
+                        "value": "<API Key>"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/eventsubscriptions/:SubscripionId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "eventsubscriptions",
+                        ":SubscripionId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "SubscripionId"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"<string>\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"<string>\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"<string>\",\n    \"httpStatus\": \"<string>\"\n  }\n}",
+                  "createdAt": "2026-10-21T20:39:24.000Z",
+                  "updatedAt": "2026-10-21T20:39:24.000Z",
+                  "uid": "35240-0db961ba-6b44-4e2b-8c35-7f4d2d62dbd4"
+                }
+              ],
+              "createdAt": "2026-10-21T20:39:24.000Z",
+              "updatedAt": "2026-10-21T20:39:24.000Z",
+              "uid": "35240-2631a938-d564-4ad9-abce-07f6f846e817"
+            }
+          ],
+          "id": "579f3c3b-bace-4814-bb7f-0180cca35c36",
+          "createdAt": "2026-10-21T20:39:24.000Z",
+          "updatedAt": "2026-10-21T20:39:24.000Z",
+          "uid": "35240-579f3c3b-bace-4814-bb7f-0180cca35c36"
+        },
+        {
+          "name": "{SubscriptionId}",
+          "item": [
+            {
+              "name": "Get event subscriptions",
+              "id": "10f7bea4-8743-4bca-b948-84506dee670c",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/eventsubscriptions/:SubscriptionId",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "eventsubscriptions",
+                    ":SubscriptionId"
+                  ],
+                  "variable": [
+                    {
+                      "id": "124028e0-cbda-4c1b-9d1f-369d20d4c75b",
+                      "key": "SubscriptionId",
+                      "value": "<string>",
+                      "description": "(Required) ID of event subscription - can be obtained from web hook response"
+                    }
+                  ]
+                }
+              },
+              "response": [
+                {
+                  "id": "522ba964-bf79-4932-80e0-cafdecee5620",
+                  "name": "Event subscriptions",
+                  "originalRequest": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/eventsubscriptions/:SubscriptionId",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "eventsubscriptions",
+                        ":SubscriptionId"
+                      ],
+                      "variable": [
+                        {
+                          "key": "SubscriptionId"
+                        }
+                      ]
+                    }
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "json",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "responseTime": null,
+                  "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"<string>\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"<string>\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"<string>\",\n    \"httpStatus\": \"<string>\"\n  }\n}",
+                  "createdAt": "2026-10-21T20:39:24.000Z",
+                  "updatedAt": "2026-10-21T20:39:24.000Z",
+                  "uid": "35240-522ba964-bf79-4932-80e0-cafdecee5620"
+                }
+              ],
+              "createdAt": "2026-10-21T20:39:24.000Z",
+              "updatedAt": "2026-10-21T20:39:24.000Z",
+              "uid": "35240-10f7bea4-8743-4bca-b948-84506dee670c"
+            }
+          ],
+          "id": "ac946cf8-f5a4-45e6-84d5-e00b32df663a",
+          "createdAt": "2026-10-21T20:39:24.000Z",
+          "updatedAt": "2026-10-21T20:39:24.000Z",
+          "uid": "35240-ac946cf8-f5a4-45e6-84d5-e00b32df663a"
+        },
+        {
+          "name": "Subscribe to response event",
+          "id": "e3d51ccd-5930-490f-8bb4-a91808fc9188",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "key",
+                  "value": "X-API-TOKEN",
+                  "type": "string"
+                },
+                {
+                  "key": "value",
+                  "value": "{{apiKey}}",
+                  "type": "string"
+                },
+                {
+                  "key": "in",
+                  "value": "header",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "headerFamily": "json",
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseUrl}}/eventsubscriptions/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "eventsubscriptions",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "47801e37-6ccd-4dcd-89ee-b03b0a4e137a",
+              "name": "New Response",
+              "originalRequest": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{}",
+                  "options": {
+                    "raw": {
+                      "headerFamily": "json",
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{baseUrl}}/eventsubscriptions/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "eventsubscriptions",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"<string>\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"<string>\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"<string>\",\n    \"httpStatus\": \"<string>\"\n  }\n}",
+              "createdAt": "2026-10-21T20:39:24.000Z",
+              "updatedAt": "2026-10-21T20:39:24.000Z",
+              "uid": "35240-47801e37-6ccd-4dcd-89ee-b03b0a4e137a"
+            }
+          ],
+          "createdAt": "2026-10-21T20:39:24.000Z",
+          "updatedAt": "2026-10-21T20:39:24.000Z",
+          "uid": "35240-e3d51ccd-5930-490f-8bb4-a91808fc9188"
+        },
+        {
+          "name": "Remove subscription to response event",
+          "id": "97190618-d3d2-4850-b684-8b633aa563e6",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "apikey",
+              "apikey": [
+                {
+                  "key": "key",
+                  "value": "X-API-TOKEN",
+                  "type": "string"
+                },
+                {
+                  "key": "value",
+                  "value": "{{apiKey}}",
+                  "type": "string"
+                },
+                {
+                  "key": "in",
+                  "value": "header",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "{{baseUrl}}/eventsubscriptions/",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "eventsubscriptions",
+                ""
+              ]
+            }
+          },
+          "response": [
+            {
+              "id": "c3b9cd29-604a-4216-8d5e-467741e8d2e9",
+              "name": "New Response",
+              "originalRequest": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  },
+                  {
+                    "description": "Added as a part of security scheme: apikey",
+                    "key": "X-API-TOKEN",
+                    "value": "<API Key>"
+                  }
+                ],
+                "url": {
+                  "raw": "{{baseUrl}}/eventsubscriptions/",
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "path": [
+                    "eventsubscriptions",
+                    ""
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "cookie": [],
+              "responseTime": null,
+              "body": "{\n  \"result\": {\n    \"result\": {\n      \"id\": \"<string>\"\n    },\n    \"meta\": {\n      \"httpStatus\": \"<string>\"\n    }\n  },\n  \"meta\": {\n    \"requestId\": \"<string>\",\n    \"httpStatus\": \"<string>\"\n  }\n}",
+              "createdAt": "2026-10-21T20:39:24.000Z",
+              "updatedAt": "2026-10-21T20:39:24.000Z",
+              "uid": "35240-c3b9cd29-604a-4216-8d5e-467741e8d2e9"
+            }
+          ],
+          "createdAt": "2026-10-21T20:39:24.000Z",
+          "updatedAt": "2026-10-21T20:39:24.000Z",
+          "uid": "35240-97190618-d3d2-4850-b684-8b633aa563e6"
+        }
+      ],
+      "id": "8891ce03-fd26-4624-9921-86552cb58c6f",
+      "createdAt": "2026-10-21T20:39:24.000Z",
+      "updatedAt": "2026-10-21T20:39:24.000Z",
+      "uid": "35240-8891ce03-fd26-4624-9921-86552cb58c6f"
+    }
+  ],
+  "variable": [
+    {
+      "key": "apiRegion",
+      "value": "fra1"
+    },
+    {
+      "key": "apiVersion",
+      "value": "v3"
+    },
+    {
+      "key": "baseUrl",
+      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}"
+    }
+  ]
+}

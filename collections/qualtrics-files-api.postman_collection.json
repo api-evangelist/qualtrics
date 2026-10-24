@@ -1,165 +1,146 @@
 {
+  "info": {
+    "_postman_id": "51c2c8b8-a3ac-467a-9f45-c6bca08cdeb4",
+    "name": "Automations File Service Files API",
+    "description": "# Introduction\n\nThe Automations File Service API exposes a secured and isolated file store for you to manage files intended for a Qualtrics Automation.\n\nContact Support:\n Name: Contact Qualtrics Support for more information.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "createdAt": "2026-10-21T20:39:13.000Z",
+    "updatedAt": "2026-10-21T20:39:14.000Z",
+    "lastUpdatedBy": "35240",
+    "uid": "35240-51c2c8b8-a3ac-467a-9f45-c6bca08cdeb4"
+  },
   "item": [
     {
-      "id": "4f4ccc24-de00-4c27-a7d3-dccc7859c016",
-      "name": "files",
-      "description": {
-        "content": "",
-        "type": "text/plain"
-      },
+      "name": "automations",
       "item": [
         {
-          "id": "b931848f-ee01-42b7-8547-9a04f6069526",
-          "name": "Get Automation's Files",
-          "request": {
-            "name": "Get Automation's Files",
-            "description": {
-              "content": "Get all the files for Automation which are neither archived or currently being processed.",
-              "type": "text/plain"
-            },
-            "url": {
-              "path": [
-                "automations",
-                ":automationId",
-                "files"
-              ],
-              "host": [
-                "{{baseUrl}}"
-              ],
-              "query": [],
-              "variable": [
-                {
-                  "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                  "type": "any",
-                  "value": "{{apiRegion}}",
-                  "key": "apiRegion"
-                },
-                {
-                  "description": "API version to use - default v3",
-                  "type": "any",
-                  "value": "{{apiVersion}}",
-                  "key": "apiVersion"
-                }
-              ]
-            },
-            "method": "GET",
-            "auth": null
-          },
-          "response": [
+          "name": "{automationId}",
+          "item": [
             {
-              "id": "5abefe66-8314-48a9-9620-1a06550e119c",
-              "name": "Files List",
-              "originalRequest": {
-                "url": {
-                  "path": [
-                    "automations",
-                    ":automationId",
-                    "files"
-                  ],
-                  "host": [
-                    "{{baseUrl}}"
-                  ],
-                  "query": [],
-                  "variable": [
-                    {
-                      "description": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-                      "type": "any",
-                      "value": "{{apiRegion}}",
-                      "key": "apiRegion"
-                    },
-                    {
-                      "description": "API version to use - default v3",
-                      "type": "any",
-                      "value": "{{apiVersion}}",
-                      "key": "apiVersion"
-                    }
-                  ]
-                },
-                "header": [
-                  {
-                    "description": {
-                      "content": "Added as a part of security scheme: apikey",
-                      "type": "text/plain"
-                    },
-                    "key": "X-API-TOKEN",
-                    "value": "<API Key>"
-                  }
-                ],
-                "method": "GET",
-                "body": {}
-              },
-              "status": "OK",
-              "code": 200,
-              "header": [
+              "name": "files",
+              "item": [
                 {
-                  "key": "Content-Type",
-                  "value": "text/plain"
+                  "name": "Get Automation's Files",
+                  "id": "f071eb60-72a7-4484-b47d-29498a4a0bf8",
+                  "protocolProfileBehavior": {
+                    "disableBodyPruning": true
+                  },
+                  "request": {
+                    "method": "GET",
+                    "header": [
+                      {
+                        "key": "Accept",
+                        "value": "application/json"
+                      }
+                    ],
+                    "url": {
+                      "raw": "{{baseUrl}}/automations/:automationId/files?tag=<string>",
+                      "host": [
+                        "{{baseUrl}}"
+                      ],
+                      "path": [
+                        "automations",
+                        ":automationId",
+                        "files"
+                      ],
+                      "query": [
+                        {
+                          "description": "* If not provided, the files that have not yet been processed by the automation will be returned.\n* If equal to `processing`, the files that are currently being processed by the automation will be returned.\n* If equal to `archived`, the files that have been processed and archived by the automation will be returned.\n",
+                          "key": "tag",
+                          "value": "<string>"
+                        }
+                      ],
+                      "variable": [
+                        {
+                          "id": "511e2fee-22e8-40bd-b999-e8efde6d8daa",
+                          "key": "automationId",
+                          "value": "<string>",
+                          "description": "(Required) Id of the associated automation.\n\n**Example**: `AU_123456789012345`\n"
+                        }
+                      ]
+                    },
+                    "description": "Get all the files for Automation which are neither archived or currently being processed."
+                  },
+                  "response": [
+                    {
+                      "id": "86feeaea-638d-4a8d-bae0-2676d1a65d41",
+                      "name": "Files List",
+                      "originalRequest": {
+                        "method": "GET",
+                        "header": [
+                          {
+                            "key": "Accept",
+                            "value": "application/json"
+                          }
+                        ],
+                        "url": {
+                          "raw": "{{baseUrl}}/automations/:automationId/files?tag=<string>",
+                          "host": [
+                            "{{baseUrl}}"
+                          ],
+                          "path": [
+                            "automations",
+                            ":automationId",
+                            "files"
+                          ],
+                          "query": [
+                            {
+                              "description": "* If not provided, the files that have not yet been processed by the automation will be returned.\n* If equal to `processing`, the files that are currently being processed by the automation will be returned.\n* If equal to `archived`, the files that have been processed and archived by the automation will be returned.\n",
+                              "key": "tag",
+                              "value": "<string>"
+                            }
+                          ],
+                          "variable": [
+                            {
+                              "key": "automationId"
+                            }
+                          ]
+                        }
+                      },
+                      "status": "OK",
+                      "code": 200,
+                      "_postman_previewlanguage": "json",
+                      "header": [
+                        {
+                          "key": "Content-Type",
+                          "value": "application/json"
+                        }
+                      ],
+                      "cookie": [],
+                      "responseTime": null,
+                      "body": "{\n  \"result\": {\n    \"value\": \"reference file.yaml#/definitions/files not found in the OpenAPI spec\"\n  },\n  \"meta\": {\n    \"httpStatus\": \"<string>\",\n    \"requestId\": \"<string>\",\n    \"error\": {\n      \"errorMessage\": \"<string>\",\n      \"errorCode\": \"<string>\"\n    }\n  }\n}",
+                      "createdAt": "2026-10-21T20:39:14.000Z",
+                      "updatedAt": "2026-10-21T20:39:14.000Z",
+                      "uid": "35240-86feeaea-638d-4a8d-bae0-2676d1a65d41"
+                    }
+                  ],
+                  "createdAt": "2026-10-21T20:39:14.000Z",
+                  "updatedAt": "2026-10-21T20:39:14.000Z",
+                  "uid": "35240-f071eb60-72a7-4484-b47d-29498a4a0bf8"
                 }
               ],
-              "body": "",
-              "cookie": [],
-              "_postman_previewlanguage": "text"
+              "id": "ff4853a1-cb7b-4b00-a6d8-b02bf793135b",
+              "createdAt": "2026-10-21T20:39:14.000Z",
+              "updatedAt": "2026-10-21T20:39:14.000Z",
+              "uid": "35240-ff4853a1-cb7b-4b00-a6d8-b02bf793135b"
             }
           ],
-          "event": [],
-          "protocolProfileBehavior": {
-            "disableBodyPruning": true
-          }
+          "id": "2b0ba722-4ef3-41c6-9527-588f797f6b4b",
+          "createdAt": "2026-10-21T20:39:14.000Z",
+          "updatedAt": "2026-10-21T20:39:14.000Z",
+          "uid": "35240-2b0ba722-4ef3-41c6-9527-588f797f6b4b"
         }
       ],
-      "event": []
+      "id": "6e4d88c0-934c-4226-8a1c-a09f970eced6",
+      "createdAt": "2026-10-21T20:39:14.000Z",
+      "updatedAt": "2026-10-21T20:39:14.000Z",
+      "uid": "35240-6e4d88c0-934c-4226-8a1c-a09f970eced6"
     }
   ],
-  "event": [],
   "variable": [
     {
-      "description": {
-        "content": "Specify the Qualtrics datacenter prefix according to your account (find it at <your URL>/Q/QualtricsIdsSection/IdsSection)",
-        "type": "text/plain"
-      },
-      "type": "any",
-      "value": "fra1",
-      "key": "apiRegion"
-    },
-    {
-      "description": {
-        "content": "API version to use - default v3",
-        "type": "text/plain"
-      },
-      "type": "any",
-      "value": "v3",
-      "key": "apiVersion"
-    },
-    {
-      "type": "string",
-      "value": "https://{{apiRegion}}.qualtrics.com/API/{{apiVersion}}",
-      "key": "baseUrl"
+      "key": "baseUrl",
+      "value": "https://datacenterId.qualtrics.com/automations-file-service"
     }
-  ],
-  "auth": {
-    "type": "apikey",
-    "apikey": [
-      {
-        "key": "key",
-        "value": "X-API-TOKEN"
-      },
-      {
-        "key": "value",
-        "value": "{{apiKey}}"
-      },
-      {
-        "key": "in",
-        "value": "header"
-      }
-    ]
-  },
-  "info": {
-    "_postman_id": "48e659e1-39f4-45af-bb6c-df1c9aed3d1c",
-    "name": "Qualtrics automations files API",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "description": {
-      "content": "Work with Qualtrics surveys, distributions and response events",
-      "type": "text/plain"
-    }
-  }
+  ]
 }
