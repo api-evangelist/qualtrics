@@ -66,24 +66,163 @@
 
 Qualtrics is an experience management platform providing REST APIs for managing surveys, accessing response data, distributing surveys, managing contacts, and automating XM programs at scale. The Qualtrics v3 API enables developers to automate repetitive processes, integrate data across systems, and build custom extensions for customer, employee, product, and brand experience programs.
 
-## Links
+**Areas:** Experience Management · Surveys · Customer Experience · Employee Experience · Market Research · XM · REST API
 
-- **Website:** https://www.qualtrics.com/
-- **API Documentation:** https://api.qualtrics.com/
-- **Developer Portal:** https://developer.qualtrics.com/developer/portal/
-- **GitHub:** https://github.com/qualtrics
-- **Blog:** https://www.qualtrics.com/blog/
-- **Pricing:** https://www.qualtrics.com/pricing/
-- **Status Page:** https://status.qualtrics.com/
-- **X (Twitter):** https://twitter.com/Qualtrics
-- **LinkedIn:** https://www.linkedin.com/company/qualtrics
+## Qualtrics on APIs.io
 
-## APIs
+Everything profiled for Qualtrics is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/qualtrics/](https://apis.io/providers/qualtrics/)** — or go straight to one of the APIs or properties below.
 
-- [Qualtrics REST API](https://api.qualtrics.com/) — Core v3 REST API for surveys, responses, distributions, users, contacts, and XM programs.
+### APIs (7)
 
-## Resources
+- [Qualtrics Automations API](https://apis.io/apis/qualtrics/qualtrics-automations-api/) — The automations API from Qualtrics — 1 operation(s) for automations.
+- [Qualtrics Directories API](https://apis.io/apis/qualtrics/qualtrics-directories-api/) — The Directories API from Qualtrics — 1 operation(s) for directories.
+- [Qualtrics Distributions API](https://apis.io/apis/qualtrics/qualtrics-distributions-api/) — The Distributions API from Qualtrics — 2 operation(s) for distributions.
+- [Qualtrics File API](https://apis.io/apis/qualtrics/qualtrics-file-api/) — The file API from Qualtrics — 3 operation(s) for file.
+- [Qualtrics Files API](https://apis.io/apis/qualtrics/qualtrics-files-api/) — The files API from Qualtrics — 1 operation(s) for files.
+- [Qualtrics Survey Definitions API](https://apis.io/apis/qualtrics/qualtrics-survey-definitions-api/) — The Survey Definitions API from Qualtrics — 2 operation(s) for survey definitions.
+- [Qualtrics Event Subscriptions API](https://apis.io/apis/qualtrics/qualtrics-event-subscriptions-api/) — The Event Subscriptions API from Qualtrics — 3 operation(s) for event subscriptions.
 
-- [Plans & Pricing](plans/qualtrics-plans-pricing.yml)
-- [Rate Limits](rate-limits/qualtrics-rate-limits.yml)
-- [FinOps](finops/qualtrics-finops.yml)
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Qualtrics Agentic Access](https://apis.io/agentic-access/qualtrics/qualtrics-agentic-access/)
+
+#### JSON Schema (8)
+
+The data models the API reads and writes.
+
+- [CreateContactInMailingList](https://apis.io/schemas/qualtrics/createcontactinmailinglist/)
+- [CreateDistributionLinks](https://apis.io/schemas/qualtrics/createdistributionlinks/)
+- [DistributionsResponse](https://apis.io/schemas/qualtrics/distributionsresponse/)
+- [EventSubscriptionHookSchema](https://apis.io/schemas/qualtrics/eventsubscriptionhookschema/)
+- [EventSubscriptionsResponse](https://apis.io/schemas/qualtrics/eventsubscriptionsresponse/)
+- [RetrieveDistributionLinksResponse](https://apis.io/schemas/qualtrics/retrievedistributionlinksresponse/)
+- [SubscribeToEventBody](https://apis.io/schemas/qualtrics/subscribetoeventbody/)
+- [SurveyResponse](https://apis.io/schemas/qualtrics/surveyresponse/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Qualtrics Api Context](https://apis.io/jsonld/qualtrics/qualtrics-api-context/)
+
+#### Examples (1)
+
+Example requests and responses.
+
+- [Qualtrics Api Examples](https://apis.io/examples/qualtrics/qualtrics-api-examples/)
+
+#### Collections (7)
+
+Postman and Open Collection request collections.
+
+- [Qualtrics automations API](https://apis.io/collections/qualtrics/open-qualtrics-automations-api/)
+- [Qualtrics automations Directories API](https://apis.io/collections/qualtrics/open-qualtrics-directories-api/)
+- [Qualtrics automations Distributions API](https://apis.io/collections/qualtrics/open-qualtrics-distributions-api/)
+- [Qualtrics automations Eventsubscriptions API](https://apis.io/collections/qualtrics/open-qualtrics-eventsubscriptions-api/)
+- [Qualtrics automations file API](https://apis.io/collections/qualtrics/open-qualtrics-file-api/)
+- [Qualtrics automations files API](https://apis.io/collections/qualtrics/open-qualtrics-files-api/)
+- [Qualtrics automations Survey Definitions API](https://apis.io/collections/qualtrics/open-qualtrics-survey-definitions-api/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [Qualtrics — jsonschema rules](https://apis.io/rules/qualtrics/qualtrics-jsonschema-spectral-rules/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Qualtrics Authentication](https://apis.io/security/qualtrics/qualtrics-authentication/)
+- [Qualtrics Domain Security](https://apis.io/security/qualtrics/qualtrics-domain-security/)
+- [Qualtrics Trust Center](https://apis.io/security/qualtrics/qualtrics-trust-center/)
+- [Qualtrics Vulnerability Disclosure](https://apis.io/security/qualtrics/qualtrics-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Qualtrics Plans Pricing](https://apis.io/plans/qualtrics/qualtrics-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Qualtrics Rate Limits](https://apis.io/rate-limits/qualtrics/qualtrics-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Qualtrics Finops](https://apis.io/finops/qualtrics/qualtrics-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.qualtrics.com/)
+- [Documentation](https://api.qualtrics.com/)
+- [Pricing](https://www.qualtrics.com/pricing/)
+- [Blog](https://www.qualtrics.com/blog/)
+- [Status](https://status.qualtrics.com/)
+
+## API Evangelist rating
+
+**Kin Score 42.5** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.4 |
+| Contract quality | 61.2 |
+| Contract governance | 23.5 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 28.6 |
+| Access clarity | 26.3 |
+
+**Agent readiness 20.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | partial |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | — |
+
+**Regulatory alignment 27.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/qualtrics/](https://apis.io/providers/qualtrics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Qualtrics: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/qualtrics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
